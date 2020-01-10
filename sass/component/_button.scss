@@ -1,0 +1,22 @@
+.btn {
+    cursor: pointer;
+
+    &,
+    &:link
+    &:visited {
+        @include textDecoration;
+
+        display: inline-block;
+        padding: 1.2rem 3rem;
+        border-radius: 6rem;
+        background-color: transparent;
+        border: 1px solid $color-dark-light;
+        color: $color-dark-light;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        
+    }
+    
+}

@@ -1,3 +1,25 @@
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0; }
+  100% {
+    display: block;
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  0% {
+    display: block;
+    opacity: 1; }
+  1% {
+    display: block;
+    opacity: 0; }
+  100% {
+    display: none;
+    opacity: 0; } }
+
 *,
 *::before,
 *::after {
@@ -51,6 +73,20 @@ h1 {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.btn {
+  cursor: pointer; }
+  .btn,
+  .btn:link .btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    border-radius: 6rem;
+    background-color: transparent;
+    border: 1px solid #222222;
+    color: #222222;
+    font-size: 1.5rem; }
+
 .header {
   position: relative;
   height: 100vh;
@@ -92,7 +128,7 @@ h1 {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  opacity: 0; }
+  display: none; }
 
 .navigation__list {
   position: absolute;
@@ -113,12 +149,8 @@ h1 {
   margin-right: 7rem; }
 
 .navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  transition: opacity .5s; }
-
-.navigation__checkbox:not(:checked) ~ .navigation__nav {
-  opacity: 0;
-  transition: opacity .5s; }
+  display: block;
+  animation: fadeIn .6s ease-out; }
 
 .navigation__button {
   position: absolute;

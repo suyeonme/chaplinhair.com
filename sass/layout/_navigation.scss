@@ -17,8 +17,8 @@
         width: 100%;
         position: fixed;
         z-index: 1000;
-        
-        opacity: 0;  
+
+        display: none;
 
 
         
@@ -49,13 +49,8 @@
 
     // FUNCTIONALITY
     &__checkbox:checked ~ &__nav {
-        opacity: 1;
-        transition: opacity .5s;
-    } 
-
-    &__checkbox:not(:checked) ~ &__nav {
-        opacity: 0;
-        transition: opacity .5s;
+        display: block;
+        animation: fadeIn .6s ease-out;
     } 
 
     // ICON
@@ -95,6 +90,7 @@
 
         &::before {top: -1rem;}
         &::after {top: 1rem;}
+        
     }
 
     // ICON SELECT EFFECT
