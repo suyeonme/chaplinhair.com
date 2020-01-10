@@ -4,3 +4,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+@mixin textDecoration {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+@mixin transition {
+
+  }
