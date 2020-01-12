@@ -3,16 +3,19 @@
     display: inline-block;
 
     &,
-    &:link
+    &:link,
     &:visited {
         @include textDecoration;
 
-        padding: 2.3rem 2rem;
+        padding: 2rem 2.3rem;
         border-radius: .5rem;
         background-color: transparent;
         border: 1px solid $color-dark-light;
         color: $color-dark-light;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        word-spacing: .7rem;
         transition: $transition-medium;
 
     }
@@ -20,6 +23,10 @@
     &:hover {
         background-color: $color-dark-light;
         color: $color-primary-light;
+    }
+
+    &:focus {    // remove blue outline around link.
+        @include removeOutline;
     }
     
 }
