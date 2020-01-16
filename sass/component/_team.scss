@@ -1,0 +1,17 @@
+.team {
+    
+    &__container {
+        height: auto; // adjust a height!
+        background-color: $color-primary-light;
+        padding: 10rem;
+    }
+
+    &__col {
+        height:auto;
+        width: 25rem; 
+    }
+
+    &__img {
+        width:100%; cursor: pointer;
+    }
+}

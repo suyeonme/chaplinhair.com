@@ -18,10 +18,7 @@
         position: fixed;
         z-index: 1000;
 
-        display: none;
-
-
-        
+        display: none;   
     }
 
     &__list{
@@ -33,7 +30,7 @@
     }
 
     &__item{
-        display: inline;
+        display: inline; 
     }
 
     &__link {
@@ -43,7 +40,7 @@
             color: $color-white;
             font-size: 3rem;
             word-spacing: .7rem;
-            margin-right: 7rem;
+            margin-right: 7rem; 
         }
     }
 
@@ -53,14 +50,14 @@
         animation: fadeIn .6s ease-out;
     } 
 
-    // ICON
+    // HAMBURGER BAR - MENU
     &__button{ 
         position: absolute;
         background-color: $color-primary-light;
         height: 4rem;
         width: 4rem;
         top: 3rem;
-        right: 3rem;   
+        right: 4rem;   
         cursor: pointer;
 
         z-index: 2000;
@@ -85,7 +82,7 @@
         &::after{
         content: "";
         position: absolute;
-        transition: all .2s;
+        transition: $transition-short;
         }
 
         &::before {top: -1rem;}

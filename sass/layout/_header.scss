@@ -1,11 +1,14 @@
-.header{
+// HOME 
+.header {
     position: relative;
-    height: 100vh;
-    background-image: linear-gradient(rgba($color-black, 0.6), rgba($color-black, 0.6)), url("../img/test.jpg");
-    background-size: cover;
-    background-position: top;
+    @include theme-white;
+    clip-path: polygon(0 10%, 100% 0%, 100% 87%, 0% 100%);
 
-    &__logobox{
+    &__row {
+        margin: 0;
+    }
+    
+    &__logobox {
         position: absolute;
         width: 23rem;
         top: 0;
@@ -13,22 +16,44 @@
         transform: translate(-50%);
     }
 
-    &__logo{
+    &__logo {
         width: 100%;
         height: auto;
     }
 
-    &__text{
-        font-size: 3rem;
-        line-height: 1.5;
-        letter-spacing: 1.3rem;
-    }  
-
-    &__textbox{
-        position: absolute;
-        top: 60rem;
-        left: 30rem;
-        transform: translate(0, -50%);
+    &__container {
+        height:100vh auto;
+        padding-bottom: 13rem; //clip-path
     }
 
-}
+    // LOCATION - ICON
+    &__location {
+        position: absolute;
+        top: 3rem;
+        left: 4rem;
+        font-size: 1.3rem;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        @include textDecoration;
+        color:  $color-primary-dark;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    } 
+
+
+    // TEAM 
+    .header-sub {
+        position: relative;
+        height: 60vh;
+        background-color: $color-primary-dark;
+        margin-top: 10rem;
+    }
+

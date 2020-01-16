@@ -7,9 +7,24 @@
 
 @mixin textDecoration {
     text-decoration: none;
-    text-transform: uppercase;
+    color: inherit;
   }
 
-@mixin transition {
 
-  }
+@mixin theme-black{
+  background-color: $color-primary-dark;
+}  
+
+@mixin theme-white{
+  background-color: $color-primary-light;
+}
+
+@mixin removeBtnOutline {      
+  border-color: inherit;
+  box-shadow: none;
+}
+
+@mixin footerHover {
+  color:$color-primary-light;
+  transition: all .5s;
+}

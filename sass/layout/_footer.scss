@@ -1,0 +1,73 @@
+.footer {
+    height: 100vh auto;
+    background-color: $color-primary-dark;
+    background-image: linear-gradient(to right bottom, rgba($color-black, .8), rgba($color-black, .8)),
+    url("../img/team.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &__text--quote{
+        padding: 0 10rem;
+    }
+
+    &__row {
+        padding: 0 8rem;
+    }
+
+    &__logo {
+        display: block;
+        height: 15rem;
+        margin: 0 auto;
+    }
+
+    &__number:hover {
+        @include footerHover;
+    }
+
+    &__email,
+    &__email:link,
+    &__email:visited {
+        @include textDecoration;
+
+        &:hover {
+            color: $color-primary-light;
+            @include footerHover;
+        }
+    }
+
+    &__icon {
+        
+        &:hover {
+            @include footerHover;
+        }
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        display: block;
+        font-size: 2rem;    
+        color: #969696;
+        text-decoration: none;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+
+        &:hover {
+            @include footerHover;
+        }
+    }
+    
+    &__adress--kr {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    &__copyright {
+        margin: 4rem 0 0;
+        padding-bottom: 2rem;
+    }
+
+}
