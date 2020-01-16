@@ -15,5 +15,6 @@ body{
 }
 
 ::selection{
-    background-color: #d5c455;
+    background-color: $color-gold;
+    color: $color-primary-light;
 }

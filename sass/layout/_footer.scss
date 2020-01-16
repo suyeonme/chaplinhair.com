@@ -7,8 +7,26 @@
     background-position: center;
     background-attachment: fixed;
 
-    &__text--quote{
-        padding: 0 10rem;
+    &__text {
+
+        &--quote{
+            font-size: 8rem;
+            padding: 0 30rem;
+        }
+
+        &--primary {
+            font-size: 2.3rem;
+            margin-bottom: 2rem;
+        }
+
+        &--secondary {
+            font-size: 2rem;
+            color: #969696;
+        }
+    }
+
+    &__adress--kr {
+        font-size: 1.5rem;
     }
 
     &__row {

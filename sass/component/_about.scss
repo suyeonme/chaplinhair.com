@@ -6,4 +6,18 @@
         width: 100%;
         height: auto;
     }
+
+    &__p {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+    &__emphasis {
+        display: block;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 300;
+    }
 }

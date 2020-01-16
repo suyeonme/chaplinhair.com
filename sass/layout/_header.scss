@@ -57,3 +57,11 @@
         margin-top: 10rem;
     }
 
+    .header__text {
+        @include absCenter;
+        color: $color-primary-light;
+        font-size: 5rem;
+        font-weight: 200;
+        text-transform: uppercase; 
+    }
+

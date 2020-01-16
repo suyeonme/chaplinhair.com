@@ -14,4 +14,15 @@
     &__img {
         width:100%; cursor: pointer;
     }
+
+    &__textBox {
+        color: $color-primary-dark;
+        text-align: center;
+        line-height: 2;
+    }
+
+    &__position {
+        display: block;
+        font-size: 1.2rem; 
+    }
 }
