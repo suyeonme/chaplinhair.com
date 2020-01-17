@@ -6,6 +6,7 @@ $color-dark-light: #222222;
 $color-grey-light: #a19f9fa8;
 $color-black: #000;
 $color-white: #fff;
+$color-gold-light:#f6eec7;
 $color-gold: #d5c455;
 
 
@@ -13,7 +14,7 @@ $color-gold: #d5c455;
 $default-font-size: 1.6rem;
 
 // SHADOW
-$box-shadow-1: 0 1.5rem 4rem rgba($color-black, .15);
+$box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 // TRANSITION
 $transition-short: all .2s;

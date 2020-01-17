@@ -3,11 +3,12 @@
 
     &__img {
         display: block;
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
     &__p {
+        color: $color-primary-dark;
         text-align: center;
         font-size: 1.5rem;
         line-height: 2;
@@ -15,9 +16,7 @@
 
     &__emphasis {
         display: block;
-        font-family: 'Noto Serif KR', serif;
         font-size: 2rem;
-        font-style: italic;
-        font-weight: 300;
+        font-weight: 600;
     }
 }

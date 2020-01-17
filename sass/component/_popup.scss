@@ -7,6 +7,7 @@
     z-index: 9999;
     background-color: rgba($color-black, .7);
     backdrop-filter: blur(10px);
+    transition: all .3s;
 
     opacity: 0;
     visibility: hidden;
@@ -14,8 +15,11 @@
     &__content {
         @include absCenter;
         width: 80%;
-        background-color: #f6eec7;
+        background-color: $color-primary-light;
         border-radius: .3rem;
+        box-shadow: $box-shadow;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .2s .2s;
 
         opacity: 0;
         visibility: hidden;
@@ -58,6 +62,7 @@
     &:target &__content {
         opacity: 1;
         visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
     }
 
     // TEXT OF POPUP
