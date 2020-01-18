@@ -7,36 +7,10 @@ body {
 
 .text {
 
-    // H1 - HEADER OF MAIN HOMEPAGE
-    &__header {
-        text-align: left;
-        margin: 0;
-        
-        &--primary {
-            position: absolute;
-            top: 33rem;
-            left: 15rem;
-            color: $color-primary-light;
-            font-family: 'Permanent Marker', cursive;
-            line-height: 1.2;
-            font-size: 5.5rem;
-        }
-
-        &--secondary {
-            color: $color-primary-light;
-            display: block;
-            padding-bottom: 7rem; padding-top: 5rem;
-            text-align: center;
-            font-size: 2rem;
-            font-family: 'Noto Serif KR', serif;
-            font-weight: 200;
-        }
-    }
-
-    // H3 - CATEGORY
     &__category {
-        margin-bottom: 3rem;
         text-align: center;
+        padding: 2rem 0;
+        margin: 0;
 
         &--white {
             color: $color-primary-light;

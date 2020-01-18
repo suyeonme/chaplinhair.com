@@ -1,0 +1,27 @@
+// MANTRA
+.mantra {
+
+    background-color: $color-primary-light;
+    text-align: center;
+
+    &__logo {
+        width: 18rem;
+        padding-top: 7rem;
+    }
+
+    &__text {
+        color: $color-primary-dark;
+        display: block;
+        padding: 5rem 0 7rem;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 200;
+        letter-spacing: .5rem;
+    }
+}
+
+// CAROUSEL 
+.carousel-inner {
+    height: 80vh;    // media query - height: auto and rerange arrow button! 
+}

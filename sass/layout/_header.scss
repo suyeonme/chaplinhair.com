@@ -7,7 +7,7 @@
     &__row {
         margin: 0;
     }
-    
+
     &__logobox {
         position: absolute;
         width: 23rem;
@@ -19,11 +19,6 @@
     &__logo {
         width: 100%;
         height: auto;
-    }
-
-    &__container {
-        height:100vh auto;
-        padding-bottom: 13rem; //clip-path
     }
 
     // LOCATION - ICON
@@ -38,42 +33,52 @@
     &__link:link,
     &__link:visited {
         @include textDecoration;
-        color:  $color-primary-dark;
+        color: $color-primary-dark;
     }
 
     &__icon {
         font-size: 2.5rem;
         margin-right: 1rem;
     }
+}
 
-    } 
-
-
-    // TEAM 
-    .header-sub {
-        position: relative;
-        height: 60vh;
-        background-color: $color-primary-dark;
-        margin-top: 5rem;
-    }
-
-    .header__text {
-        text-align: center;
+.headerHome {
+    &__text {
+        position: absolute;
+        top: 30rem;
+        left: 15rem;
+        text-align: left;
         color: $color-primary-light;
-        padding-top: 10rem;
-        
-        &--big {
-            display: block;
-            font-size: 5rem;
-            font-weight: 200;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-        }
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1.2;
+        font-size: 7rem;
+    }
+}
 
-        &--small {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2rem;
-            font-style: italic;
-        }
+// TEAM 
+.header-sub {
+    position: relative;
+    height: 60vh;
+    background-color: $color-primary-dark;
+    margin-top: 5rem;
+}
+
+.headerSub__text {
+    text-align: center;
+    color: $color-primary-light;
+    padding-top: 10rem;
+
+    &--big {
+        display: block;
+        font-size: 5rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
     }
 
+    &--small {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-style: italic;
+    }
+}
