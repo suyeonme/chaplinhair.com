@@ -18,10 +18,13 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="img/Favicon.png">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>채플린헤어살롱</title>
+    <title>Chaplin Hairsalon</title>
 </head>
 
 
@@ -43,7 +46,7 @@
 
                 <!-- LOGO -->
                 <div class="header__logobox">
-                    <a href="index.html"><img src="img/logo-1-black.png" alt="logo" class="header__logo"></a>
+                    <a href="index.html"><img src="img/logo-sample.png" alt="logo" class="header__logo"></a>
                 </div>
 
                 <!-- LOCATION  -->
@@ -61,7 +64,7 @@
                     </li>
                     <li class="navigation__item"><a href="team.html" class="navigation__link">TEAM</a>
                     </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">JOIN WITH US</a></li>
+                    <li class="navigation__item"><a href="joinWithUs.html" class="navigation__link">JOIN WITH US</a></li>
                 </ul>
             </nav>
         </div>
@@ -86,12 +89,13 @@
 
                         <!-- Park Cheonwoong -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--1"><img src="img/team-test.jpg" alt="Park Cheonwoong" class="team__img"></a>
+                            <a href="#popup__team--1" class="popup__trigger"><img src="img/team-test.jpg" alt="Park Cheonwoong"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
                                 <span class="team__name team__name">Park Cheonwoong</span>
                                 <span class="team__position">박천웅 대표</span>
-                            </h2>                          
+                            </h2>
                         </div>
 
                         <!-- POPUP - Park Cheonwoong -->
@@ -99,81 +103,176 @@
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Wang Hanna -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--2"><img src="img/team-test.jpg" alt="Wang Hanna" class="team__img"></a>
-                            
+                            <a href="#popup__team--2" class="popup__trigger"><img src="img/sample-1.jpg" alt="Wang Hanna"
+                                    class="team__img person-1"></a>
+
                             <h2 class="team__textBox">
                                 <span class="team__name team__name">Wang Hanna</span>
                                 <span class="team__position">왕한나 이사</span>
                             </h2>
-                        </div>   
-                        
+                        </div>
+
                         <!-- POPUP - Wang Hanna -->
                         <div class="popup" id="popup__team--2">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="img/sample-3.jpg"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Park Kwan Soo -->
+                        <div class="col-xl-3 col-lg-3 col-md-6 team__person">
+                            <a href="#popup__team--3" class="popup__trigger"><img src="img/team-test.jpg" alt="Wang Hanna"
+                                    class="team__img"></a>
+
+                            <h2 class="team__textBox">
+                                <span class="team__name team__name">Park Kwansoo</span>
+                                <span class="team__position">박관수 부장</span>
+                            </h2>
+                        </div>
+
+                        <!-- POPUP - Park Kwan Soo -->
+                        <div class="popup" id="popup__team--3">
+                            <div class="container popup__content">
+
+                                <div class="row popup__row">
+
+                                    <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
+                                    </div>
+
+                                    <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
+                                        <a href="javascript:;" class="popup__close">&times;</a>
+
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
+                                        <p class="popup__text popup__text--interview">
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
+                                            <span class="popup__text popup__text--question">좌우명이 있나요?</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
+
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
+                                            <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
+
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -183,49 +282,65 @@
 
                     <!-- SECOND ROW  -->
                     <div class="row team__row u-margin-bottom-medium">
-                        
+
                         <!-- Jeong Haemin -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--3"><img src="img/team-test.jpg" alt="Jeong HaeMin" class="team__img"></a>
+                            <a href="#popup__team--4" class="popup__trigger"><img src="img/team-test.jpg" alt="Jeong HaeMin"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
-                                <span class="team__name team__name">Jeong HaeMin</span>
+                                <span class="team__name team__name">Jeong Haemin</span>
                                 <span class="team__position">시작점 정해민 점장</span>
                             </h2>
                         </div>
 
                         <!-- POPUP - Jeong Haemin -->
-                        <div class="popup" id="popup__team--3">
+                        <div class="popup" id="popup__team--4">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -234,7 +349,8 @@
 
                         <!-- Kim Jinah -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--4"><img src="img/team-test.jpg" alt="Kim Jinah" class="team__img"></a>
+                            <a href="#popup__team--5" class="popup__trigger"><img src="img/team-test.jpg" alt="Kim Jinah"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
                                 <span class="team__name team__name">Kim Jinah</span>
@@ -243,37 +359,52 @@
                         </div>
 
                         <!-- POPUP - Kim Jinah -->
-                        <div class="popup" id="popup__team--4">
+                        <div class="popup" id="popup__team--5">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -282,46 +413,62 @@
 
                         <!-- Jeon Yunseon -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--5"><img src="img/team-test.jpg" alt="Jeon Yunseon" class="team__img"></a>
+                            <a href="#popup__team--6" class="popup__trigger"><img src="img/team-test.jpg" alt="Jeon Yunseon"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
-                                <span class="team__name team__name">Jeon YunSeon</span>
+                                <span class="team__name team__name">Jeon Yunseon</span>
                                 <span class="team__position">진격점 전윤선 원장</span>
                             </h2>
                         </div>
 
                         <!-- POPUP - Jeon YunSeon -->
-                        <div class="popup" id="popup__team--5">
+                        <div class="popup" id="popup__team--6">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -330,7 +477,7 @@
 
                         <!-- Lee Hana -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--6"><img src="img/team-test.jpg" alt="Lee Hana" class="team__img"></a>
+                            <a href="#popup__team--7" class="popup__trigger"><img src="img/team-test.jpg" alt="Lee Hana" class="team__img"></a>
 
                             <h2 class="team__textBox">
                                 <span class="team__name team__name">Lee Hana</span>
@@ -339,37 +486,52 @@
                         </div>
 
                         <!-- POPUP - Lee Hana -->
-                        <div class="popup" id="popup__team--6">
+                        <div class="popup" id="popup__team--7">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -382,46 +544,62 @@
 
                         <!-- Han Yoonjoo -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--7"><img src="img/team-test.jpg" alt="Han Yoonjoo" class="team__img"></a>
+                            <a href="#popup__team--8" class="popup__trigger"><img src="img/team-test.jpg" alt="Han Yoonjoo"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
-                                <span class="team__name team__name">Jeon YunSeon</span>
+                                <span class="team__name team__name">Jeon Yunseon</span>
                                 <span class="team__position">로얄점 한윤주 실장</span>
                             </h2>
                         </div>
 
                         <!-- POPUP - Han Yoonjoo -->
-                        <div class="popup" id="popup__team--7">
+                        <div class="popup" id="popup__team--8">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -430,7 +608,8 @@
 
                         <!-- Gown Seol -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--8"><img src="img/team-test.jpg" alt="Gown Seol" class="team__img"></a>
+                            <a href="#popup__team--9" class="popup__trigger"><img src="img/team-test.jpg" alt="Gown Seol"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
                                 <span class="team__name team__name">Gown Seol</span>
@@ -439,37 +618,52 @@
                         </div>
 
                         <!-- POPUP - Gown Seol -->
-                        <div class="popup" id="popup__team--8">
+                        <div class="popup" id="popup__team--9">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -478,46 +672,62 @@
 
                         <!-- Jung Hana -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--9"><img src="img/team-test.jpg" alt="Jung Hana" class="team__img"></a>
+                            <a href="#popup__team--10" class="popup__trigger"><img src="img/team-test.jpg" alt="Jung Hana"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
                                 <span class="team__name team__name">Jung Hana</span>
-                                <span class="team__position">시작점 정하나 수석디자이너</span>
+                                <span class="team__position">시작점 정하나 아트디렉터</span>
                             </h2>
                         </div>
 
                         <!-- POPUP - Jung Hana -->
-                        <div class="popup" id="popup__team--9">
+                        <div class="popup" id="popup__team--10">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -526,46 +736,62 @@
 
                         <!-- Lee Joonha -->
                         <div class="col-xl-3 col-lg-3 col-md-6 team__person">
-                            <a href="#popup__team--10"><img src="img/team-test.jpg" alt="Lee Joonha" class="team__img"></a>
+                            <a href="#popup__team--11" class="popup__trigger"><img src="img/team-test.jpg" alt="Lee Joonha"
+                                    class="team__img"></a>
 
                             <h2 class="team__textBox">
                                 <span class="team__name team__name">Lee Joonha</span>
-                                <span class="team__position">이준하 수석디자이너</span>
+                                <span class="team__position">시작점 이준하 아트디렉터</span>
                             </h2>
                         </div>
 
                         <!-- POPUP - Lee Joonha -->
-                        <div class="popup" id="popup__team--10">
+                        <div class="popup" id="popup__team--11">
                             <div class="container popup__content">
 
                                 <div class="row popup__row">
-                    
+
                                     <div class="col-xl-5 col-lg-5 popup__col popup__col--img">
-                                        <img class="popup__image" src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+                                        <img class="popup__image"
+                                            src="https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="">
                                     </div>
 
                                     <div class="col-xl-7 col-lg-7 popup__col popup__col--interview">
-                                        <a href="#section-team" class="popup__close">&times;</a>
+                                        <a href="javascript:;" class="popup__close">&times;</a>
 
-                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture makes a good man</h2>
+                                        <h2 class="popup__text popup__text--mantra u-margin-top-medium">Good culture
+                                            makes a good man</h2>
                                         <p class="popup__text popup__text--interview">
-                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무 행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
-                                        
+                                            <span class="popup__text popup__text--question">당신의 가슴을 뛰게 하는 것은
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">하루하루 조금씩 발전해가는 제 모습을 보는게 너무
+                                                행복해요. 훗날에 보면 아주 멋있는 사람이 되어있지 않을까 하는 기대감이라고 해야할까요?</span>
+
                                             <span class="popup__text popup__text--question">좌우명이 있나요?</span>
-                                            <span class="popup__text popup__text--answer">In life, it's not where you go, it's who you go with.</span>
+                                            <span class="popup__text popup__text--answer">In life, it's not where you
+                                                go, it's who you go with.</span>
 
-                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가 만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
-                                            
+                                            <span class="popup__text popup__text--question">당신이 꿈꾸는 미용의 미래는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">행복한 미용을 하는 거에요. 정말 좋은 문화가
+                                                만들어져서 제 삶과 일의 균형을 잘 맞추며 만족도 높은 미용을 하고 싶어요.</span>
+
                                             <span class="popup__text popup__text--question">당신만의 특별한 강점은?</span>
-                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서 긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데, 가만 생각해보니 아주 큰 장점인 것 같아요. </span>
-                                        
-                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이 가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만 아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+                                            <span class="popup__text popup__text--answer">저는 웃음이 많고 친화력이 좋은 편이에요. 그래서
+                                                긍정적 분위기를 잘 만드는 것 같아요. 팀웍에 있어서 분위기는 정말 중요하니까요! 예전에는 장점이라는 생각을 해본 적이 없었는데,
+                                                가만 생각해보니 아주 큰 장점인 것 같아요. </span>
 
-                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는 무엇인가요?</span>
-                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책 출판하기</span>
+                                            <span class="popup__text popup__text--question">앞으로 배워보고 싶은 것을 한가지만 고른다면
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">주짓수를 배워보고 싶어요. 요새들어 운동에 관심이 많이
+                                                가더라구요. 제 꿈을 향해서 계속 해서 달려나가기 위해서는 체력관리도 아주 중요하다는 생각이 들어요. 주짓수는 체력을 키울뿐만
+                                                아니라 정신력도 기를 수 있는 것 같아요. 왠지 멋있어보이기도 하구요. (웃음)</span>
+
+                                            <span class="popup__text popup__text--question">죽기전에 꼭 해보고 싶은 3가지는
+                                                무엇인가요?</span>
+                                            <span class="popup__text popup__text--answer">아프리카여행, 강의하기, 내 이름으로 책
+                                                출판하기</span>
                                         </p>
                                     </div>
                                 </div>
@@ -574,7 +800,7 @@
                     </div>
 
                 </div>
-            </div>  
+            </div>
         </section>
     </main>
 
@@ -608,7 +834,8 @@
 
                     <a href="https://www.instagram.com/chaplin_hairsalon" class="footer__link"><i
                             class="fab fa-instagram footer__icon"></i>&nbsp; Instagram</a>
-                    <a href="https://blog.naver.com/ckffl4325" class="footer__link"><i class="fab fa-blogger footer__icon"></i>&nbsp; Blog</a>
+                    <a href="https://blog.naver.com/ckffl4325" class="footer__link"><i
+                            class="fab fa-blogger footer__icon"></i>&nbsp; Blog</a>
                 </div>
 
                 <div class="col-xl-4 col-lg-4 footer__col">
@@ -644,6 +871,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- javascript -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@
 
         &--secondary {
             font-size: 2rem;
-            color: #969696;
+            color: $color-footer-grey;
         }
     }
 
@@ -47,6 +47,7 @@
     &__email:link,
     &__email:visited {
         @include textDecoration;
+        color: $color-footer-grey;
 
         &:hover {
             color: $color-primary-light;
@@ -66,7 +67,7 @@
     &__link:visited {
         display: block;
         font-size: 2rem;    
-        color: #969696;
+        color: $color-footer-grey;
         text-decoration: none;
 
         &:not(:last-child){

@@ -1,30 +1,53 @@
-@mixin absCenter{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-@mixin textDecoration {
-    text-decoration: none;
-    color: inherit;
-  }
-
-
-@mixin theme-black{
-  background-color: $color-primary-dark;
-}  
-
-@mixin theme-white{
-  background-color: $color-primary-light;
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@mixin removeBtnOutline {      
+@mixin textDecoration {
+  text-decoration: none;
+}
+
+@mixin removeBtnOutline {
   border-color: inherit;
   box-shadow: none;
 }
 
+@mixin theme-black {
+  background-color: $color-primary-dark;
+}
+
+@mixin theme-white {
+  background-color: $color-primary-light;
+}
+
 @mixin footerHover {
-  color:$color-primary-light;
+  color: $color-primary-light;
   transition: all .5s;
+}
+
+@mixin popup-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba($color-black, .7);
+  backdrop-filter: blur(10px);
+
+  display: none;
+  visibility: hidden;
+}
+
+@mixin popup-content {
+  @include absCenter;
+  width: 80%;
+  background-color: $color-primary-light;
+  border-radius: .3rem;
+  box-shadow: $box-shadow;
+  transform: translate(-50%, -50%) scale(.25);
+
+  visibility: hidden;
 }

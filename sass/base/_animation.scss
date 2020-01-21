@@ -19,3 +19,13 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+
+// Animation on Scroll
+.wp {
+    opacity: 0;
+}
+
+.wp.animated{
+    opacity: 1;
+}
