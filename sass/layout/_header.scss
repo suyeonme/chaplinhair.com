@@ -1,81 +1,38 @@
 // HOME 
 .header {
-    position: relative;
     @include theme-black;
     height: auto;
 
-    &__row {
-        margin: 0;
+    &__btn {
+        animation-delay: 1s;
     }
 
-    &__logobox {
-        position: absolute;
-        width: 23rem;
-        top: .5rem;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    &__logo {
-        width: 100%;
-        height: auto;
-    }
-
-    // LOCATION - ICON
-    &__location {
-        position: absolute;
-        top: 3rem;
-        left: 4rem;
-        font-size: 1.3rem;
-    }
-
-    &__link,
-    &__link:link,
-    &__link:visited {
-        @include textDecoration;
-        color: $color-primary-dark;
-    }
-
-    &__icon {
-        font-size: 2.5rem;
-        margin-right: 1rem;
-    }
-
-    &__textBox {
+    &__title {
         position: absolute;
         top: 30rem;
         left: 15rem;
         text-align: left;
         color: $color-primary-light;
-    }
-
-    &__btn {
-        animation-delay: 1s;
-    }
-}
-
-.headerHome {
-    &__text {
         font-family: 'Permanent Marker', cursive;
         line-height: 1.2;
         font-size: 7rem;
+        animation-delay: .8s;
     }
 }
 
 // TEAM 
-.header-sub {
+.subheader {
     position: relative;
     height: 60vh;
     background-color: $color-primary-dark;
-    margin-top: 5rem;
 }
 
-.headerSub__text {
+.subheader__text {
     text-align: center;
     color: $color-primary-light;
-    padding-top: 10rem;
+    padding-top: 8rem;
 
-    &--big {
+    &--title {
         display: block;
         font-size: 5rem;
         font-weight: 200;
@@ -83,7 +40,7 @@
         margin-bottom: 2rem;
     }
 
-    &--small {
+    &--description {
         font-family: 'Times New Roman', Times, serif;
         font-size: 2rem;
         font-style: italic;

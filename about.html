@@ -30,10 +30,10 @@
 
 <body>
 
-    <div class="row header__row">
+    <div class="navigation">
 
         <!-- NAVIGATION BAR-->
-        <div class="navigation">
+        <div class="navigation__row row">
 
             <input type="checkbox" id="navi-toggler" class="navigation__checkbox">
 
@@ -45,13 +45,13 @@
                 <div class="navigation__background"></div>
 
                 <!-- LOGO -->
-                <div class="header__logobox">
-                    <a href="index.html"><img src="img/logo-sample.png" alt="logo" class="header__logo"></a>
+                <div class="navigation__logobox">
+                    <a href="index.html"><img src="img/logo-gold.png" alt="logo" class="navigation__logo"></a>
                 </div>
 
-                <!-- LOCATION  -->
-                <div class="header__location">
-                    <a href="#" class="header__link"><i class="fas fa-map-marker-alt header__icon"></i>Find a salon</a>
+                <!-- MAP  -->
+                <div class="navigation__map">
+                    <a href="#" class="navigation__map-link"><i class="fas fa-map-marker-alt navigation__map-icon"></i>Find a salon</a>
                 </div>
             </div>
 
@@ -59,30 +59,32 @@
             <!-- NAVIGATION -->
             <nav class="navigation__nav">
                 <ul class="navigation__list u-center-text">
-                    <li class="navigation__item"><a href="index.html" class="navigation__link">HOME</a>
-                    <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT</a>
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">HOME</a></li>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT</a></li>
+                    <li class="navigation__item"><a href="team.html" class="navigation__link">TEAM</a></li>
+                    <li class="navigation__item"><a href="joinWithUs.html" class="navigation__link">JOIN WITH US</a>
                     </li>
-                    <li class="navigation__item"><a href="team.html" class="navigation__link">TEAM</a>
-                    </li>
-                    <li class="navigation__item"><a href="joinWithUs.html" class="navigation__link">JOIN WITH US</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </div> 
 
     <!-- HEADER -->
-    <header class="header-sub header-sub--team">
-        <h1 class="headerSub__text">
-            <span class="headerSub__text headerSub__text--big">Who we are</span>
-            <span class="headerSub__text headerSub__text--small">We create beautiful culture. We create beautiful
-                life.</span>
+    <header class="subheader subheader--team">
+        <h1 class="subheader__text">
+            <span class="subheader__text subheader__text--title">Who we are</span>
+            <span class="headerSub__text subheader__text--description">
+                We keep having childlike mind and live the questions. We are a rascal in beauty industry.<br>
+                When you follow the passion along this path, sometimes you feel like, you’re alone.<br>
+                Just keep in mind we are your family, friend and companion. 
+            </span>
         </h1>
     </header>
 
     <main>
         <!-- SECTION - ABOUT US  -->
         <section id="section-about">
-            <div class="about u-center-block u-padding-top-big u-padding-bottom-big">
+            <div class="about u-center-block u-padding-top-medium u-padding-bottom-big">
                 <h3 class="text__category text__category--black">Mission</h3>
 
                 <img src="https://images.unsplash.com/photo-1561198929-06611095c95d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -177,10 +179,19 @@
             </div>
         </section>
 
-
-
-
-
+        <!-- CEO SAYING -->
+        <section id="section-ceo">
+            <div class="container-fluid ceo__container">
+                <div class="row ceo__row">
+                    <div class="col-xl-5 col-lg-5 ceo__col">
+                        <img class="ceo__img" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="CEO-image" >
+                    </div>
+                    <div class="col-xl-7 col-lg-7 ceo__col">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>

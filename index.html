@@ -29,10 +29,12 @@
 
 
 <body>
-    <div class="row header__row">
+
+
+    <div class="navigation">
 
         <!-- NAVIGATION BAR-->
-        <div class="navigation">
+        <div class="navigation__row row">
 
             <input type="checkbox" id="navi-toggler" class="navigation__checkbox">
 
@@ -44,13 +46,13 @@
                 <div class="navigation__background"></div>
 
                 <!-- LOGO -->
-                <div class="header__logobox">
-                    <a href="index.html"><img src="img/logo-sample.png" alt="logo" class="header__logo"></a>
+                <div class="navigation__logobox">
+                    <a href="index.html"><img src="img/logo-gold.png" alt="logo" class="navigation__logo"></a>
                 </div>
 
-                <!-- LOCATION  -->
-                <div class="header__location">
-                    <a href="#" class="header__link"><i class="fas fa-map-marker-alt header__icon"></i>Find a salon</a>
+                <!-- MAP  -->
+                <div class="navigation__map">
+                    <a href="#" class="navigation__map-link"><i class="fas fa-map-marker-alt navigation__map-icon"></i>Find a salon</a>
                 </div>
             </div>
 
@@ -61,11 +63,13 @@
                     <li class="navigation__item"><a href="index.html" class="navigation__link">HOME</a></li>
                     <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT</a></li>
                     <li class="navigation__item"><a href="team.html" class="navigation__link">TEAM</a></li>
-                    <li class="navigation__item"><a href="joinWithUs.html" class="navigation__link">JOIN WITH US</a></li>
+                    <li class="navigation__item"><a href="joinWithUs.html" class="navigation__link">JOIN WITH US</a>
+                    </li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </div> 
+
 
     <header class="header u-padding-bottom-big">
         <div class="header__video u-center-block">
@@ -75,13 +79,11 @@
             </video>
         </div>
 
-        <div class="header__textBox">
-            <h1 class="headerHome__text animated fadeIn slow">
-                We were lucky<br>to have lived<br>in his time
-            </h1>
-            <a href="about.html" class=" btn btn--light header__btn u-margin-top-medium animated fadeIn">Learn More</a>
+        <div class="header__title animated fadeIn">
+            We were lucky<br>to have lived<br>in his time<br>
+            <a href="about.html" class=" btn btn--gold header__btn u-margin-top-medium animated fadeIn">Learn More</a>
         </div>
-        
+
     </header>
 
     <main>
@@ -89,42 +91,25 @@
         <!-- MANTRA -->
         <div class="mantra u-padding-top-medium u-padding-bottom-medium wp wp--home-1">
             <img src="img/logo-chaplin.png" class="mantra__logo " alt="logo">
-            <h1 class="mantra__text">미용의 판을 바꾸다 - 채플린 헤어살롱</h1>
+            <h1 class="mantra__text">미용의 판을 바꾸다 &mdash; 채플린 헤어살롱</h1>
         </div>
 
-
-        <!-- CAROUSEL -->
-        <div id="chaplinHairsalon" class="carousel slide" data-ride="carousel" data-interval="4000">
-            <ol class="carousel-indicators">
-                <li data-target="#chaplinHairsalon" data-slide-to="0" class="active"></li>
-                <li data-target="#chaplinHairsalon" data-slide-to="1"></li>
-                <li data-target="#chaplinHairsalon" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid" src="https://images.unsplash.com/photo-1515678916313-2263ebfad5cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 img-fluid" src="https://images.unsplash.com/photo-1481437156560-3205f6a55735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 img-fluid" src="https://images.unsplash.com/photo-1515165359388-5309c518b140?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" alt="Third slide">
+        <!-- GALLERY -->
+        <section class="section-gallery">
+            <div class="gallery">
+                <div class="gallery__container gallery__container--1">
+                    <div class="gallery__content gallery__content--2">
+                        
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#chaplinHairsalon" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#chaplinHairsalon" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+        </section>
+
 
         <!-- STORY OF JOIN WITH US -->
-        <section class="section-story u-padding-top-big wp wp--home-2" id="section-story">
+        <section class="section-story wp wp--home-2" id="section-story">
             <div class="story story--1">
-                <h3 class="text__category">Interview</h3>
+                <h3 class="text__category">Partner Interview</h3>
                 <div class="story__imageContainer">
                     <img src="img/story.jpg" class="story__img" alt="story-image">
                 </div>
@@ -135,14 +120,13 @@
                         내가 행복한 미용을 한다는 것
                         <span class="story__name story__name--ko">채플린헤어살롱 광주점, 강수연 원장</span>
                     </p>
-                    <a href="joinWithUs.html" class="btn btn--light u-margin-top-small">Learn More</a>
+                    <a href="joinWithUs.html" class="btn btn--pink u-margin-top-small">Learn More</a>
                 </div>
 
             </div>
         </section>
-
-
     </main>
+
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -171,7 +155,8 @@
 
                     <a href="https://www.instagram.com/chaplin_hairsalon" class="footer__link"><i
                             class="fab fa-instagram footer__icon"></i>&nbsp; Instagram</a>
-                    <a href="https://blog.naver.com/ckffl4325" class="footer__link"><i class="fab fa-blogger footer__icon"></i>&nbsp; Blog</a>
+                    <a href="https://blog.naver.com/ckffl4325" class="footer__link"><i
+                            class="fab fa-blogger footer__icon"></i>&nbsp; Blog</a>
                 </div>
 
                 <div class="col-xl-4 col-lg-4 footer__col">
@@ -189,13 +174,6 @@
         </div>
 
     </footer>
-
-
-
-
-
-
-
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c379705f96.js" crossorigin="anonymous"></script>
@@ -215,7 +193,7 @@
     <script src="js/jquery.waypoints.min.js"></script>
 
     <!-- javascript -->
-    <script src="js/index.js"></script>
+    <script src="js/index.js" charset="utf-8"></script>
 </body>
 
 </html>

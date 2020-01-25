@@ -4,13 +4,14 @@
 
     &__content {
         @include popup-content;
+        overflow: auto;
     }
 
     &__close,
     &__close:link,
     &__close:visited {
         @include textDecoration;
-        position: absolute;
+        position: fixed;
         top: 1rem;
         right: 2rem;
         font-size: 4rem;
@@ -20,7 +21,6 @@
     &__col {
         height: 80vh;
         padding: 0;
-        overflow: hidden;
     }
 
     &__image {
@@ -68,4 +68,11 @@
             font-size: 1.1rem;
         }
     }
+}
+
+
+
+
+.popup__row {
+    position: relative;
 }

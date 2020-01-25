@@ -42,6 +42,32 @@
         }
     }
 
+    &--pink {
+        color: $color-pink;
+        border: 1px solid $color-pink;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+
+        &::before {
+            background: $color-pink;
+        }
+    }
+
+    &--gold {
+        color: $color-gold;
+        border: 1px solid $color-gold;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+
+        &::before {
+            background: $color-gold;
+        }
+    }
+
     &:hover {
         z-index: 1;
     }
@@ -64,7 +90,8 @@
     &:focus {
         @include removeBtnOutline;
     }
-}
+    }
+
 
 
 

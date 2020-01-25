@@ -17,6 +17,7 @@
         &--primary {
             font-size: 2.3rem;
             margin-bottom: 2rem;
+            color: $color-primary-light;
         }
 
         &--secondary {
@@ -50,7 +51,7 @@
         color: $color-footer-grey;
 
         &:hover {
-            color: $color-primary-light;
+            color: $color-pink;
             @include footerHover;
         }
     }

@@ -21,12 +21,12 @@ body {
         }
     }
 
-    &__quote {
+    &__quote {              // MAKE IT DRY
         font-family: 'Permanent Marker', cursive;
         font-size: 3.5rem;
         text-align: center;
         letter-spacing: .3rem;
-        color: $color-primary-light;
+        color: $color-gold;
         padding: 0 30rem;
     }
 }
