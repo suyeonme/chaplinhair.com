@@ -1,4 +1,5 @@
-// WAYPOINTS - FADE IN 
+/******** WAYPOINTS *********/
+// fadeIn
 $('.wp--home-1').waypoint(function (direction) {
     $('.wp--home-1').addClass('animated fadeIn');
 }, {
@@ -12,7 +13,7 @@ $('.wp--home-2').waypoint(function (direction) {
     offset: '50%'
 });
 
-// IMAGE ON HOVER
+/********  IMAGE ON HOVER *********/
 $(".person-1").hover(function () {
     $(".person-1").attr("src", "img/sample-2.jpg");
 }, function () {
@@ -20,7 +21,8 @@ $(".person-1").hover(function () {
 });
 
 
-// POPUP - OPEN AND CLOSE 
+/******** POPUP *********/ 
+// open and close
 $(".popup__trigger").click(function () {
     $(".popup").show();
 });
@@ -29,28 +31,28 @@ $(".popup__close").click(function () {
     $(".popup").hide();
 });
 
-// POPUP - HIDE BY CLICKING
+// hide by clicking
 var mouse_is_inside = false;
 
-$(document).ready(function () {
-    $('.popup__content').hover(function () {
-        mouse_is_inside = true;
-    }, function () {
-        mouse_is_inside = false;
-    });
+$('.popup__content').hover(function () {
+    mouse_is_inside = true;
+}, function () {
+    mouse_is_inside = false;
+});
 
-    $("body").mouseup(function () {
-        if (!mouse_is_inside) $('.popup').hide();
-    });
+$("body").mouseup(function () {
+    if (!mouse_is_inside) $('.popup').hide();
 });
 
 
-// TOGGLE NAVIGATION 
+/********  NAVIGATION *********/
+// toggle
 $(".navigation__button").click(function () {
     $(".navigation__nav").toggle();
+    $(".navigation__container").css({"position": "fixed"});
 });
 
-// STICKY NAVIGATION - HOME
+// sticky - home
 $('.mantra').waypoint(function (direction) {
     if (direction == "down") {
         $('.navigation').addClass('sticky');
@@ -64,7 +66,7 @@ $('.mantra').waypoint(function (direction) {
     offset: '30%;'
 });
 
-// STICKY NAVIGATION - SUBPAGES
+// sticky - subpages
 $('main').waypoint(function (direction) {
     if (direction == "down") {
         $('.navigation').addClass('sticky');
@@ -77,3 +79,6 @@ $('main').waypoint(function (direction) {
 }, {
     offset: '30%;'
 });
+
+
+

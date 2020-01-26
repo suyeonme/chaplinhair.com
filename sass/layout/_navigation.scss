@@ -1,147 +1,104 @@
 .navigation {
 
-    &__row {
-        margin: 0;
-        background-color: $color-primary-dark;
-        position: relative;
-        z-index: 8000;
-    }
-
-    &__navbar {
+    &__container {
+        position: relative; 
+        z-index: 2000;
         width: 100%;
         height: 10rem;
-        z-index: 9000;
-    }
-
-    &__logobox {
-        position: absolute;
-        width: 23rem;
-        top: 2rem;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    &__logo {
-        width: 100%;
-        height: auto;
-    }
-
-    // MAP ICON
-    &__map {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-        font-size: 1.3rem;
-    }
-
-    &__map-link,
-    &__map-link:link,
-    &__map-link:visited {
-        @include textDecoration;
-        color: $color-gold;
-        font-size: 1.5rem;
-    }
-
-    &__map-icon {
-        font-size: 2.5rem;
-        margin-right: 1rem;
-        color: $color-gold;
-    }
-
-
-    &__checkbox {
-        display: none;
-    }
-
-    &__nav {
-        display: none;
+        padding: 3rem 4rem 0;
         background-color: $color-primary-dark;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        z-index: 1000;
+
+        display: flex;
+        align-items: center;
     }
 
-    &__list {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
+    &__checkbox {display: none;}
+
+    &__logobox { 
+        margin: 0 auto;
+        width: 23rem;
     }
 
-    &__item {
-        display: inline;
-    }
-
-        &__link,
-        &__link:link,
-        &__link:visited {
-            @include textDecoration;
-            color: $color-primary-light;
-            font-size: 3.5rem;
-            margin-right: 7rem;
-        }
+    &__logo { width: 100%;}
 
     // HAMBURGER BAR - MENU
     &__button {
-        position: absolute;
-        background-color: transparent;
+        position: relative;
         height: 4rem;
         width: 4rem;
-        top: 4rem;
-        right: 5rem;
         cursor: pointer;
-    }
-
-    // ICON SELECT EFFECT
-    &__checkbox:checked+&__navbar {
-        position: fixed;
-    }
-
-    &__checkbox:checked+&__navbar &__button &__icon {
-        background-color: transparent;
-    }
-
-    &__checkbox:checked+&__navbar &__button &__icon::before {
-        top: 0;
-        transform: rotate(135deg);
-    }
-
-    &__checkbox:checked+&__navbar &__button &__icon::after {
-        top: 0;
-        transform: rotate(-135deg);
+        display: flex;
+        align-items: center;
     }
 
     &__icon {
-        position: relative;
-        margin-top: 1.5rem;
 
         &,
         &::before,
         &::after {
+            position: absolute;
+            right: 0;
             display: inline-block;
             width: 4rem;
             height: 2.4px;
             background-color: $color-gold;
-            position: absolute;
-            right: 0;
         }
 
         &::before,
         &::after {
             content: "";
-            position: absolute;
             transition: $transition-short;
         }
 
-        &::before {
-            top: -1rem;
-        }
+        &::before {top: 1rem;}
 
-        &::after {
-            top: 1rem;
-        }
+        &::after {top: -1rem;}
+    }
+
+     // ICON SELECT EFFECT
+    &__checkbox:checked ~ &__button-container &__button &__icon { background-color: transparent; }
+
+    &__checkbox:checked ~ &__button-container &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked ~ &__button-container &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    // NAVIGATION ITEMS
+    &__nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $color-primary-dark;
+        height: 100vh;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    &__list {  
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; 
+    } 
+
+    &__item {
+        display: inline;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        @include textDecoration; 
+        color: $color-primary-light;
+        font-size: 4rem;
+        margin-right: 7rem;
     }
 }
 
@@ -149,44 +106,23 @@
 
 .sticky .navigation {
 
-    &__navbar {
+    &__container {
         height: 9rem;
         position: fixed;
         background-color: $color-primary-light;
         box-shadow: $box-shadow;
-    }
-
-    &__logobox {
-        top: 0;
-    }
-
-    // LOCATION - ICON
-    &__map {
-        top: 3rem;
-        left: 3rem;
+        padding: 0 4rem;
     }
 
     &__map-link,
     &__map-link:link,
-    &__map-link:visited {
-        color: $color-primary-dark;
-    }
+    &__map-link:visited {color: $color-primary-dark;}
 
-    &__map-icon {
-        color: $color-primary-dark;
-    }
-
-    // HAMBURGER BAR - MENU
-    &__button {
-        top: 3rem;
-    }
+    &__map-icon {color: $color-primary-dark;}
 
     &__icon {
-
         &,
         &::before,
-        &::after {
-            background-color: $color-primary-dark;
-        }
+        &::after {background-color: $color-primary-dark;}
     }
 }

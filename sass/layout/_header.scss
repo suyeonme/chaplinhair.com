@@ -1,7 +1,7 @@
 // HOME 
 .header {
     @include theme-black;
-    height: auto;
+    height: 100vh;
 
     &__btn {
         animation-delay: 1s;

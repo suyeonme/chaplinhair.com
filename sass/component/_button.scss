@@ -4,6 +4,7 @@
     &:link,
     &:visited {
         @include textDecoration;
+        font-family: 'Montserrat', sans-serif;
         position: relative;
         background: none;
         padding: 2rem 2.3rem;
