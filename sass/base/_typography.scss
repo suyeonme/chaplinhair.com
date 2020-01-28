@@ -23,11 +23,14 @@ body {
 
     &__quote {              // MAKE IT DRY
         font-family: 'Permanent Marker', cursive;
+        color: $color-primary-dark;
         font-size: 3.5rem;
         text-align: center;
         letter-spacing: .3rem;
-        color: $color-gold;
-        padding: 0 30rem;
+        
+        &--gold {
+            color: $color-gold;
+        }
     }
 }
 

@@ -7,12 +7,6 @@ $('.wp--home-1').waypoint(function (direction) {
 });
 
 
-$('.wp--home-2').waypoint(function (direction) {
-    $('.wp--home-2').addClass('animated fadeIn');
-}, {
-    offset: '50%'
-});
-
 /********  IMAGE ON HOVER *********/
 $(".person-1").hover(function () {
     $(".person-1").attr("src", "img/sample-2.jpg");

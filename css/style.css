@@ -39,11 +39,12 @@ body {
 
 .text__quote {
   font-family: 'Permanent Marker', cursive;
+  color: #0f0f0f;
   font-size: 3.5rem;
   text-align: center;
-  letter-spacing: .3rem;
-  color: #dbcc8f;
-  padding: 0 30rem; }
+  letter-spacing: .3rem; }
+  .text__quote--gold {
+    color: #dbcc8f; }
 
 .u-center-text {
   text-align: center !important; }
@@ -111,15 +112,6 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 600; }
-
-.ceo__col {
-  padding: 0;
-  height: 80vh; }
-
-.ceo__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -201,6 +193,61 @@ body {
     font-family: 'Noto Serif KR', serif;
     font-weight: 200;
     letter-spacing: .5rem; }
+
+.gallery {
+  overflow: auto; }
+  .gallery__container {
+    position: relative;
+    width: 60%;
+    height: 60vh; }
+    .gallery__container--1 {
+      background-color: #e6a157; }
+    .gallery__container--2 {
+      float: right;
+      margin-top: 20rem;
+      background-color: #e6d385; }
+  .gallery__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 60%; }
+  .gallery__image-container {
+    width: 50%;
+    height: 100%; }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .gallery__text-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 7rem 3.5rem;
+    color: #f7f7f7;
+    font-size: 1.5rem;
+    line-height: 2; }
+    .gallery__text-container--1 {
+      background-color: #eb8242; }
+    .gallery__text-container--2 {
+      background-color: #5c7658; }
+  .gallery__text:before {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    content: "\201C";
+    font-size: 4rem; }
+  .gallery__name {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400; }
+
+.instagram__img {
+  width: 30%; }
 
 .partnership__container {
   position: relative; }
