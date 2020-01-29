@@ -3,9 +3,38 @@
 $('.wp--home-1').waypoint(function (direction) {
     $('.wp--home-1').addClass('animated fadeIn');
 }, {
-    offset: '50%'
+    offset: '80%'
 });
 
+$('.wp--home-2').waypoint(function (direction) {
+    $('.wp--home-2').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+$('.wp--home-3').waypoint(function (direction) {
+    $('.wp--home-3').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+$('.wp--home-4').waypoint(function (direction) {
+    $('.wp--home-4').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+$('.wp--home-5').waypoint(function (direction) {
+    $('.wp--home-5').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+$('.wp--home-6').waypoint(function (direction) {
+    $('.wp--home-6').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
 
 /********  IMAGE ON HOVER *********/
 $(".person-1").hover(function () {

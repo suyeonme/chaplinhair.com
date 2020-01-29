@@ -117,7 +117,6 @@ body {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  background: none;
   padding: 2rem 2.3rem;
   border-radius: .5rem;
   font-size: 1.3rem;
@@ -179,6 +178,22 @@ body {
   border-color: inherit;
   box-shadow: none; }
 
+.btn-instagram, .btn-instagram:link, .btn-instagram:visited {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5rem 1.8rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  transition: all 0.7s;
+  color: #0f0f0f;
+  border: 1px solid #0f0f0f; }
+
+.btn-instagram:hover {
+  background-color: #0f0f0f;
+  color: #f7f7f7; }
+
 .mantra {
   text-align: center; }
   .mantra__logo {
@@ -204,8 +219,12 @@ body {
       background-color: #e6a157; }
     .gallery__container--2 {
       float: right;
-      margin-top: 20rem;
-      background-color: #e6d385; }
+      margin-top: 13rem;
+      background-color: #9dab86; }
+    .gallery__container--3 {
+      float: left;
+      margin-top: 13rem;
+      background-color: #a0855b; }
   .gallery__content {
     position: absolute;
     top: 50%;
@@ -233,6 +252,8 @@ body {
       background-color: #eb8242; }
     .gallery__text-container--2 {
       background-color: #5c7658; }
+    .gallery__text-container--3 {
+      background-color: #6b591d; }
   .gallery__text:before {
     display: block;
     position: absolute;
@@ -246,8 +267,24 @@ body {
     font-size: 1.3rem;
     font-weight: 400; }
 
-.instagram__img {
-  width: 30%; }
+.instagram {
+  overflow: auto;
+  padding: 3rem 0 5rem; }
+  .instagram__image-container {
+    text-align: center;
+    margin-top: 10rem; }
+  .instagram__img {
+    width: 20%;
+    height: auto;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+    position: relative; }
+    .instagram__img--1 {
+      right: -2rem; }
+    .instagram__img--2 {
+      top: -3rem;
+      z-index: 100; }
+    .instagram__img--3 {
+      left: -2rem; }
 
 .partnership__container {
   position: relative; }
