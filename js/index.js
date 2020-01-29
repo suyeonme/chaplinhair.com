@@ -1,5 +1,5 @@
 /******** WAYPOINTS *********/
-// fadeIn
+// Home
 $('.wp--home-1').waypoint(function (direction) {
     $('.wp--home-1').addClass('animated fadeIn');
 }, {
@@ -32,6 +32,13 @@ $('.wp--home-5').waypoint(function (direction) {
 
 $('.wp--home-6').waypoint(function (direction) {
     $('.wp--home-6').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+// About 
+$('.wp--home-7').waypoint(function (direction) {
+    $('.wp--home-7').addClass('animated fadeIn');
 }, {
     offset: '80%'
 });

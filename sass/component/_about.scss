@@ -1,22 +1,61 @@
+
+// ABOUT
 .about {
-    padding: 0 25rem; //section padding
+    overflow: hidden;
+    color: $color-primary-dark;
+
+    &__title {
+        padding: 0 30rem;
+        text-align: center;
+        font-weight: 800;
+        font-size: 4.3rem;
+
+        &-ko {
+            display: block;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2;
+        margin: 6rem 0;
+
+        &-title {
+            display: block;
+            font-size: 4rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    
+    &__image-wrapper {
+        height: auto;
+
+        &--1 {width: 80%;}
+        &--2 {width: 100%;}
+        &--4 {width: 80%; float: right; transform: translateX(6rem);}
+        &--5 {
+            width: 90%; 
+            float: right; 
+            margin-top: 10rem;
+        }
+    }
 
     &__img {
-        display: block;
-        width: 80%;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
-
-    &__p {
-        color: $color-primary-dark;
-        text-align: center;
-        font-size: 1.5rem;
-        line-height: 2;
-    }
-
-    &__emphasis {
-        display: block;
-        font-size: 2rem;
-        font-weight: 600;
-    }
+    
 }
+
+
+.col {
+    width: 33.333%;
+    height: auto;
+    float: left;
+    padding-top: 10rem;
+}
+
