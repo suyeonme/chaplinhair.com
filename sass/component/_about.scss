@@ -3,12 +3,13 @@
 .about {
     overflow: hidden;
     color: $color-primary-dark;
+    padding-bottom: 10rem;
 
     &__title {
         padding: 0 30rem;
         text-align: center;
         font-weight: 800;
-        font-size: 4.3rem;
+        font-size: 4.5rem;
 
         &-ko {
             display: block;
@@ -26,7 +27,7 @@
         &-title {
             display: block;
             font-size: 4rem;
-            font-weight: 600;
+            font-weight: 800;
             text-align: center;
         }
     }
@@ -36,12 +37,19 @@
 
         &--1 {width: 80%;}
         &--2 {width: 100%;}
-        &--4 {width: 80%; float: right; transform: translateX(6rem);}
+        &--4 {
+            width: 80%; 
+            float: right; 
+            transform: translateX(6rem);
+            margin-top: 13rem;
+        }
         &--5 {
             width: 90%; 
             float: right; 
-            margin-top: 10rem;
+            margin-top: 20rem;
         }
+        &--6 {width: 90%; margin-top: 15rem;}
+        &--7 {width: 50%; margin-left: 7rem;}
     }
 
     &__img {
@@ -50,7 +58,6 @@
     }
     
 }
-
 
 .col {
     width: 33.333%;

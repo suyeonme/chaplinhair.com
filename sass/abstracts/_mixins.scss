@@ -52,4 +52,11 @@
   visibility: hidden;
 }
 
+@mixin horizontal-line {
+  display: block;
+  width: 10rem;
+  background-color: $color-gold;
+  height: .1rem;
+}
+
 

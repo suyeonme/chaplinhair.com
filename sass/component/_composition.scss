@@ -118,77 +118,56 @@
         }
     }
 
-    // PARTNERSHIP
-    .partnership {
-
-        &__container {
-            position: relative;
+    //PARTNER INTERVIEW
+    .story {
+        width: 100%;
+        height: 85vh;
+        position: relative;
+        background-color: #5d5b6a;
+        
+    
+        &__imageContainer {
+            width: 40%;
+            @include absCenter;
         }
-
-        &__content {
-            width: 100%;
-            height: 120vh;
-
-            &-imageBox {
-                position: absolute;
-                top: 10rem;
-                left: 15rem;
-                width: 55%;
-                height: 55%;
-            }
-
-            &-textBox {
-                position: absolute;
-                top: 55rem;
-                right: 28rem;
-                width: 23%;
-                height: 37%;
-                background-color: $color-primary-dark;
-                font-size: 4rem;
-                font-weight: 800;
-                text-align: center;
-                padding: 4rem;
-            }
-        }
-
-
+    
         &__img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
         }
-
-        &__text {
-            display: block;
-            text-align: left;
-
-            &--primary {
-                color: $color-primary-dark;
-                font-size: 10rem;
+    
+        &__name {
+    
+            &--eg {
+                position: absolute;
+                top: 13rem;
+                left: 30rem;
+                font-size: 7rem;
+                text-transform: uppercase;
                 font-weight: 800;
             }
-
-            &--secondary {
-                font-size: 3rem;
-                font-weight: 600;
-                margin-bottom: 1.5rem;
-            }
-
-            &--tertiary {
-                font-size: 2.3rem;
-                font-weight: 400;
+    
+            &--ko {
+                display: block;
+                font-size: 1.2rem;
             }
         }
-
-        &__decoLine {
-            display: inline-block;
-            width: 10rem;
-            background-color: $color-gold;
-            float: left;
-            height: .1rem;
-            margin-top: 4rem;
+    
+        &__textBox {
+            position: absolute;
+            right: 4rem;
+            bottom: 8rem;
+            line-height: 2;
+            width: 35rem;
+        }
+    
+        &__text {
+            font-size: 2.3rem;
+            font-weight: 400;
+            font-family: 'Noto Serif KR', serif;
+            ;
         }
     }
+
 
 
 

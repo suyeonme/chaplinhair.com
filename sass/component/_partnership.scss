@@ -1,0 +1,128 @@
+ // PARTNERSHIP
+.contact-us {
+
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+        width: 100%;
+        height: 120vh;
+
+        &-imageBox {
+            position: absolute;
+            top: 8rem;
+            left: 15rem;
+            width: 55%;
+            height: 55%;
+        }
+
+        &-textBox {
+            position: absolute;
+            top: 55rem;
+            right: 28rem;
+            width: 23%;
+            height: 37%;
+            background-color: $color-primary-dark;
+            font-size: 4rem;
+            font-weight: 800;
+            text-align: center;
+            padding: 4rem;
+        }
+    }
+
+
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__text {
+        display: block;
+        text-align: left;
+
+        &--primary {
+            color: $color-primary-dark;
+            font-size: 10rem;
+            font-weight: 800;
+        }
+
+        &--secondary {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        &--tertiary {
+            font-size: 2.3rem;
+            font-weight: 400;
+        }
+    }
+
+    &__horizontal-line {
+        @include horizontal-line;
+        margin: 3rem 0 2rem 0;
+    }
+}
+
+
+.partnership {
+
+    &__row {
+
+        padding: 0 10rem;
+    }
+
+    &__col {
+
+        &-1 {padding: 0 5rem;}
+        &-2{height: 40vh; margin-top: 9rem;}
+        
+    }
+    
+    &__branch {
+        color: $color-primary-dark;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    &__branch-location { 
+        background-color: $color-gold-dark;
+        color: $color-primary-light;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__horizontal-line {
+        @include horizontal-line;
+    }
+
+    &__text {
+        color: $color-primary-dark;
+        padding: 7rem 5rem 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2;
+
+        &-title {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        &-info {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        &-name {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+}
