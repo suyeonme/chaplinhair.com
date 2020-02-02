@@ -1,3 +1,18 @@
+/*
+0 - 600px: phone
+600 - 900px: Tablet Portrait
+900 - 1200px: Tablet Landscape
+[1200 - 1800px] is where our normal styles apply
+1800px + : Big desktop
+
+Breakpoint argument choices:
+- phone
+- tap-port
+- tap-land
+- big-desktop
+
+1em = 16px
+*/
 .wp {
   opacity: 0; }
 
@@ -14,6 +29,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 46%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   background-color: #f7f7f7; }
@@ -638,21 +665,13 @@ body {
 .header {
   background-color: #0f0f0f;
   height: 100vh;
-  /*
-    &__title {
-        position: absolute;
-        top: 30rem;
-        left: 15rem;
-        text-align: left;
-        color: $color-primary-light;
-        font-family: 'Permanent Marker', cursive;
-        line-height: 1.2;
-        font-size: 7rem;
-        animation-delay: .8s;
-    }
-    */ }
-  .header__btn {
-    animation-delay: 1s; }
+  overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      height: 80vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 90vh; } }
   .header__title {
     position: absolute;
     top: 50rem;
@@ -663,6 +682,11 @@ body {
     line-height: 1.2;
     font-size: 7rem;
     animation-delay: 1.3s; }
+    @media only screen and (max-width: 37.5em) {
+      .header__title {
+        top: 70rem;
+        right: 5rem;
+        font-size: 6rem; } }
   .header__image-container {
     position: relative; }
   .header__img {
@@ -676,17 +700,39 @@ body {
       top: 13rem;
       left: 13rem;
       animation-delay: .5s; }
+      @media only screen and (max-width: 37.5em) {
+        .header__image-wrapper--1 {
+          width: 70%;
+          height: 50vh;
+          top: 18rem;
+          left: 0;
+          transform: translateX(-20rem); } }
     .header__image-wrapper--2 {
       width: 25%;
       height: auto;
       top: 5rem;
       right: 13rem;
       animation-delay: .9s; }
+      @media only screen and (max-width: 37.5em) {
+        .header__image-wrapper--2 {
+          width: 60%;
+          top: 0;
+          right: 0;
+          transform: translateX(17rem); } }
 
 .subheader {
   position: relative;
   height: 60vh;
   background-color: #0f0f0f; }
+  @media only screen and (max-width: 75em) {
+    .subheader {
+      height: 40vh; } }
+  @media only screen and (max-width: 56.25em) {
+    .subheader {
+      height: 40vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .subheader {
+      height: 40vh; } }
 
 .subheader__text {
   text-align: center;
@@ -708,7 +754,7 @@ body {
   z-index: 2000;
   width: 100%;
   height: 10rem;
-  padding: 3rem 4rem 0;
+  padding: 3rem 4rem;
   background-color: #0f0f0f;
   display: flex;
   align-items: center; }

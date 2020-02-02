@@ -2,26 +2,15 @@
 .header {
     @include theme-black;
     height: 100vh;
+    overflow: hidden;
 
-    &__btn {
-        animation-delay: 1s;
+    @include respond(tab-port) {
+        height: 80vh;
     }
 
-    /*
-    &__title {
-        position: absolute;
-        top: 30rem;
-        left: 15rem;
-        text-align: left;
-        color: $color-primary-light;
-        font-family: 'Permanent Marker', cursive;
-        line-height: 1.2;
-        font-size: 7rem;
-        animation-delay: .8s;
+    @include respond(phone) {
+        height: 90vh;
     }
-    */
-
-    //test 
 
     &__title {
         position: absolute;
@@ -33,6 +22,12 @@
         line-height: 1.2;
         font-size: 7rem;
         animation-delay: 1.3s;
+
+        @include respond(phone) {
+            top: 70rem;
+            right: 5rem;
+            font-size: 6rem;
+        }
     }
 
     &__image-container {
@@ -53,6 +48,14 @@
             top: 13rem;
             left: 13rem;
             animation-delay: .5s;
+
+            @include respond(phone) {
+                width: 70%;
+                height: 50vh;
+                top: 18rem;
+                left: 0;
+                transform: translateX(-20rem);
+            }
         }
 
         &--2 {
@@ -61,6 +64,13 @@
             top: 5rem;
             right: 13rem;
             animation-delay: .9s;
+
+            @include respond(phone) {
+                width: 60%;
+                top: 0;
+                right: 0;
+                transform: translateX(17rem);
+            }
         }
     }
 }
@@ -70,6 +80,19 @@
     position: relative;
     height: 60vh;
     background-color: $color-primary-dark;
+
+    @include respond(tab-land) {
+        height: 40vh;
+    }
+
+    @include respond(tab-port) {
+        height: 40vh;
+    }
+
+    @include respond(phone) {
+        height: 40vh;
+    }
+    
 }
 
 .subheader__text {
