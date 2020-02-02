@@ -7,6 +7,7 @@
         animation-delay: 1s;
     }
 
+    /*
     &__title {
         position: absolute;
         top: 30rem;
@@ -17,6 +18,50 @@
         line-height: 1.2;
         font-size: 7rem;
         animation-delay: .8s;
+    }
+    */
+
+    //test 
+
+    &__title {
+        position: absolute;
+        top: 50rem;
+        right: 30rem;
+        text-align: left;
+        color: $color-primary-light;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1.2;
+        font-size: 7rem;
+        animation-delay: 1.3s;
+    }
+
+    &__image-container {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image-wrapper {
+        position: absolute;
+
+        &--1 {
+            width: 45%;
+            height: auto;
+            top: 13rem;
+            left: 13rem;
+            animation-delay: .5s;
+        }
+
+        &--2 {
+            width: 25%;
+            height: auto;
+            top: 5rem;
+            right: 13rem;
+            animation-delay: .9s;
+        }
     }
 }
 

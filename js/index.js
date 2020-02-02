@@ -55,6 +55,26 @@ $('.wp--about-9').waypoint(function (direction) {
     offset: '80%'
 });
 
+// Join with us
+$('.wp--partnership-1').waypoint(function (direction) {
+    $('.wp--partnership-1').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+$('.wp--partnership-2').waypoint(function (direction) {
+    $('.wp--partnership-2').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+$('.wp--partnership-3').waypoint(function (direction) {
+    $('.wp--partnership-3').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+
 /********  IMAGE ON HOVER *********/
 $(".person-2").hover(function () {
     $(".person-2").attr("src", "img/sample-2.jpg");
