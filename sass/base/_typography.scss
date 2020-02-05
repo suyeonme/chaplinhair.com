@@ -31,6 +31,10 @@ body {
         &--gold {
             color: $color-gold;
         }
+
+        @include respond(tab-land) {
+            font-size: 5rem;
+        }
     }
 }
 

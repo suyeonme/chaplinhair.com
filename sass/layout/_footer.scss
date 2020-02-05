@@ -12,17 +12,50 @@
         &--quote{
             font-size: 8rem;
             padding: 0 30rem;
+
+            @include respond(tab-land) {
+                font-size: 7rem;
+                padding: 0 4rem;
+            }
+
+            @include respond(phone) {
+                font-size: 6rem;
+            }
+
+            @include respond(small-phone) {
+                font-size: 5rem;
+            }
         }
 
         &--primary {
             font-size: 2.3rem;
             margin-bottom: 2rem;
             color: $color-primary-light;
+
+            @include respond(tab-land) {
+                margin: 5rem 0 1rem 0;
+            }
+
+            @include respond(tab-port) {
+                font-size: 3rem;
+            }
+
+            @include respond(small-phone) {
+                font-size: 2.8rem;
+            }
         }
 
         &--secondary {
             font-size: 2rem;
             color: $color-footer-grey;
+
+            @include respond(tab-port) {
+                font-size: 2.5rem;
+            }
+
+            @include respond(small-phone) {
+                font-size: 2.3rem;
+            }
         }
     }
 
@@ -32,6 +65,18 @@
 
     &__row {
         padding: 0 8rem;
+
+        @include respond(tab-land) {
+            padding: 0;
+            margin: 2rem !important;
+        }
+    }
+
+    &__col {
+
+        @include respond(tab-land) {
+            padding: 0;
+        }
     }
 
     &__logo {

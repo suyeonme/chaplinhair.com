@@ -15,94 +15,21 @@
         font-size: 4.3rem;
         font-weight: 800;
         letter-spacing: .5rem;
+
+        @include respond(tab-land) {
+            font-size: 6rem;
+            }
+
+        @include respond(tab-port) {
+            font-size: 5rem;
+            }
+
+        @include respond(phone) {
+        font-size: 4rem;
+        }
         
     }
 }
-
-// GALLERY 
-.gallery {
-    overflow: auto;
-
-    &__container {
-        position: relative;
-        width: 60%;
-        height: 60vh;
-
-        &--1 {
-            background-color: #e6a157;
-        }
-
-        &--2 {
-            float: right;
-            margin-top: 13rem;
-            background-color: #9dab86;
-        }
-
-        &--3 {
-            float:left;
-            margin-top: 13rem;
-            background-color: #a0855b;
-        }
-    }
-
-        &__content {
-            @include absCenter;
-            width: 75%;
-            height: 60%;
-        }
-
-        &__image-container {
-            width: 50%;
-            height: 100%;
-        }
-
-        &__img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        &__text-container {
-            position: relative;
-            width: 50%;
-            height: 100%;
-            float: right;
-            padding: 7rem 3.5rem;
-
-            color: $color-primary-light;
-            font-size: 1.5rem;
-            line-height: 2;
-
-            &--1 {
-                background-color: #eb8242;
-            }
-
-            &--2 {
-                background-color: #5c7658;
-            }
-
-            &--3 {
-                background-color: #6b591d;
-            }
-        }
-
-        &__text:before {
-            display: block;
-            position: absolute;
-            top: 3rem;
-            left: 2rem;
-            content: "\201C";
-            font-size: 4rem;
-        }
-
-        &__name {
-            display: block;
-            text-align: center;
-            font-size: 1.3rem;
-            font-weight: 400;
-        }
-    }
-
 
     // INSTAGRAM
     .instagram {
@@ -125,10 +52,32 @@
         height: 85vh;
         position: relative;
         background-color: $color-purple;
+
+        @include respond(tab-land) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            height: 70vh;
+        }
+
+        @include respond(small-phone) {
+            height: 60vh;
+        }
         
         &__imageContainer {
-            width: 40%;
+            width: 35%;
             @include absCenter;
+
+            @include respond(big-desktop) {
+                width: 40%;
+            }
+
+            @include respond(tab-land) {
+                width: 60%;
+            }
+
+            @include respond(phone) {
+                width: 70%;
+            }
         }
     
         &__img {
@@ -144,6 +93,23 @@
                 font-size: 7rem;
                 text-transform: uppercase;
                 font-weight: 800;
+
+                @include respond(tab-land) {
+                    top: 0;
+                    left: 20rem;
+                    padding-top: inherit;
+                    font-size: 7rem;
+                }
+
+                @include respond(tab-port) {
+                    left: 14rem;
+                    font-size: 6rem;
+                }
+
+                @include respond(small-phone) {
+                    left: 6rem;
+                    font-size: 5rem;
+                }
             }
     
             &--ko {
@@ -163,7 +129,22 @@
             right: 4rem;
             bottom: 8rem;
             line-height: 2;
-            width: 35rem;
+            width: 35rem; 
+
+            @include respond(tab-land) {
+                left: 20rem;
+                bottom: 0;
+                padding-bottom: inherit;
+            }
+
+            @include respond(tab-port) {
+                left: 14rem;
+            }
+
+            @include respond(phone) {
+                left: 6rem;
+            }
+
         }
     
         &__text {

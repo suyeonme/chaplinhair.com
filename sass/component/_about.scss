@@ -4,11 +4,20 @@
     color: $color-primary-dark;
     padding-bottom: 10rem;
 
+    @include respond(tab-land) {
+        padding-bottom: 0;
+    }
+
     &__title {
         padding: 0 30rem;
         text-align: center;
         font-weight: 800;
         font-size: 4.5rem;
+
+        @include respond(tab-land) {
+            padding: 10rem 4rem !important;
+            font-size: 3.5rem;
+        }
 
         &-ko {
             display: block;
@@ -23,6 +32,10 @@
         line-height: 2;
         margin: 6rem 0;
 
+        @include respond(tab-land) {
+            padding: 0 5rem;
+        }
+        
         &-title {
             display: block;
             font-size: 4rem;
@@ -58,6 +71,7 @@
         &--6 {
             width: 90%;
             margin-top: 15rem;
+
         }
 
         &--7 {
@@ -78,13 +92,48 @@
     height: auto;
     float: left;
     padding-top: 10rem;
+
+    &--one-third {
+        @include respond(tab-land) {
+            display: none; 
+        }
+    }
+
+    &--two-third {
+        @include respond(tab-land) {
+            width: 100%; 
+            padding: 0;
+        }
+    }
+
+    &--three-third {
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
 }
 
 // CEO Message
 .ceo-message {
 
+    @include respond(tab-land) {
+        padding: 3rem !important; 
+    }
+
     &__image-container {
-        height: 90vh;
+        height: 100vh;
+
+        @include respond(tab-land) {
+            height: 90vh;
+        }
+
+        @include respond(tab-port) {
+            height: 80vh;
+        }
+
+        @include respond(phone) {
+            height: 50vh;
+        }
     }
 
     &__img {
@@ -100,7 +149,11 @@
         font-size: 1.8rem;
         line-height: 2.5;
         font-weight: 400;
-        padding: 9rem 9rem;
+        padding: 12rem 5rem;
+
+        @include respond(tab-port) {
+            padding: 4rem 2rem;
+        }
 
         &-name {
             display: block;
