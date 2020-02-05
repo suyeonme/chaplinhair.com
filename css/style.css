@@ -12,7 +12,43 @@ Breakpoint argument choices:
 - big-desktop
 
 1em = 16px
-*/
+
+
+@mixin respond($breakpoint){
+
+  @if $breakpoint == phone{
+    @media only screen and (max-width: 37.5em){ @content }; //  600px
+  }
+
+  @if $breakpoint == tab-port{
+    @media only screen and (max-width: 56.25em) { @content }; // 900px
+  }
+
+  @if $breakpoint == tab-land{
+    @media only screen and (max-width: 75em){ @content }; // 1200px
+  }
+
+  @if $breakpoint == big-desktop{
+    @media only screen and  (min-width: 112.5em){ @content }; // 1800px
+  }
+  */
+/*
+0 - 320px: small phone
+320 - 600px: phone
+600 - 900px: Tablet Portrait
+900 - 1200px: Tablet Landscape
+[1200 - 1800px] is where our normal styles apply
+1800px + : Big desktop
+
+Breakpoint argument choices:
+- small-phone
+- phone
+- tap-port
+- tap-land
+- big-desktop
+
+1em = 16px
+  */
 .wp {
   opacity: 0; }
 
@@ -29,6 +65,9 @@ Breakpoint argument choices:
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -38,9 +77,9 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 46%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (max-width: 20em) {
     html {
-      font-size: 75%; } }
+      font-size: 40%; } }
 
 body {
   background-color: #f7f7f7; }
@@ -57,7 +96,7 @@ body {
 
 .text__category {
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   margin: 0; }
   .text__category--white {
     color: #f7f7f7; }
@@ -177,6 +216,27 @@ body {
   height: auto;
   float: left;
   padding-top: 10rem; }
+
+.ceo-message__image-container {
+  height: 90vh; }
+
+.ceo-message__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0; }
+
+.ceo-message__text {
+  color: #0f0f0f;
+  text-align: left;
+  font-size: 1.8rem;
+  line-height: 2.5;
+  font-weight: 400;
+  padding: 9rem 9rem; }
+  .ceo-message__text-name {
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -370,6 +430,10 @@ body {
   .partner-interview__name--ko {
     display: block;
     font-size: 1.2rem; }
+  .partner-interview__name--popup {
+    text-align: center;
+    display: block;
+    font-weight: 400; }
   .partner-interview__textBox {
     position: absolute;
     right: 4rem;
@@ -441,6 +505,13 @@ body {
     transform: translate(-50%, -50%) scale(0.25);
     visibility: hidden;
     overflow: auto; }
+    .popup__content--partner-interview {
+      background-color: #5d5b6a;
+      color: #f7f7f7; }
+  .popup__partner-interview {
+    font-size: 1.5rem;
+    line-height: 2.3;
+    padding: 11rem 6rem 0; }
   .popup__close, .popup__close:link, .popup__close:visited {
     text-decoration: none;
     position: fixed;
@@ -479,9 +550,6 @@ body {
         margin-top: 2rem; }
     .popup__text--answer {
       font-size: 1.3rem; }
-
-.popup__row {
-  position: relative; }
 
 .contact-us__container {
   position: relative; }
@@ -538,7 +606,7 @@ body {
   padding: 0 10rem; }
 
 .partnership__col-1 {
-  padding: 0 5rem; }
+  padding: 0 3rem; }
 
 .partnership__col-2 {
   height: 40vh;
@@ -726,13 +794,13 @@ body {
   background-color: #0f0f0f; }
   @media only screen and (max-width: 75em) {
     .subheader {
-      height: 40vh; } }
+      height: 50vh; } }
   @media only screen and (max-width: 56.25em) {
     .subheader {
-      height: 40vh; } }
+      height: 50vh; } }
   @media only screen and (max-width: 37.5em) {
     .subheader {
-      height: 40vh; } }
+      height: 50vh; } }
 
 .subheader__text {
   text-align: center;

@@ -82,15 +82,15 @@
     background-color: $color-primary-dark;
 
     @include respond(tab-land) {
-        height: 40vh;
+        height: 50vh;
     }
 
     @include respond(tab-port) {
-        height: 40vh;
+        height: 50vh;
     }
 
     @include respond(phone) {
-        height: 40vh;
+        height: 50vh;
     }
     
 }

@@ -5,6 +5,19 @@
     &__content {
         @include popup-content;
         overflow: auto;
+
+        // PARTNER INTERVIEW
+        &--partner-interview {
+            background-color: $color-purple;
+            color: $color-primary-light;
+        }
+    }
+
+    // PARTNER INTERVIEW
+    &__partner-interview {
+        font-size: 1.5rem;
+        line-height: 2.3;
+        padding: 11rem 6rem 0;
     }
 
     &__close,
@@ -56,20 +69,18 @@
             line-height: 2;
         }
 
-        &--question{
+        &--question {
             display: block;
             font-size: 1.4rem;
             font-weight: 600;
 
-            &:not(:first-child) {margin-top: 2rem;}
+            &:not(:first-child) {
+                margin-top: 2rem;
+            }
         }
 
         &--answer {
             font-size: 1.3rem;
         }
     }
-}
-
-.popup__row {
-    position: relative;
 }

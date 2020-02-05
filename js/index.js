@@ -37,20 +37,26 @@ $('.wp--home-6').waypoint(function (direction) {
 })
 
 // About 
-$('.wp--about-7').waypoint(function (direction) {
-    $('.wp--about-7').addClass('animated fadeIn');
+$('.wp--about-1').waypoint(function (direction) {
+    $('.wp--about-1').addClass('animated fadeIn');
 }, {
     offset: '80%'
 });
 
-$('.wp--about-8').waypoint(function (direction) {
-    $('.wp--about-8').addClass('animated fadeIn');
+$('.wp--about-2').waypoint(function (direction) {
+    $('.wp--about-2').addClass('animated fadeIn');
 }, {
     offset: '80%'
 });
 
-$('.wp--about-9').waypoint(function (direction) {
-    $('.wp--about-9').addClass('animated fadeIn');
+$('.wp--about-3').waypoint(function (direction) {
+    $('.wp--about-3').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
+$('.wp--about-4').waypoint(function (direction) {
+    $('.wp--about-4').addClass('animated fadeIn');
 }, {
     offset: '80%'
 });
@@ -76,10 +82,16 @@ $('.wp--partnership-3').waypoint(function (direction) {
 
 
 /********  IMAGE ON HOVER *********/
-$(".person-2").hover(function () {
-    $(".person-2").attr("src", "img/sample-2.jpg");
+$(".person-1").hover(function () {
+    $(".person-1").attr("src", "img/Park Cheonwoong-2.jpg");
 }, function () {
-    $(".person-2").attr("src", "img/sample-1.jpg");
+    $(".person-1").attr("src", "img/Park Cheonwoong-1.jpg");
+});
+
+$(".person-2").hover(function () {
+    $(".person-2").attr("src", "img/Wang Hanna-2.jpg");
+}, function () {
+    $(".person-2").attr("src", "img/Wang Hanna-1.jpg");
 });
 
 $(".person-4").hover(function () {
