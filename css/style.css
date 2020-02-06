@@ -595,64 +595,49 @@ body {
     .popup__text--answer {
       font-size: 1.3rem; }
 
-.contact-us__container {
-  position: relative; }
-
 .contact-us__content {
   width: 100%;
-  height: 120vh; }
-  @media only screen and (max-width: 75em) {
-    .contact-us__content {
-      height: 110vh; } }
-  @media only screen and (max-width: 56.25em) {
-    .contact-us__content {
-      height: 100vh; } }
-  @media only screen and (max-width: 37.5em) {
-    .contact-us__content {
-      height: 75vh; } }
+  height: auto;
+  overflow: hidden; }
   .contact-us__content-imageBox {
-    position: absolute;
-    top: 8rem;
-    left: 15rem;
-    width: 55%;
-    height: 55%; }
+    width: 60%;
+    margin-top: 5rem;
+    margin-left: 20rem; }
     @media only screen and (max-width: 75em) {
       .contact-us__content-imageBox {
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: auto; } }
+        min-width: 80%;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 56.25em) {
+      .contact-us__content-imageBox {
+        min-width: 90%; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact-us__content-imageBox {
+        min-width: 100%; } }
   .contact-us__content-textBox {
-    position: absolute;
-    top: 55rem;
-    right: 28rem;
-    width: 23%;
-    height: 37%;
-    background-color: #0f0f0f;
+    width: 25%;
     padding: 4rem;
+    background-color: #0f0f0f;
+    transform: translateY(-10rem);
+    float: right;
+    margin-right: 10rem;
     font-size: 4rem;
     font-weight: 800;
     text-align: center; }
     @media only screen and (max-width: 75em) {
       .contact-us__content-textBox {
-        width: 60%;
-        height: 28%;
-        top: 120rem;
-        right: 0;
-        text-align: left;
-        font-size: 7rem; } }
+        min-width: 30%; } }
     @media only screen and (max-width: 56.25em) {
       .contact-us__content-textBox {
-        width: 55%;
-        height: 30%;
-        top: 90rem;
-        font-size: 5rem; } }
+        min-width: 50%;
+        transform: translateY(0);
+        margin: 0; } }
     @media only screen and (max-width: 37.5em) {
       .contact-us__content-textBox {
-        width: 65%;
-        height: 35%;
-        top: 60rem;
-        font-size: 4rem; } }
+        font-size: 3.5rem;
+        padding: 2.5rem; } }
+    @media only screen and (max-width: 23.44em) {
+      .contact-us__content-textBox {
+        font-size: 3rem; } }
 
 .contact-us__img {
   width: 100%;
@@ -666,14 +651,9 @@ body {
     color: #0f0f0f;
     font-size: 10rem;
     font-weight: 800; }
-    @media only screen and (max-width: 75em) {
-      .contact-us__text--primary {
-        font-size: 12rem;
-        margin-top: 15rem; } }
     @media only screen and (max-width: 56.25em) {
       .contact-us__text--primary {
-        font-size: 10rem;
-        margin-top: 5rem; } }
+        font-size: 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .contact-us__text--primary {
         font-size: 6rem; } }
@@ -681,24 +661,18 @@ body {
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 1.5rem; }
-    @media only screen and (max-width: 75em) {
-      .contact-us__text--secondary {
-        font-size: 5rem; } }
     @media only screen and (max-width: 56.25em) {
       .contact-us__text--secondary {
-        font-size: 4rem; } }
+        font-size: 2.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .contact-us__text--secondary {
-        font-size: 3rem; } }
+        font-size: 2rem; } }
   .contact-us__text--tertiary {
     font-size: 2.3rem;
     font-weight: 400; }
-    @media only screen and (max-width: 75em) {
-      .contact-us__text--tertiary {
-        font-size: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .contact-us__text--tertiary {
-        font-size: 2.3rem; } }
+        font-size: 2rem; } }
 
 .contact-us__horizontal-line {
   display: block;
@@ -711,34 +685,21 @@ body {
   padding: 0 10rem; }
   @media only screen and (max-width: 75em) {
     .partnership__row {
-      padding: 0; } }
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .partnership__row {
+      padding: 3rem; } }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   .partnership__col {
     padding: 0; } }
 
-.partnership__col-1 {
-  padding: 0 3rem; }
-  @media only screen and (max-width: 75em) {
-    .partnership__col-1 {
-      padding: 0; } }
-
-.partnership__col-2 {
-  height: 40vh;
+.partnership__col--margin-top {
+  height: auto;
   margin-top: 9rem; }
   @media only screen and (max-width: 75em) {
-    .partnership__col-2 {
-      height: auto;
-      margin: 0;
-      padding: 0; } }
-
-@media only screen and (max-width: 75em) {
-  .partnership__col-3 {
-    padding: 15rem; } }
-
-@media only screen and (max-width: 56.25em) {
-  .partnership__col-3 {
-    padding: 0; } }
+    .partnership__col--margin-top {
+      margin: 0; } }
 
 .partnership__branch {
   color: #0f0f0f;
@@ -893,129 +854,184 @@ body {
     margin: 4rem 0 0;
     padding-bottom: 2rem; }
 
+/*
+.header {
+    @include theme-black;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    @include respond(tab-land) {
+        height: 70vh;
+    }
+
+    @include respond(phone) {
+        height: 65vh;
+    }
+
+    @include respond(small-phone) {
+        height: 60vh;
+    }
+
+    &__title {
+        position: absolute;
+        top: 50rem;
+        right: 23rem;
+        text-align: left;
+        color: $color-primary-light;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1.2;
+        font-size: 7rem;
+        animation-delay: 1.3s;
+
+        @include respond(tab-land) {
+            top: 70rem;
+            right: 6rem;
+            font-size: 6rem;
+        }
+
+        @include respond(tab-port) {
+            top: 60rem;
+        }
+
+        @include respond(phone) {
+            top: 50rem;
+            right: 4rem;
+            font-size: 6rem;
+        }
+
+    }
+
+    &__image-container {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image-wrapper {
+        position: absolute;
+
+        &--1 {
+            width: 45%;
+            height: auto;
+            top: 13rem;
+            left: 13rem;
+            animation-delay: .5s;
+
+            @include respond(tab-land) {
+                width: 70%;
+                height: 50vh;
+                top: 18rem;
+                left: 0;
+                transform: translateX(-30rem);
+            }
+
+            @include respond(tab-port) {
+                transform: translateX(-25rem);
+            }
+
+            @include respond(phone) {
+                transform: translateX(-15rem);
+            }
+
+            @include respond(small-phone) {
+                width: 60%;
+                height: 40vh;
+                top: 15rem;
+                transform: translateX(-10rem);
+            }
+        }
+
+        &--2 {
+            width: 25%;
+            height: auto;
+            top: 5rem;
+            right: 13rem;
+            animation-delay: .9s;
+
+            @include respond(tab-land) {
+                width: 60%;
+                top: 0;
+                right: 0;
+                transform: translateX(17rem);
+            }
+
+            @include respond(phone) {
+                transform: translateX(7rem);
+            }
+
+
+            @include respond(small-phone) {
+                width: 60%;
+                top: 1rem;
+            }
+        }
+    }
+}
+
+*/
 .header {
   background-color: #0f0f0f;
   width: 100%;
-  height: 100vh;
-  overflow: hidden; }
-  @media only screen and (max-width: 75em) {
-    .header {
-      height: 70vh; } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      height: 65vh; } }
-  @media only screen and (max-width: 23.44em) {
-    .header {
-      height: 60vh; } }
+  height: auto;
+  overflow: hidden;
+  min-height: 60vh; }
   .header__title {
-    position: absolute;
-    top: 50rem;
-    right: 23rem;
+    display: inline-block;
     text-align: left;
     color: #f7f7f7;
     font-family: 'Permanent Marker', cursive;
     line-height: 1.2;
     font-size: 7rem;
-    animation-delay: 1.3s; }
-    @media only screen and (max-width: 75em) {
-      .header__title {
-        top: 70rem;
-        right: 6rem;
-        font-size: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .header__title {
-        top: 60rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .header__title {
-        top: 50rem;
-        right: 4rem;
-        font-size: 6rem; } }
-  .header__image-container {
-    position: relative; }
+    animation-delay: 1.3s;
+    float: right; }
   .header__img {
     width: 100%;
     height: 100%; }
   .header__image-wrapper {
-    position: absolute; }
+    display: inline-block; }
     .header__image-wrapper--1 {
       width: 45%;
       height: auto;
-      top: 13rem;
-      left: 13rem;
-      animation-delay: .5s; }
-      @media only screen and (max-width: 75em) {
-        .header__image-wrapper--1 {
-          width: 70%;
-          height: 50vh;
-          top: 18rem;
-          left: 0;
-          transform: translateX(-30rem); } }
-      @media only screen and (max-width: 56.25em) {
-        .header__image-wrapper--1 {
-          transform: translateX(-25rem); } }
-      @media only screen and (max-width: 37.5em) {
-        .header__image-wrapper--1 {
-          transform: translateX(-15rem); } }
-      @media only screen and (max-width: 23.44em) {
-        .header__image-wrapper--1 {
-          width: 60%;
-          height: 40vh;
-          top: 15rem;
-          transform: translateX(-10rem); } }
+      animation-delay: .5s;
+      margin-top: 10rem;
+      margin-left: 3rem; }
     .header__image-wrapper--2 {
-      width: 25%;
+      width: 30%;
       height: auto;
-      top: 5rem;
-      right: 13rem;
-      animation-delay: .9s; }
-      @media only screen and (max-width: 75em) {
-        .header__image-wrapper--2 {
-          width: 60%;
-          top: 0;
-          right: 0;
-          transform: translateX(17rem); } }
+      animation-delay: .9s;
+      float: right; }
+
+.sub-header {
+  height: auto;
+  min-height: 60vh;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 75em) {
+    .sub-header {
+      min-height: 45vh; } }
+  .sub-header__text {
+    text-align: center;
+    color: #f7f7f7;
+    padding: 0 3rem; }
+    .sub-header__text--title {
+      display: block;
+      font-size: 5rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin-bottom: 2rem; }
       @media only screen and (max-width: 37.5em) {
-        .header__image-wrapper--2 {
-          transform: translateX(7rem); } }
-      @media only screen and (max-width: 23.44em) {
-        .header__image-wrapper--2 {
-          width: 60%;
-          top: 1rem; } }
-
-.subheader {
-  position: relative;
-  height: 60vh;
-  background-color: #0f0f0f; }
-  @media only screen and (max-width: 75em) {
-    .subheader {
-      height: 40vh; } }
-  @media only screen and (max-width: 37.5em) {
-    .subheader {
-      height: 35vh; } }
-
-.subheader__text {
-  text-align: center;
-  color: #f7f7f7;
-  padding-top: 8rem; }
-  @media only screen and (max-width: 75em) {
-    .subheader__text {
-      padding: 5rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .subheader__text {
-      padding: 3rem; } }
-  .subheader__text--title {
-    display: block;
-    font-size: 5rem;
-    font-weight: 200;
-    text-transform: uppercase;
-    margin-bottom: 2rem; }
-    @media only screen and (max-width: 37.5em) {
-      .subheader__text--title {
-        font-size: 4rem; } }
-  .subheader__text--description {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    font-style: italic; }
+        .sub-header__text--title {
+          font-size: 4rem; } }
+    .sub-header__text--description {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2rem;
+      font-style: italic; }
 
 .navigation__container {
   position: relative;
