@@ -1,144 +1,53 @@
 // HOMEPAGE
-
-/*
 .header {
     @include theme-black;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     overflow: hidden;
 
     @include respond(tab-land) {
-        height: 70vh;
+        height: auto;
+        min-height: 60vh;   // weird
+    }
+
+    @include respond(tab-port) {
+        min-height: 65vh;
     }
 
     @include respond(phone) {
-        height: 65vh;
+        min-height: 60vh;
     }
-
-    @include respond(small-phone) {
-        height: 60vh;
-    }
-
-    &__title {
-        position: absolute;
-        top: 50rem;
-        right: 23rem;
-        text-align: left;
-        color: $color-primary-light;
-        font-family: 'Permanent Marker', cursive;
-        line-height: 1.2;
-        font-size: 7rem;
-        animation-delay: 1.3s;
-
-        @include respond(tab-land) {
-            top: 70rem;
-            right: 6rem;
-            font-size: 6rem;
-        }
-
-        @include respond(tab-port) {
-            top: 60rem;
-        }
-
-        @include respond(phone) {
-            top: 50rem;
-            right: 4rem;
-            font-size: 6rem;
-        }
-
-    }
-
-    &__image-container {
-        position: relative;
-    }
-
-    &__img {
-        width: 100%;
-        height: 100%;
-    }
-
-    &__image-wrapper {
-        position: absolute;
-
-        &--1 {
-            width: 45%;
-            height: auto;
-            top: 13rem;
-            left: 13rem;
-            animation-delay: .5s;
-
-            @include respond(tab-land) {
-                width: 70%;
-                height: 50vh;
-                top: 18rem;
-                left: 0;
-                transform: translateX(-30rem);
-            }
-
-            @include respond(tab-port) {
-                transform: translateX(-25rem);
-            }
-
-            @include respond(phone) {
-                transform: translateX(-15rem);
-            }
-
-            @include respond(small-phone) {
-                width: 60%;
-                height: 40vh;
-                top: 15rem;
-                transform: translateX(-10rem);
-            }
-        }
-
-        &--2 {
-            width: 25%;
-            height: auto;
-            top: 5rem;
-            right: 13rem;
-            animation-delay: .9s;
-
-            @include respond(tab-land) {
-                width: 60%;
-                top: 0;
-                right: 0;
-                transform: translateX(17rem);
-            }
-
-            @include respond(phone) {
-                transform: translateX(7rem);
-            }
-
-
-            @include respond(small-phone) {
-                width: 60%;
-                top: 1rem;
-            }
-        }
-    }
-}
-
-*/
-
-
-// HOMEPAGE
-.header {
-    @include theme-black;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-
-    min-height: 60vh;
 
     &__title {
         display: inline-block;
         text-align: left;
         color: $color-primary-light;
         font-family: 'Permanent Marker', cursive;
-        line-height: 1.2;
         font-size: 7rem;
+        line-height: 1.2;
         animation-delay: 1.3s;
+
         float: right;
+        transform: translateY(-28rem) translateX(-28rem);
+
+        @include respond(tab-land) {
+            transform: translateY(-23rem) translateX(-7rem);
+            font-size: 8rem;
+        }
+
+        @include respond(tab-port) {
+            transform: translateY(-15rem) translateX(-10rem);
+        }
+
+        @include respond(phone) {
+            transform: translateY(-10rem) translateX(-3rem);
+            font-size: 5.5rem;
+        }
+
+        @include respond(small-phone) {
+            transform: translateY(-7rem) translateX(-4rem);
+            font-size: 5rem;
+        }
         
     }
 
@@ -149,27 +58,47 @@
 
     &__image-wrapper {
         display: inline-block;
+        height: auto;
 
         &--1 {
-            width: 45%;
-            height: auto;
+            width: 40%;
+            min-width: 40%;
             animation-delay: .5s;
-            margin-top: 10rem;
-            margin-left:3rem;
+
+            margin-top: 12rem;
+            margin-left:13rem;
+
+            @include respond(tab-land) {
+                min-width: 50%;
+                margin-top: 20rem;
+                margin-left: 0;
+            }
+
+            @include respond(tab-port) {
+                min-width: 80%;
+                margin: 0;
+            }
             
         }
 
         &--2 {
             width: 30%;
-            height: auto;
             animation-delay: .9s;
+
             float: right;
+            margin-right: 13rem;
+
+            @include respond(tab-land) {
+                width: 40%;
+                margin-right: 0;
+            }
+
+            @include respond(tab-port) {
+                display: none;
+            }
         }
     }
 }
-
-
-
 
 
 // SUBPAGES
