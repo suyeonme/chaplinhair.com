@@ -178,6 +178,3 @@ $('main').waypoint(function (direction) {
 }, {
     offset: '30%;'
 });
-
-
-

@@ -7,10 +7,6 @@
 
     @include respond(tab-land) {
         height: auto;
-        min-height: 60vh;   // weird
-    }
-
-    @include respond(tab-port) {
         min-height: 65vh;
     }
 
@@ -37,6 +33,7 @@
 
         @include respond(tab-port) {
             transform: translateY(-15rem) translateX(-10rem);
+            animation-delay: 1s;
         }
 
         @include respond(phone) {
@@ -77,6 +74,7 @@
             @include respond(tab-port) {
                 min-width: 80%;
                 margin: 0;
+                animation-delay: 0;
             }
             
         }

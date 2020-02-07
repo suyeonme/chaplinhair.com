@@ -4,12 +4,30 @@
 
     &__content {
         @include popup-content;
-        overflow: auto;
+        width: 80%;
+
+        @include respond(phone) {
+            width: 100%;
+            padding: 3rem;
+            overflow: auto;
+        }
+
+        @include respond(phone) {
+            padding: 0;
+            max-height: 100vh;
+        }
 
         // PARTNER INTERVIEW
         &--partner-interview {
-            background-color: $color-purple;
+            background-color: $color-green;
             color: $color-primary-light;
+
+            @include respond(phone) {
+                display: flex;
+                padding: 0 3rem;
+                height: auto;
+                min-height: 60vh;
+            }
         }
     }
 
@@ -17,7 +35,8 @@
     &__partner-interview {
         font-size: 1.5rem;
         line-height: 2.3;
-        padding: 11rem 6rem 0;
+        margin: 0;
+        padding: 3rem;
     }
 
     &__close,
@@ -32,8 +51,31 @@
     }
 
     &__col {
-        height: 80vh;
         padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--img {
+
+            @include respond(tab-land) {
+                width: 40%;
+                margin: 0 auto;
+            }
+
+            @include respond(phone) {
+                width: 80%;
+            }
+        }
+
+        &--text {
+            padding: 0 3rem;
+
+            @include respond(phone) {
+                padding: 0;
+            }
+        }
     }
 
     &__image {
@@ -60,13 +102,22 @@
             text-align: center;
             text-transform: uppercase;
             font-size: 2rem;
-            padding: 2rem 6rem 0;
+            padding: 0 5rem;
+
+            @include respond(tab-land) {
+                margin-top: 4rem;
+            }
         }
 
         &--interview {
-            padding: 2rem 5rem;
+            padding: 0 5rem;
             text-align: left;
             line-height: 2;
+            margin: 0;
+
+            @include respond(tab-land) {
+                margin-bottom: 5rem;
+            }
         }
 
         &--question {

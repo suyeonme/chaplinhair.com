@@ -43,11 +43,9 @@
 
 @mixin popup-content {
   @include absCenter;
-  width: 80%;
   background-color: $color-primary-light;
   border-radius: .3rem;
   box-shadow: $box-shadow;
-  transform: translate(-50%, -50%) scale(.25);
 
   visibility: hidden;
 }
