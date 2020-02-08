@@ -128,7 +128,7 @@
     }
 
     &__col {
-
+        
         @include respond(tab-port) {
             padding: 0;
         }
