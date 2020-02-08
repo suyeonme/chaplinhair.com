@@ -2,7 +2,6 @@
 .about {
     overflow: hidden;
     color: $color-primary-dark;
-    padding-bottom: 10rem;
 
     @include respond(tab-land) {
         padding-bottom: 0;
@@ -149,9 +148,13 @@
         font-size: 1.8rem;
         line-height: 2.5;
         font-weight: 400;
-        padding: 12rem 5rem;
 
-        @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        @include respond(tab-land) {
             padding: 4rem 2rem;
         }
 

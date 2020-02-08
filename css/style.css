@@ -1,39 +1,5 @@
 /*
-0 - 600px: phone
-600 - 900px: Tablet Portrait
-900 - 1200px: Tablet Landscape
-[1200 - 1800px] is where our normal styles apply
-1800px + : Big desktop
-
-Breakpoint argument choices:
-- phone
-- tap-port
-- tap-land
-- big-desktop
-
-1em = 16px
-
-
-@mixin respond($breakpoint){
-
-  @if $breakpoint == phone{
-    @media only screen and (max-width: 37.5em){ @content }; //  600px
-  }
-
-  @if $breakpoint == tab-port{
-    @media only screen and (max-width: 56.25em) { @content }; // 900px
-  }
-
-  @if $breakpoint == tab-land{
-    @media only screen and (max-width: 75em){ @content }; // 1200px
-  }
-
-  @if $breakpoint == big-desktop{
-    @media only screen and  (min-width: 112.5em){ @content }; // 1800px
-  }
-  */
-/*
-0 - 320px: small phone
+0 - 375px: small phone
 320 - 600px: phone
 600 - 900px: Tablet Portrait
 900 - 1200px: Tablet Landscape
@@ -152,10 +118,10 @@ body {
   padding-top: 4rem !important; }
 
 .u-padding-top-big {
-  padding-top: 13rem !important; }
+  padding-top: 8rem !important; }
 
 .u-padding-top-huge {
-  padding-top: 15rem !important; }
+  padding-top: 10rem !important; }
 
 .u-padding-bottom-small {
   padding-bottom: 1rem !important; }
@@ -164,15 +130,14 @@ body {
   padding-bottom: 4rem !important; }
 
 .u-padding-bottom-big {
-  padding-bottom: 13rem !important; }
+  padding-bottom: 8rem !important; }
 
 .u-padding-bottom-huge {
-  padding-bottom: 15rem !important; }
+  padding-bottom: 10rem !important; }
 
 .about {
   overflow: hidden;
-  color: #0f0f0f;
-  padding-bottom: 10rem; }
+  color: #0f0f0f; }
   @media only screen and (max-width: 75em) {
     .about {
       padding-bottom: 0; } }
@@ -271,8 +236,10 @@ body {
   font-size: 1.8rem;
   line-height: 2.5;
   font-weight: 400;
-  padding: 12rem 5rem; }
-  @media only screen and (max-width: 56.25em) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media only screen and (max-width: 75em) {
     .ceo-message__text {
       padding: 4rem 2rem; } }
   .ceo-message__text-name {
@@ -368,41 +335,34 @@ body {
     color: #0f0f0f;
     border: 1px solid #0f0f0f; }
 
-.mantra {
-  text-align: center; }
-  .mantra__logo {
-    width: 18rem;
-    padding-top: 7rem; }
-  .mantra__text {
-    color: #0f0f0f;
-    display: block;
-    padding: 5rem 0 7rem;
-    text-align: center;
-    font-size: 4.3rem;
-    font-weight: 800;
-    letter-spacing: .5rem; }
-    @media only screen and (max-width: 75em) {
-      .mantra__text {
-        font-size: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .mantra__text {
-        font-size: 5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .mantra__text {
-        font-size: 4rem; } }
+.main-logo__logo {
+  width: 18rem;
+  padding-top: 7rem; }
 
-.instagram {
-  padding: 3rem 0 4rem;
-  display: inline-block; }
-  .instagram__image-container {
-    text-align: center; }
-  .instagram__illustration {
-    width: 10%; }
-    .instagram__illustration:not(:last-child) {
-      margin-right: 8rem; }
-    @media only screen and (max-width: 37.5em) {
-      .instagram__illustration {
-        width: 15%; } }
+.main-logo__text {
+  color: #0f0f0f;
+  display: block;
+  padding: 5rem 0 7rem;
+  font-size: 4.3rem;
+  font-weight: 800;
+  letter-spacing: .5rem; }
+  @media only screen and (max-width: 75em) {
+    .main-logo__text {
+      font-size: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .main-logo__text {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .main-logo__text {
+      font-size: 4rem; } }
+
+.instagram__illustration {
+  width: 10%; }
+  .instagram__illustration:not(:last-child) {
+    margin-right: 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .instagram__illustration {
+      width: 15%; } }
 
 .partner-interview {
   background-color: #d9b650;
@@ -431,6 +391,9 @@ body {
   .partner-interview__name--ko {
     display: block;
     font-size: 1.2rem; }
+  .partner-interview__name--popup {
+    display: block;
+    font-weight: 400; }
   .partner-interview-mobile__name--eg {
     display: none; }
     @media only screen and (max-width: 75em) {
@@ -590,7 +553,7 @@ body {
         padding: 0;
         max-height: 100vh; } }
     .popup__content--partner-interview {
-      background-color: #698474;
+      background-color: #d9b650;
       color: #f7f7f7; }
       @media only screen and (max-width: 37.5em) {
         .popup__content--partner-interview {
@@ -1139,8 +1102,7 @@ body {
   background-color: #f7f7f7; }
 
 #section-features {
-  background-color: #0f0f0f;
-  padding: 13rem 0; }
+  background-color: #0f0f0f; }
   @media only screen and (max-width: 75em) {
     #section-features {
       padding: 5rem 0; } }

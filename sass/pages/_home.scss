@@ -4,7 +4,6 @@
 
 #section-features {
     @include theme-black;
-    padding: 13rem 0;
 
     @include respond(tab-land) {
         padding: 5rem 0;

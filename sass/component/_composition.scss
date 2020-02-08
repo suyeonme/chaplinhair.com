@@ -1,6 +1,5 @@
-// MANTRA
-.mantra {
-    text-align: center;
+// Chaplin logo and name
+.main-logo {
 
     &__logo {
         width: 18rem;
@@ -11,7 +10,6 @@
         color: $color-primary-dark;
         display: block;
         padding: 5rem 0 7rem;
-        text-align: center;
         font-size: 4.3rem;
         font-weight: 800;
         letter-spacing: .5rem;
@@ -31,14 +29,8 @@
     }
 }
 
-// INSTAGRAM
+// Instagram
 .instagram {
-    padding: 3rem 0 4rem;
-    display: inline-block; // weird
-
-    &__image-container {
-        text-align: center;
-    }
 
     &__illustration {
         width: 10%;
@@ -94,6 +86,11 @@
         &--ko {
             display: block;
             font-size: 1.2rem;
+        }
+
+        &--popup {
+            display: block;
+            font-weight: 400;
         }
     }
 
