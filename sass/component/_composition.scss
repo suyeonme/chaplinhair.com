@@ -54,254 +54,167 @@
 }
 
 
-/*
+// Big screen (tab-land - desktop)
 .partner-interview {
+    background-color: $color-gold-dark;
     position: relative;
 
-    &__fill {
-        width: 100%;
-        height: auto;
-        min-height: 100vh;
-        background-color: $color-green;
-        position: absolute;
-
-        @include respond(tab-port) {
-            display: none;
-        }
+    @include respond (tab-port) {
+        display: none;
     }
 
-    &__mobile-content {
-        width: 80%;
-        height: auto;
-        min-height: 100vh;
-        background-color: $color-green;
-        padding: 3rem;
+    &__content {
+        padding: 4rem;
         margin: 0 auto;
-
+        width: 50%;
         position: relative;
 
-        @include respond(tab-port) {
-            width: 100%;
-        }
-
-        @include respond(phone) {
-            min-height: 80vh;
+        @include respond (tab-land) {
+            width: 70%;
         }
     }
 
-    &__imageContainer {
-        min-width: 50%;
-        min-height: 50%;
-        @include absCenter;
+    &__name {
+
+        &--eg {
+            font-size: 6.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            //margin-left: 5rem;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @include respond (tab-land) {
+                display: none;
+            }
+        }
+
+        &--ko {
+            display: block;
+            font-size: 1.2rem;
+        }
+    }
+
+    &-mobile {
+        &__name--eg {
+            display: none;
+
+            @include respond(tab-land) {
+                display: block;
+            }
+        }
+    }
+
+    &__image-container {
+        width: 80%;
+        margin: 0 auto;
 
         @include respond(tab-land) {
-            min-width: 60%;
+            width: 90%;
         }
-
-        @include respond(phone) {
-            min-width: 70%;
-        }
-
     }
 
     &__img {
         width: 100%;
-    }
-
-    &__name {
-
-        &--eg {
-            font-size: 7rem;
-            text-transform: uppercase;
-            font-weight: 800;
-            display: block;
-            position: relative;
-            z-index: 1;
-            margin-left: 5rem;
-            margin-top: 5rem;
-            width: 30%;
-
-            @include respond(tab-port) {
-                display: none;
-            }
-
-            &-mobile {
-                font-size: 7rem;
-                text-transform: uppercase;
-                font-weight: 800;
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                margin-left: 5rem;
-                margin-top: 5rem;
-                display: none;
-
-                @include respond(tab-port) {
-                    display: block;
-                }
-
-                @include respond(phone) {
-                    font-size: 5rem;
-                }
-            }
-        }
-
-        &--ko {
-            font-size: 1.2rem;
-            display: block;
-        }
-
-        &--popup {
-            text-align: center;
-            display: block;
-            font-weight: 400;
-        }
-    }
-
-    &__textBox {
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        line-height: 2;
-        margin-top: 20rem;
-        float: right;
-
-        @include respond(tab-port) {
-            display: none;
-        }
-
-        &-mobile {
-            display: none;
-
-            @include respond(tab-port) {
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                margin-left: 5rem;
-                margin-top: 50rem;
-            }
-        }
-    }
-
-    &__text {
-        font-size: 2.3rem;
-        font-weight: 400;
-        font-family: 'Noto Serif KR', serif;
-    }
-}
-*/
-
-
-
-// Bis screen
-.partner-interview {
-    position: relative;
-
-    &__fill {
-        width: 100%;
-        min-height: 100vh;
-        background-color: $color-green;
-        position: absolute;
-    }
-
-    &__mobile-content {
-        position: relative;
-        width: 80%;
-        height: 100vh;
-        margin: 0 auto;
-        background-color: $color-green;
-        padding: 30rem;
-        position: relative;
-    }
-
-    &__imageContainer {
-        min-width: 50%;
-        min-height: 50%;
-        @include absCenter;
-    }
-
-    &__img {
-        width: 100%;
-    }
-
-    &__name {
-
-        &--eg {
-            font-size: 7rem;
-            text-transform: uppercase;
-            font-weight: 800;
-            position: relative;
-            z-index: 1;
-            transform: translateX(-20rem) translateY(-20rem);
-        }
-
-        &--ko {
-            font-size: 1.2rem;
-            display: block;
-        }
-
-        &--popup {
-            text-align: center;
-            display: block;
-            font-weight: 400;
-        }
     }
 
     &__caption {
-        position: absolute;
-        right: 3rem;
-        line-height: 2;
-        //transform: translateX(50rem) translateY(-5rem);
-    }
-
-    &__description {
+        font-family: 'Noto Serif KR', serif;
         font-size: 2.3rem;
         font-weight: 400;
-        font-family: 'Noto Serif KR', serif;
+        margin-top: 1rem;
+        margin-left: 5rem;
+
+        // Desktop 
+        position: absolute;
+        z-index: 1;
+        right: 15rem;
+        bottom: 5rem;
+
+        @include respond (tab-land) {
+            display: none;
+        }
+
+        &-tab {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 2.3rem;
+            font-weight: 400;
+            margin-top: 1rem;
+            margin-left: 5rem;
+            display: none;
+
+            @include respond (tab-land) {
+                display: block;
+            }
+        }
     }
 }
 
 
-
-// Small screen
+// Small screen (small phone - tab port)
 .partner-interview-mobile {
     background-color: $color-gold-dark;
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+    }
 
     &__content {
-        //display: flex;
-        //flex-direction: column;
-        //align-items: center;
-        padding: 3rem;
+        padding: 4rem;
     }
 
     &__name {
-        
+
         &--eg {
             font-size: 5rem;
             font-weight: 800;
             text-transform: uppercase;
-
             margin-left: 5rem;
+
+            @include respond(small-phone) {
+                font-size: 4rem;
+            }
         }
 
-        &--ko {
-            
+        &--popup {
+            text-align: center;
+            display: block;
+            font-weight: 400;
         }
     }
-    
+
     &__image-container {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
+
+        @include respond(tab-port) {
+            width: 85%;
+        }
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 
     &__caption {
         font-family: 'Noto Serif KR', serif;
         font-size: 2.3rem;
-        font-weight: 400; 
-
+        font-weight: 400;
         margin-top: 1rem;
         margin-left: 5rem;
+
+        @include respond(small-phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__button {
+
+        @include respond(small-phone) {
+            padding: 1.8rem !important;
+        }
     }
 }
-
-

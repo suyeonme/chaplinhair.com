@@ -404,207 +404,111 @@ body {
       .instagram__illustration {
         width: 15%; } }
 
-/*
 .partner-interview {
-    position: relative;
-
-    &__fill {
-        width: 100%;
-        height: auto;
-        min-height: 100vh;
-        background-color: $color-green;
-        position: absolute;
-
-        @include respond(tab-port) {
-            display: none;
-        }
-    }
-
-    &__mobile-content {
-        width: 80%;
-        height: auto;
-        min-height: 100vh;
-        background-color: $color-green;
-        padding: 3rem;
-        margin: 0 auto;
-
-        position: relative;
-
-        @include respond(tab-port) {
-            width: 100%;
-        }
-
-        @include respond(phone) {
-            min-height: 80vh;
-        }
-    }
-
-    &__imageContainer {
-        min-width: 50%;
-        min-height: 50%;
-        @include absCenter;
-
-        @include respond(tab-land) {
-            min-width: 60%;
-        }
-
-        @include respond(phone) {
-            min-width: 70%;
-        }
-
-    }
-
-    &__img {
-        width: 100%;
-    }
-
-    &__name {
-
-        &--eg {
-            font-size: 7rem;
-            text-transform: uppercase;
-            font-weight: 800;
-            display: block;
-            position: relative;
-            z-index: 1;
-            margin-left: 5rem;
-            margin-top: 5rem;
-            width: 30%;
-
-            @include respond(tab-port) {
-                display: none;
-            }
-
-            &-mobile {
-                font-size: 7rem;
-                text-transform: uppercase;
-                font-weight: 800;
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                margin-left: 5rem;
-                margin-top: 5rem;
-                display: none;
-
-                @include respond(tab-port) {
-                    display: block;
-                }
-
-                @include respond(phone) {
-                    font-size: 5rem;
-                }
-            }
-        }
-
-        &--ko {
-            font-size: 1.2rem;
-            display: block;
-        }
-
-        &--popup {
-            text-align: center;
-            display: block;
-            font-weight: 400;
-        }
-    }
-
-    &__textBox {
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        line-height: 2;
-        margin-top: 20rem;
-        float: right;
-
-        @include respond(tab-port) {
-            display: none;
-        }
-
-        &-mobile {
-            display: none;
-
-            @include respond(tab-port) {
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                margin-left: 5rem;
-                margin-top: 50rem;
-            }
-        }
-    }
-
-    &__text {
-        font-size: 2.3rem;
-        font-weight: 400;
-        font-family: 'Noto Serif KR', serif;
-    }
-}
-*/
-.partner-interview {
+  background-color: #d9b650;
   position: relative; }
-  .partner-interview__fill {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #698474;
-    position: absolute; }
-  .partner-interview__mobile-content {
-    position: relative;
-    width: 80%;
-    height: 100vh;
+  @media only screen and (max-width: 56.25em) {
+    .partner-interview {
+      display: none; } }
+  .partner-interview__content {
+    padding: 4rem;
     margin: 0 auto;
-    background-color: #698474;
-    padding: 30rem;
+    width: 50%;
     position: relative; }
-  .partner-interview__imageContainer {
-    min-width: 50%;
-    min-height: 50%;
+    @media only screen and (max-width: 75em) {
+      .partner-interview__content {
+        width: 70%; } }
+  .partner-interview__name--eg {
+    font-size: 6.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    top: 0;
+    left: 0; }
+    @media only screen and (max-width: 75em) {
+      .partner-interview__name--eg {
+        display: none; } }
+  .partner-interview__name--ko {
+    display: block;
+    font-size: 1.2rem; }
+  .partner-interview-mobile__name--eg {
+    display: none; }
+    @media only screen and (max-width: 75em) {
+      .partner-interview-mobile__name--eg {
+        display: block; } }
+  .partner-interview__image-container {
+    width: 80%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 75em) {
+      .partner-interview__image-container {
+        width: 90%; } }
   .partner-interview__img {
     width: 100%; }
-  .partner-interview__name--eg {
-    font-size: 7rem;
-    text-transform: uppercase;
-    font-weight: 800;
-    position: relative;
-    z-index: 1;
-    transform: translateX(-20rem) translateY(-20rem); }
-  .partner-interview__name--ko {
-    font-size: 1.2rem;
-    display: block; }
-  .partner-interview__name--popup {
-    text-align: center;
-    display: block;
-    font-weight: 400; }
   .partner-interview__caption {
-    position: absolute;
-    right: 3rem;
-    line-height: 2; }
-  .partner-interview__description {
+    font-family: 'Noto Serif KR', serif;
     font-size: 2.3rem;
     font-weight: 400;
-    font-family: 'Noto Serif KR', serif; }
+    margin-top: 1rem;
+    margin-left: 5rem;
+    position: absolute;
+    z-index: 1;
+    right: 15rem;
+    bottom: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .partner-interview__caption {
+        display: none; } }
+    .partner-interview__caption-tab {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 2.3rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      margin-left: 5rem;
+      display: none; }
+      @media only screen and (max-width: 75em) {
+        .partner-interview__caption-tab {
+          display: block; } }
 
 .partner-interview-mobile {
-  background-color: #d9b650; }
+  background-color: #d9b650;
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .partner-interview-mobile {
+      display: block; } }
   .partner-interview-mobile__content {
-    padding: 3rem; }
+    padding: 4rem; }
   .partner-interview-mobile__name--eg {
     font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-left: 5rem; }
+    @media only screen and (max-width: 23.44em) {
+      .partner-interview-mobile__name--eg {
+        font-size: 4rem; } }
+  .partner-interview-mobile__name--popup {
+    text-align: center;
+    display: block;
+    font-weight: 400; }
   .partner-interview-mobile__image-container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto; }
+    @media only screen and (max-width: 56.25em) {
+      .partner-interview-mobile__image-container {
+        width: 85%; } }
+    @media only screen and (max-width: 37.5em) {
+      .partner-interview-mobile__image-container {
+        width: 80%; } }
   .partner-interview-mobile__caption {
     font-family: 'Noto Serif KR', serif;
     font-size: 2.3rem;
     font-weight: 400;
     margin-top: 1rem;
     margin-left: 5rem; }
+    @media only screen and (max-width: 23.44em) {
+      .partner-interview-mobile__caption {
+        font-size: 2rem; } }
+  @media only screen and (max-width: 23.44em) {
+    .partner-interview-mobile__button {
+      padding: 1.8rem !important; } }
 
 .features {
   width: 100%;
