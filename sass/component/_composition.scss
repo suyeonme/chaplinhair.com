@@ -55,196 +55,6 @@
 
 
 /*
-    //PARTNER INTERVIEW
-    .partner-interview {
-        width: 100%;
-        height: 85vh;
-        position: relative;
-        background-color: $color-green;
-
-        @include respond(tab-land) {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-            height: 70vh;
-        }
-
-        @include respond(small-phone) {
-            height: 60vh;
-        }
-        
-        &__imageContainer {
-            width: 35%;
-            @include absCenter;
-
-            @include respond(big-desktop) {
-                width: 40%;
-            }
-
-            @include respond(tab-land) {
-                width: 60%;
-            }
-
-            @include respond(phone) {
-                width: 70%;
-            }
-        }
-    
-        &__img {
-            width: 100%;
-        }
-    
-        &__name {
-    
-            &--eg {
-                position: absolute;
-                top: 13rem;
-                left: 30rem;
-                font-size: 7rem;
-                text-transform: uppercase;
-                font-weight: 800;
-
-                @include respond(tab-land) {
-                    top: 0;
-                    left: 20rem;
-                    padding-top: inherit;
-                    font-size: 7rem;
-                }
-
-                @include respond(tab-port) {
-                    left: 14rem;
-                    font-size: 6rem;
-                }
-
-                @include respond(small-phone) {
-                    left: 6rem;
-                    font-size: 5rem;
-                }
-            }
-    
-            &--ko {
-                display: block;
-                font-size: 1.2rem;
-            }
-
-            &--popup {
-                text-align: center;
-                display: block;
-                font-weight: 400;
-            }
-        }
-    
-        &__textBox {
-            position: absolute;
-            right: 4rem;
-            bottom: 8rem;
-            line-height: 2;
-            width: 35rem; 
-
-            @include respond(tab-land) {
-                left: 20rem;
-                bottom: 0;
-                padding-bottom: inherit;
-            }
-
-            @include respond(tab-port) {
-                left: 14rem;
-            }
-
-            @include respond(phone) {
-                left: 6rem;
-            }
-
-        }
-    
-        &__text {
-            font-size: 2.3rem;
-            font-weight: 400;
-            font-family: 'Noto Serif KR', serif;
-        }
-    }
-*/
-
-
-
-/*
-    .partner-interview {
-        width: 90%;
-        height: auto;
-        min-height: 70vh;
-        background-color: $color-green;
-        padding: 3rem;
-        margin: 0 auto;
-        
-        &__imageContainer {
-            width: 40%;
-            margin: 0 auto;
-            transform: translateY(-13.5rem);
-
-            @include respond(tab-land) {
-                max-width: 60%;
-                transform: translateY(-5rem);
-            }
-
-            @include respond(tab-port) {
-                transform: translateY(-5rem);
-            }
-        }
-    
-        &__img {
-            width: 100%;
-        }
-    
-        &__name {
-    
-            &--eg {
-                font-size: 7rem;
-                text-transform: uppercase;
-                font-weight: 800;
-                display: inline-block;
-                transform: translateX(13rem);
-                position: relative;
-                z-index: 1;
-
-                @include respond(tab-land) {
-                    transform: translateX(10rem) translateY(3rem);
-                }
-            }
-    
-            &--ko {
-                display: inline-block;
-                font-size: 1.2rem;
-            }
-
-            &--popup {
-                text-align: center;
-                display: block;
-                font-weight: 400;
-            }
-        }
-    
-        &__textBox {
-            display: inline-block;
-            line-height: 2;
-            width: 35rem; 
-
-            float: right;
-            transform: translateY(-31rem);
-            
-            @include respond(tab-land) {
-                transform: translateY(-23rem);
-            }
-        }
-    
-        &__text {
-            font-size: 2.3rem;
-            font-weight: 400;
-            font-family: 'Noto Serif KR', serif;
-            ;
-        }
-    }
-*/
-
-
 .partner-interview {
     position: relative;
 
@@ -379,3 +189,119 @@
         font-family: 'Noto Serif KR', serif;
     }
 }
+*/
+
+
+
+// Bis screen
+.partner-interview {
+    position: relative;
+
+    &__fill {
+        width: 100%;
+        min-height: 100vh;
+        background-color: $color-green;
+        position: absolute;
+    }
+
+    &__mobile-content {
+        position: relative;
+        width: 80%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: $color-green;
+        padding: 30rem;
+        position: relative;
+    }
+
+    &__imageContainer {
+        min-width: 50%;
+        min-height: 50%;
+        @include absCenter;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__name {
+
+        &--eg {
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+            transform: translateX(-20rem) translateY(-20rem);
+        }
+
+        &--ko {
+            font-size: 1.2rem;
+            display: block;
+        }
+
+        &--popup {
+            text-align: center;
+            display: block;
+            font-weight: 400;
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        right: 3rem;
+        line-height: 2;
+        //transform: translateX(50rem) translateY(-5rem);
+    }
+
+    &__description {
+        font-size: 2.3rem;
+        font-weight: 400;
+        font-family: 'Noto Serif KR', serif;
+    }
+}
+
+
+
+// Small screen
+.partner-interview-mobile {
+    background-color: $color-gold-dark;
+
+    &__content {
+        //display: flex;
+        //flex-direction: column;
+        //align-items: center;
+        padding: 3rem;
+    }
+
+    &__name {
+        
+        &--eg {
+            font-size: 5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            margin-left: 5rem;
+        }
+
+        &--ko {
+            
+        }
+    }
+    
+    &__image-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &__caption {
+        font-family: 'Noto Serif KR', serif;
+        font-size: 2.3rem;
+        font-weight: 400; 
+
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+}
+
+

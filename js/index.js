@@ -34,7 +34,7 @@ $('.wp--home-6').waypoint(function (direction) {
     $('.wp--home-6').addClass('animated fadeIn');
 }, {
     offset: '80%'
-})
+});
 
 // About 
 $('.wp--about-1').waypoint(function (direction) {
@@ -148,7 +148,7 @@ $("body").mouseup(function () {
 // toggle
 $(".navigation__button").click(function () {
     $(".navigation__nav").toggle();
-    $(".navigation__container").css({"position": "fixed"});
+    //$(".navigation__container").css({"position": "fixed"});
 });
 
 // sticky - home

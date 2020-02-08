@@ -405,216 +405,156 @@ body {
         width: 15%; } }
 
 /*
-    //PARTNER INTERVIEW
-    .partner-interview {
+.partner-interview {
+    position: relative;
+
+    &__fill {
         width: 100%;
-        height: 85vh;
-        position: relative;
+        height: auto;
+        min-height: 100vh;
         background-color: $color-green;
+        position: absolute;
 
-        @include respond(tab-land) {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-            height: 70vh;
-        }
-
-        @include respond(small-phone) {
-            height: 60vh;
-        }
-        
-        &__imageContainer {
-            width: 35%;
-            @include absCenter;
-
-            @include respond(big-desktop) {
-                width: 40%;
-            }
-
-            @include respond(tab-land) {
-                width: 60%;
-            }
-
-            @include respond(phone) {
-                width: 70%;
-            }
-        }
-    
-        &__img {
-            width: 100%;
-        }
-    
-        &__name {
-    
-            &--eg {
-                position: absolute;
-                top: 13rem;
-                left: 30rem;
-                font-size: 7rem;
-                text-transform: uppercase;
-                font-weight: 800;
-
-                @include respond(tab-land) {
-                    top: 0;
-                    left: 20rem;
-                    padding-top: inherit;
-                    font-size: 7rem;
-                }
-
-                @include respond(tab-port) {
-                    left: 14rem;
-                    font-size: 6rem;
-                }
-
-                @include respond(small-phone) {
-                    left: 6rem;
-                    font-size: 5rem;
-                }
-            }
-    
-            &--ko {
-                display: block;
-                font-size: 1.2rem;
-            }
-
-            &--popup {
-                text-align: center;
-                display: block;
-                font-weight: 400;
-            }
-        }
-    
-        &__textBox {
-            position: absolute;
-            right: 4rem;
-            bottom: 8rem;
-            line-height: 2;
-            width: 35rem; 
-
-            @include respond(tab-land) {
-                left: 20rem;
-                bottom: 0;
-                padding-bottom: inherit;
-            }
-
-            @include respond(tab-port) {
-                left: 14rem;
-            }
-
-            @include respond(phone) {
-                left: 6rem;
-            }
-
-        }
-    
-        &__text {
-            font-size: 2.3rem;
-            font-weight: 400;
-            font-family: 'Noto Serif KR', serif;
+        @include respond(tab-port) {
+            display: none;
         }
     }
-*/
-/*
-    .partner-interview {
-        width: 90%;
+
+    &__mobile-content {
+        width: 80%;
         height: auto;
-        min-height: 70vh;
+        min-height: 100vh;
         background-color: $color-green;
         padding: 3rem;
         margin: 0 auto;
-        
-        &__imageContainer {
-            width: 40%;
-            margin: 0 auto;
-            transform: translateY(-13.5rem);
 
-            @include respond(tab-land) {
-                max-width: 60%;
-                transform: translateY(-5rem);
-            }
+        position: relative;
 
-            @include respond(tab-port) {
-                transform: translateY(-5rem);
-            }
-        }
-    
-        &__img {
+        @include respond(tab-port) {
             width: 100%;
         }
-    
-        &__name {
-    
-            &--eg {
+
+        @include respond(phone) {
+            min-height: 80vh;
+        }
+    }
+
+    &__imageContainer {
+        min-width: 50%;
+        min-height: 50%;
+        @include absCenter;
+
+        @include respond(tab-land) {
+            min-width: 60%;
+        }
+
+        @include respond(phone) {
+            min-width: 70%;
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__name {
+
+        &--eg {
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            display: block;
+            position: relative;
+            z-index: 1;
+            margin-left: 5rem;
+            margin-top: 5rem;
+            width: 30%;
+
+            @include respond(tab-port) {
+                display: none;
+            }
+
+            &-mobile {
                 font-size: 7rem;
                 text-transform: uppercase;
                 font-weight: 800;
                 display: inline-block;
-                transform: translateX(13rem);
                 position: relative;
                 z-index: 1;
+                margin-left: 5rem;
+                margin-top: 5rem;
+                display: none;
 
-                @include respond(tab-land) {
-                    transform: translateX(10rem) translateY(3rem);
+                @include respond(tab-port) {
+                    display: block;
+                }
+
+                @include respond(phone) {
+                    font-size: 5rem;
                 }
             }
-    
-            &--ko {
-                display: inline-block;
-                font-size: 1.2rem;
-            }
-
-            &--popup {
-                text-align: center;
-                display: block;
-                font-weight: 400;
-            }
         }
-    
-        &__textBox {
-            display: inline-block;
-            line-height: 2;
-            width: 35rem; 
 
-            float: right;
-            transform: translateY(-31rem);
-            
-            @include respond(tab-land) {
-                transform: translateY(-23rem);
-            }
+        &--ko {
+            font-size: 1.2rem;
+            display: block;
         }
-    
-        &__text {
-            font-size: 2.3rem;
+
+        &--popup {
+            text-align: center;
+            display: block;
             font-weight: 400;
-            font-family: 'Noto Serif KR', serif;
-            ;
         }
     }
+
+    &__textBox {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        line-height: 2;
+        margin-top: 20rem;
+        float: right;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+
+        &-mobile {
+            display: none;
+
+            @include respond(tab-port) {
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                margin-left: 5rem;
+                margin-top: 50rem;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 2.3rem;
+        font-weight: 400;
+        font-family: 'Noto Serif KR', serif;
+    }
+}
 */
 .partner-interview {
   position: relative; }
   .partner-interview__fill {
     width: 100%;
-    height: auto;
     min-height: 100vh;
     background-color: #698474;
     position: absolute; }
-    @media only screen and (max-width: 56.25em) {
-      .partner-interview__fill {
-        display: none; } }
   .partner-interview__mobile-content {
+    position: relative;
     width: 80%;
-    height: auto;
-    min-height: 100vh;
-    background-color: #698474;
-    padding: 3rem;
+    height: 100vh;
     margin: 0 auto;
+    background-color: #698474;
+    padding: 30rem;
     position: relative; }
-    @media only screen and (max-width: 56.25em) {
-      .partner-interview__mobile-content {
-        width: 100%; } }
-    @media only screen and (max-width: 37.5em) {
-      .partner-interview__mobile-content {
-        min-height: 80vh; } }
   .partner-interview__imageContainer {
     min-width: 50%;
     min-height: 50%;
@@ -622,43 +562,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 75em) {
-      .partner-interview__imageContainer {
-        min-width: 60%; } }
-    @media only screen and (max-width: 37.5em) {
-      .partner-interview__imageContainer {
-        min-width: 70%; } }
   .partner-interview__img {
     width: 100%; }
   .partner-interview__name--eg {
     font-size: 7rem;
     text-transform: uppercase;
     font-weight: 800;
-    display: block;
     position: relative;
     z-index: 1;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    width: 30%; }
-    @media only screen and (max-width: 56.25em) {
-      .partner-interview__name--eg {
-        display: none; } }
-    .partner-interview__name--eg-mobile {
-      font-size: 7rem;
-      text-transform: uppercase;
-      font-weight: 800;
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      margin-left: 5rem;
-      margin-top: 5rem;
-      display: none; }
-      @media only screen and (max-width: 56.25em) {
-        .partner-interview__name--eg-mobile {
-          display: block; } }
-      @media only screen and (max-width: 37.5em) {
-        .partner-interview__name--eg-mobile {
-          font-size: 5rem; } }
+    transform: translateX(-20rem) translateY(-20rem); }
   .partner-interview__name--ko {
     font-size: 1.2rem;
     display: block; }
@@ -666,29 +578,33 @@ body {
     text-align: center;
     display: block;
     font-weight: 400; }
-  .partner-interview__textBox {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    line-height: 2;
-    margin-top: 20rem;
-    float: right; }
-    @media only screen and (max-width: 56.25em) {
-      .partner-interview__textBox {
-        display: none; } }
-    .partner-interview__textBox-mobile {
-      display: none; }
-      @media only screen and (max-width: 56.25em) {
-        .partner-interview__textBox-mobile {
-          display: inline-block;
-          position: relative;
-          z-index: 1;
-          margin-left: 5rem;
-          margin-top: 50rem; } }
-  .partner-interview__text {
+  .partner-interview__caption {
+    position: absolute;
+    right: 3rem;
+    line-height: 2; }
+  .partner-interview__description {
     font-size: 2.3rem;
     font-weight: 400;
     font-family: 'Noto Serif KR', serif; }
+
+.partner-interview-mobile {
+  background-color: #d9b650; }
+  .partner-interview-mobile__content {
+    padding: 3rem; }
+  .partner-interview-mobile__name--eg {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 5rem; }
+  .partner-interview-mobile__image-container {
+    width: 60%;
+    margin: 0 auto; }
+  .partner-interview-mobile__caption {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-left: 5rem; }
 
 .features {
   width: 100%;
@@ -1213,11 +1129,13 @@ body {
   display: flex;
   align-items: center; }
 
+.navigation__checkbox:checked + .navigation__container {
+  position: fixed; }
+
 .navigation__checkbox {
   display: none; }
 
 .navigation__logobox {
-  margin: 0 auto;
   width: 23rem; }
 
 .navigation__logo {
@@ -1228,9 +1146,9 @@ body {
   height: 4rem;
   width: 4rem;
   cursor: pointer;
+  margin: 0;
   display: flex;
-  align-items: center;
-  margin: 0; }
+  align-items: center; }
 
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   position: absolute;
@@ -1245,19 +1163,19 @@ body {
   transition: all 0.2s; }
 
 .navigation__icon::before {
-  top: 1rem; }
-
-.navigation__icon::after {
   top: -1rem; }
 
-.navigation__checkbox:checked ~ .navigation__button-container .navigation__button .navigation__icon {
+.navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__container .navigation__button-container .navigation__button .navigation__icon {
   background-color: transparent; }
 
-.navigation__checkbox:checked ~ .navigation__button-container .navigation__button .navigation__icon::before {
+.navigation__checkbox:checked + .navigation__container .navigation__button-container .navigation__button .navigation__icon::before {
   top: 0;
   transform: rotate(135deg); }
 
-.navigation__checkbox:checked ~ .navigation__button-container .navigation__button .navigation__icon::after {
+.navigation__checkbox:checked + .navigation__container .navigation__button-container .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
 
