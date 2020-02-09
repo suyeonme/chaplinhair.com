@@ -109,6 +109,10 @@
     &__item {
         display: inline;
 
+        &:not(:last-child) {
+            margin-right: 7rem;
+        }
+
         @include respond(tab-land) {
             display: block;
             margin-top: 7rem;
@@ -122,8 +126,7 @@
         @include textDecoration;
         color: $color-primary-light;
         font-size: 4rem;
-        margin-right: 7rem;
-
+        
         @include respond(tab-land) {
             margin: 0;
         }

@@ -124,18 +124,15 @@
     }
 
     &__image-container {
-        height: 100vh;
+        max-height: 100vh;
+        height: auto;
 
         @include respond(tab-land) {
-            height: 90vh;
+            max-height: 90vh;
         }
 
         @include respond(tab-port) {
-            height: 80vh;
-        }
-
-        @include respond(phone) {
-            height: 50vh;
+            max-height: 90vh;
         }
     }
 

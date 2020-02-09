@@ -22,7 +22,7 @@
   background-color: $color-primary-light;
 }
 
-@mixin footerHover {
+@mixin footerHover {  // hover effect on footer
   color: $color-pink;
   transition: all .5s;
 }
@@ -36,6 +36,7 @@
   z-index: 9999;
   background-color: rgba($color-black, .7);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   display: none;
   visibility: hidden;
@@ -50,7 +51,7 @@
   visibility: hidden;
 }
 
-@mixin horizontal-line {
+@mixin horizontal-line {  // gold decoration line
   display: block;
   width: 10rem;
   background-color: $color-gold;
@@ -61,11 +62,11 @@
   // MEDIA QUERY MANAGER
 
 /*
-0 - 375px: small phone
-320 - 600px: phone
-600 - 900px: Tablet Portrait
-900 - 1200px: Tablet Landscape
-[1200 - 1800px] is where our normal styles apply
+0 - 374px: small phone
+375 - 600px: phone
+601 - 900px: Tablet Portrait
+901 - 1200px: Tablet Landscape
+[1201 - 1800px] is where our normal styles apply
 1800px + : Big desktop
 
 Breakpoint argument choices:
@@ -76,12 +77,12 @@ Breakpoint argument choices:
 - big-desktop
 
 1em = 16px
-  */
+*/
 
 @mixin respond($breakpoint){
 
   @if $breakpoint == small-phone{
-    @media only screen and (max-width: 23.44em) { @content }; //  375px 
+    @media only screen and (max-width: 23.375em) { @content }; //  375px 
   }
 
   @if $breakpoint == phone{

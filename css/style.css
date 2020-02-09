@@ -1,9 +1,9 @@
 /*
-0 - 375px: small phone
-320 - 600px: phone
-600 - 900px: Tablet Portrait
-900 - 1200px: Tablet Landscape
-[1200 - 1800px] is where our normal styles apply
+0 - 374px: small phone
+375 - 600px: phone
+601 - 900px: Tablet Portrait
+901 - 1200px: Tablet Landscape
+[1201 - 1800px] is where our normal styles apply
 1800px + : Big desktop
 
 Breakpoint argument choices:
@@ -14,7 +14,7 @@ Breakpoint argument choices:
 - big-desktop
 
 1em = 16px
-  */
+*/
 .wp {
   opacity: 0; }
 
@@ -43,7 +43,7 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 46%; } }
-  @media only screen and (max-width: 23.44em) {
+  @media only screen and (max-width: 23.375em) {
     html {
       font-size: 40%; } }
 
@@ -162,7 +162,7 @@ body {
     @media only screen and (max-width: 75em) {
       .about__description {
         padding: 0 6rem; } }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .about__description {
         padding: 0 3rem; } }
     .about__description-title {
@@ -216,16 +216,14 @@ body {
     padding: 3rem !important; } }
 
 .ceo-message__image-container {
-  height: 100vh; }
+  max-height: 100vh;
+  height: auto; }
   @media only screen and (max-width: 75em) {
     .ceo-message__image-container {
-      height: 90vh; } }
+      max-height: 90vh; } }
   @media only screen and (max-width: 56.25em) {
     .ceo-message__image-container {
-      height: 80vh; } }
-  @media only screen and (max-width: 37.5em) {
-    .ceo-message__image-container {
-      height: 50vh; } }
+      max-height: 90vh; } }
 
 .ceo-message__img {
   width: 100%;
@@ -246,7 +244,7 @@ body {
   @media only screen and (max-width: 75em) {
     .ceo-message__text {
       padding: 4rem; } }
-  @media only screen and (max-width: 23.44em) {
+  @media only screen and (max-width: 23.375em) {
     .ceo-message__text {
       padding: 2rem; } }
   .ceo-message__text-name {
@@ -396,6 +394,7 @@ body {
       .partner-interview__name--eg {
         display: none; } }
   .partner-interview__name--ko {
+    font-family: 'Noto Sans KR', sans-serif;
     display: block;
     font-size: 1.2rem; }
   .partner-interview__name--popup {
@@ -451,7 +450,7 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     margin-left: 5rem; }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .partner-interview-mobile__name--eg {
         font-size: 4rem; } }
   .partner-interview-mobile__name--popup {
@@ -473,10 +472,10 @@ body {
     font-weight: 400;
     margin-top: 1rem;
     margin-left: 5rem; }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .partner-interview-mobile__caption {
         font-size: 2rem; } }
-  @media only screen and (max-width: 23.44em) {
+  @media only screen and (max-width: 23.375em) {
     .partner-interview-mobile__button {
       padding: 1.8rem !important; } }
 
@@ -529,6 +528,144 @@ body {
     line-height: 1.7;
     margin-top: 2rem; }
 
+/*
+.popup {
+    @include popup-bg;
+
+    &__content {
+        @include popup-content;
+        width: 80%;
+
+        @include respond(phone) {
+            width: 100%;
+            padding: 3rem;
+            overflow: auto;
+        }
+
+        @include respond(phone) {
+            padding: 0;
+            max-height: 100vh;
+        }
+
+        // PARTNER INTERVIEW
+        &--partner-interview {
+            background-color: $color-gold-dark;
+            color: $color-primary-light;
+
+            @include respond(phone) {
+                display: flex;
+                padding: 0 3rem;
+                height: auto;
+                min-height: 60vh;
+            }
+        }
+    }
+
+    // PARTNER INTERVIEW
+    &__partner-interview {
+        font-size: 1.5rem;
+        line-height: 2.3;
+        margin: 0;
+        padding: 3rem;
+    }
+
+    &__close,
+    &__close:link,
+    &__close:visited {
+        @include textDecoration;
+        position: fixed;
+        top: 1rem;
+        right: 2rem;
+        font-size: 4rem;
+        color: $color-primary-dark;
+    }
+
+    &__col {
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--img {
+
+            @include respond(tab-land) {
+                width: 40%;
+                margin: 0 auto;
+            }
+
+            @include respond(phone) {
+                width: 80%;
+            }
+        }
+
+        &--text {
+            padding: 0 3rem;
+
+            @include respond(phone) {
+                padding: 0;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // OPEN STATE
+    &:target {
+        visibility: visible;
+    }
+
+    &:target &__content {
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    // TEXT OF POPUP
+    &__text {
+        color: $color-primary-dark;
+
+        &--mantra {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding: 0 5rem;
+
+            @include respond(tab-land) {
+                margin-top: 4rem;
+            }
+        }
+
+        &--interview {
+            padding: 0 5rem;
+            text-align: left;
+            line-height: 2;
+            margin: 0;
+
+            @include respond(tab-land) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        &--question {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 600;
+
+            &:not(:first-child) {
+                margin-top: 2rem;
+            }
+        }
+
+        &--answer {
+            font-size: 1.3rem;
+        }
+    }
+}
+*/
 .popup {
   position: fixed;
   width: 100%;
@@ -538,6 +675,7 @@ body {
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: none;
   visibility: hidden; }
   .popup__content {
@@ -549,16 +687,18 @@ body {
     border-radius: .3rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     visibility: hidden;
-    width: 80%; }
+    width: 80%;
+    height: auto;
+    overflow: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__content {
+        width: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .popup__content {
-        width: 100%;
-        padding: 3rem;
-        overflow: auto; } }
-    @media only screen and (max-width: 37.5em) {
-      .popup__content {
-        padding: 0;
-        max-height: 100vh; } }
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
     .popup__content--partner-interview {
       background-color: #d9b650;
       color: #f7f7f7; }
@@ -568,6 +708,10 @@ body {
           padding: 0 3rem;
           height: auto;
           min-height: 60vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .popup__row {
+      padding: 0;
+      width: 100%; } }
   .popup__partner-interview {
     font-size: 1.5rem;
     line-height: 2.3;
@@ -591,7 +735,7 @@ body {
         margin: 0 auto; } }
     @media only screen and (max-width: 37.5em) {
       .popup__col--img {
-        width: 80%; } }
+        width: 60%; } }
     .popup__col--text {
       padding: 0 3rem; }
       @media only screen and (max-width: 37.5em) {
@@ -612,10 +756,14 @@ body {
       text-align: center;
       text-transform: uppercase;
       font-size: 2rem;
-      padding: 0 5rem; }
+      padding: 2rem 5rem 0; }
       @media only screen and (max-width: 75em) {
         .popup__text--mantra {
-          margin-top: 4rem; } }
+          margin-top: 4rem;
+          padding: 0 5rem; } }
+      @media only screen and (max-width: 23.375em) {
+        .popup__text--mantra {
+          display: none; } }
     .popup__text--interview {
       padding: 0 5rem;
       text-align: left;
@@ -673,7 +821,7 @@ body {
       .contact-us__content-textBox {
         font-size: 3.5rem;
         padding: 2.5rem; } }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .contact-us__content-textBox {
         font-size: 3rem; } }
 
@@ -822,7 +970,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .footer__text--quote {
         font-size: 6rem; } }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .footer__text--quote {
         font-size: 5rem; } }
   .footer__text--primary {
@@ -835,7 +983,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .footer__text--primary {
         font-size: 3rem; } }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .footer__text--primary {
         font-size: 2.8rem; } }
   .footer__text--secondary {
@@ -844,7 +992,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .footer__text--secondary {
         font-size: 2.5rem; } }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .footer__text--secondary {
         font-size: 2.3rem; } }
   .footer__adress--kr {
@@ -926,7 +1074,7 @@ body {
       .header__title {
         transform: translateY(-10rem) translateX(-3rem);
         font-size: 5.5rem; } }
-    @media only screen and (max-width: 23.44em) {
+    @media only screen and (max-width: 23.375em) {
       .header__title {
         transform: translateY(-7rem) translateX(-4rem);
         font-size: 5rem; } }
@@ -1075,6 +1223,8 @@ body {
 
 .navigation__item {
   display: inline; }
+  .navigation__item:not(:last-child) {
+    margin-right: 7rem; }
   @media only screen and (max-width: 75em) {
     .navigation__item {
       display: block;
@@ -1083,8 +1233,7 @@ body {
 .navigation__link, .navigation__link:link, .navigation__link:visited {
   text-decoration: none;
   color: #f7f7f7;
-  font-size: 4rem;
-  margin-right: 7rem; }
+  font-size: 4rem; }
   @media only screen and (max-width: 75em) {
     .navigation__link, .navigation__link:link, .navigation__link:visited {
       margin: 0; } }
