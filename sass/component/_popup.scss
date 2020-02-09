@@ -261,7 +261,6 @@
 
             @include respond(tab-land) {
                 margin-top: 4rem;
-                padding: 0 5rem;
             }
 
             @include respond(small-phone) {
@@ -270,7 +269,7 @@
         }
 
         &--interview {
-            padding: 0 5rem;
+            padding: 0 5rem 2rem;
             text-align: left;
             line-height: 2;
             margin: 0;

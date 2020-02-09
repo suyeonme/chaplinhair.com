@@ -111,13 +111,17 @@
 
         &:not(:last-child) {
             margin-right: 7rem;
+
+            @include respond(tab-land) {
+                margin-top: 7rem;
+                margin-right: 0;
+            }
         }
 
         @include respond(tab-land) {
             display: block;
             margin-top: 7rem;
         }
-
     }
 
     &__link,
