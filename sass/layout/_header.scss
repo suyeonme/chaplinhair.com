@@ -105,48 +105,45 @@
     min-height: 60vh;
     background-color: $color-primary-dark;
 
-    @supports (display: flex) { // For Chrome, Firefox, Safafi
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: flex;  // For Chorome, Safafi, Firefox
+    align-items: center;
+    justify-content: center;
+
+    &:after {   // For IE , alternative for flexbox
+        content: "";
+        min-height: inherit;
+        font-size: 0;
     }
-
-    @supports not (display:flex) {  // For IE
-        position: relative;
-    }
-
-
 
     @include respond(tab-land) {
-        min-height: 45vh;
+        min-height: 40vh;
     }
 
-    &__text {
-        text-align: center;
-        color: $color-primary-light;
-        padding: 0 3rem;
 
-        @supports not (display:flex) {  // For IE
-            position: absolute;
-            @include absCenter;
-        }
+&__text {
+    text-align: center;
+    color: $color-primary-light;
 
-        &--title {
-            display: block;
-            font-size: 5rem;
-            font-weight: 200;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
+    @include respond(phone) {
+        padding: 0 2rem;
+    }
 
-            @include respond(phone) {
-                font-size: 4rem;
-            }
-        }
+    &--title {
+        display: block;
+        font-size: 5rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
 
-        &--description {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2rem;
-            font-style: italic;
+        @include respond(phone) {
+            font-size: 4rem;
         }
     }
+
+    &--description {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-style: italic;
+    }
+}
 }

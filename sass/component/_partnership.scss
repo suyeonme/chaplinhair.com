@@ -131,17 +131,8 @@
         
         @include respond(tab-port) {
             padding: 0;
-        }
-
-        &--margin-top{
-            height: auto;
-            margin-top: 9rem;
-
-            @include respond(tab-land) {
-                margin:0;
             }
         }
-    }
     
     &__branch {
         color: $color-primary-dark;
@@ -156,7 +147,7 @@
 
     &__img {
         width: 100%;
-        height: 100%;
+        height: auto;
 
         &--hidden {
             @include respond(tab-land) {
@@ -178,7 +169,7 @@
 
         &-title {
             text-align: center;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         &-info {

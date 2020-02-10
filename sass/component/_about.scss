@@ -35,7 +35,7 @@
             padding: 0 6rem;
         }
 
-        @include respond(small-phone) {
+        @include respond(phone) {
             padding: 0 3rem;
         }
         
@@ -119,6 +119,7 @@
 // CEO Message
 .ceo-message {
 
+
     @include respond(tab-land) {
         padding: 3rem !important; 
     }
@@ -152,7 +153,7 @@
         font-size: 1.8rem;
         line-height: 2.5;
         font-weight: 400;
-        padding: 15rem 5rem;
+        padding: 13rem 5rem;
 
         display: flex;
         flex-direction: column;
@@ -163,14 +164,38 @@
             padding: 4rem;
         }
 
-        @include respond(small-phone) {
-            padding: 2rem;
+        @include respond(phone) {
+            padding: 2rem 1rem;
         }
 
         &-name {
             display: block;
             font-weight: 600;
             font-size: 1.5rem;
+        }
+    }
+
+    &__handwritten {
+        width: 40%;
+        padding-top: 6rem;
+
+        @include respond(tab-land) {
+            width: 30%;
+            padding-top: 5rem;
+        }
+
+        @include respond(tab-port) {
+            width: 40%;
+            padding-top: 5rem;
+        }
+
+        @include respond(phone) {
+            width: 50%;
+            padding-top: 4rem;
+        }
+
+        &-name {
+            width: 100%;
         }
     }
 }

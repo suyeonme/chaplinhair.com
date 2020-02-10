@@ -148,7 +148,6 @@ $("body").mouseup(function () {
 // toggle
 $(".navigation__button").click(function () {
     $(".navigation__nav").toggle();
-    //$(".navigation__container").css({"position": "fixed"});
 });
 
 // sticky - home

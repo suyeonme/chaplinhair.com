@@ -1,3 +1,4 @@
+
 .navigation {
 
     &__container {
@@ -91,6 +92,7 @@
         background-color: $color-primary-dark;
         height: 100vh;
         width: 100%;
+
         z-index: 1000;
     }
 
@@ -136,6 +138,9 @@
         }
     }
 }
+
+
+
 
     .sticky .navigation {
 
