@@ -136,6 +136,9 @@ body {
 .u-padding-bottom-huge {
   padding-bottom: 10rem !important; }
 
+.u-bold {
+  font-weight: 700; }
+
 .about {
   overflow: hidden;
   color: #0f0f0f; }
