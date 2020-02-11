@@ -1,6 +1,6 @@
-
 .navigation {
 
+    //Navbar
     &__container {
         position: relative;
         z-index: 2000;
@@ -12,7 +12,7 @@
         align-items: center;
     }
 
-    &__checkbox:checked + &__container {               
+    &__checkbox:checked+&__container {
         position: fixed;
     }
 
@@ -21,16 +21,16 @@
     }
 
     &__logobox {
-        width: 23rem;                                          
+        width: 23rem;
     }
 
     &__logo {
         width: 100%;
     }
 
-    // HAMBURGER BAR - MENU
+    // Hamburger menu
     &__button {
-        position: relative;                                          
+        position: relative;
         height: 4rem;
         width: 4rem;
         cursor: pointer;
@@ -68,22 +68,22 @@
         }
     }
 
-    // ICON SELECT EFFECT
-    &__checkbox:checked + &__container &__button-container &__button &__icon {
+    // Icon select effect
+    &__checkbox:checked+&__container &__button-container &__button &__icon {
         background-color: transparent;
     }
 
-    &__checkbox:checked + &__container &__button-container &__button &__icon::before {
+    &__checkbox:checked+&__container &__button-container &__button &__icon::before {
         top: 0;
         transform: rotate(135deg);
     }
 
-    &__checkbox:checked + &__container &__button-container &__button &__icon::after {
+    &__checkbox:checked+&__container &__button-container &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
     }
 
-    // NAVIGATION ITEMS
+    // Navigation (hidden - show)
     &__nav {
         display: none;
         position: fixed;
@@ -132,42 +132,40 @@
         @include textDecoration;
         color: $color-primary-light;
         font-size: 4rem;
-        
+
         @include respond(tab-land) {
             margin: 0;
         }
     }
 }
 
+// Sticky Navigation
+.sticky .navigation {
 
+    &__container {
+        height: 9rem;
+        position: fixed;
+        background-color: $color-primary-light;
+        box-shadow: $box-shadow;
+        padding: 0 4rem;
+    }
 
+    &__map-link,
+    &__map-link:link,
+    &__map-link:visited {
+        color: $color-primary-dark;
+    }
 
-    .sticky .navigation {
+    &__map-icon {
+        color: $color-primary-dark;
+    }
 
-        &__container {
-            height: 9rem;
-            position: fixed;
-            background-color: $color-primary-light;
-            box-shadow: $box-shadow;
-            padding: 0 4rem;
-        }
+    &__icon {
 
-        &__map-link,
-        &__map-link:link,
-        &__map-link:visited {
-            color: $color-primary-dark;
-        }
-
-        &__map-icon {
-            color: $color-primary-dark;
-        }
-
-        &__icon {
-
-            &,
-            &::before,
-            &::after {
-                background-color: $color-primary-dark;
-            }
+        &,
+        &::before,
+        &::after {
+            background-color: $color-primary-dark;
         }
     }
+}

@@ -1,4 +1,4 @@
- // PARTNERSHIP
+ // Partnership - contanct us
 .contact-us {
 
     &__content {
@@ -113,8 +113,8 @@
 }
 
 
+// Partnership - branches
 .partnership {
-
     &__row {
         padding: 0 10rem;
 
@@ -124,6 +124,10 @@
 
         @include respond(tab-port) {
             padding: 3rem;
+        }
+
+        @include respond(phone) {
+            margin: 0 !important;
         }
     }
 

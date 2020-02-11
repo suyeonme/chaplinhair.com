@@ -1,3 +1,4 @@
+// Basic button 
 .btn {
 
     &,
@@ -92,7 +93,7 @@
     }
 }
 
-// BUTTON - CIRCLE 
+// Colored circle button
 .btn-circle-color {
     position: relative;
     width: 7rem;
@@ -120,4 +121,4 @@
         color: $color-primary-dark;
         border: 1px solid $color-primary-dark;
     }
-    }
+}

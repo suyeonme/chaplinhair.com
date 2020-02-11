@@ -1,4 +1,4 @@
-// POPUP OF TEAM
+// Popup of Team
 .popup {
     @include popup-bg;
 
@@ -45,7 +45,7 @@
         }
     }
 
-    // PARTNER INTERVIEW
+    // Partner Interview
     &__partner-interview {
         font-size: 1.5rem;
         line-height: 2.3;
@@ -84,11 +84,7 @@
         }
 
         &--text {
-            padding: 0 3rem;
-
-            @include respond(phone) {
-                padding: 0;
-            }
+            padding: 3rem 0;
         }
     }
 
@@ -108,7 +104,7 @@
         transform: translate(-50%, -50%) scale(1);
     }
 
-    // TEXT OF POPUP
+    // Text in Popup
     &__text {
         color: $color-primary-dark;
 
@@ -116,10 +112,10 @@
             text-align: center;
             text-transform: uppercase;
             font-size: 2rem;
-            padding: 2rem 5rem 0;
+            padding: 2rem 5rem;
 
-            @include respond(tab-land) {
-                margin-top: 4rem;
+            @include respond(phone) {
+                padding: 4rem 5rem;
             }
 
             @include respond(small-phone) {
@@ -128,13 +124,17 @@
         }
 
         &--interview {
-            padding: 0 5rem;
             text-align: left;
             line-height: 2;
             margin: 0;
+            padding: 0 5rem;
 
-            @include respond(tab-land) {
-                margin-bottom: 5rem;
+            @include respond(phone) {  
+                padding: 0 2rem;
+            }
+
+            @include respond(small-phone) {
+                margin-top: 3rem;
             }
         }
 

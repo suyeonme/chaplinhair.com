@@ -118,7 +118,7 @@
 
 // CEO Message
 .ceo-message {
-
+    padding: 0 2rem;
 
     @include respond(tab-land) {
         padding: 3rem !important; 

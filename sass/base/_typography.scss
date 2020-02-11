@@ -22,7 +22,7 @@ body {
         }
     }
 
-    &__quote {              // MAKE IT DRY
+    &__quote {         
         font-family: 'Permanent Marker', cursive;
         color: $color-primary-dark;
         font-size: 3.5rem;
