@@ -139,6 +139,9 @@ body {
 .u-bold {
   font-weight: 700; }
 
+.u-text-left {
+  text-align: left; }
+
 .about {
   overflow: hidden;
   color: #0f0f0f; }
@@ -161,14 +164,14 @@ body {
   .about__description {
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2;
+    line-height: 2.5;
     margin: 6rem 0; }
     @media only screen and (max-width: 75em) {
       .about__description {
-        padding: 0 6rem; } }
+        padding: 0 7rem; } }
     @media only screen and (max-width: 37.5em) {
       .about__description {
-        padding: 0 3rem; } }
+        padding: 0 4rem; } }
     .about__description-title {
       display: block;
       font-size: 4rem;
@@ -222,7 +225,9 @@ body {
       padding: 3rem !important; } }
   .ceo-message__image-container {
     background-image: url("../img/Park Cheonwoong-4.jpg");
-    background-size: cover; }
+    background-size: cover;
+    height: auto;
+    max-height: 125vh; }
     @media only screen and (max-width: 75em) {
       .ceo-message__image-container {
         height: 100vh;
@@ -232,18 +237,13 @@ body {
       .ceo-message__image-container {
         height: 90vh;
         width: 100%; } }
-  .ceo-message__img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: 0 0; }
   .ceo-message__text {
     color: #0f0f0f;
     text-align: left;
     font-size: 1.8rem;
     line-height: 2.5;
     font-weight: 400;
-    padding: 13rem 5rem;
+    padding: 7rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -252,7 +252,7 @@ body {
         padding: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .ceo-message__text {
-        padding: 2rem 1rem; } }
+        padding: 2rem 1.3rem; } }
     .ceo-message__text-name {
       display: block;
       font-weight: 600;
@@ -605,11 +605,12 @@ body {
     padding: 3rem; }
   .popup__close, .popup__close:link, .popup__close:visited {
     text-decoration: none;
+    font-size: 4rem;
+    color: #0f0f0f;
     position: absolute;
     top: 1rem;
     right: 2rem;
-    font-size: 4rem;
-    color: #0f0f0f; }
+    z-index: 2; }
   .popup__col {
     padding: 0;
     display: flex;
@@ -792,7 +793,7 @@ body {
 
 .partnership__text {
   color: #0f0f0f;
-  padding: 7rem 5rem 0;
+  padding: 3rem 5rem 0;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2; }

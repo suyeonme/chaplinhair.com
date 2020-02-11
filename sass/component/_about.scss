@@ -28,15 +28,15 @@
     &__description {
         font-size: 1.8rem;
         font-weight: 400;
-        line-height: 2;
+        line-height: 2.5;
         margin: 6rem 0;
 
         @include respond(tab-land) {
-            padding: 0 6rem;
+            padding: 0 7rem;
         }
 
         @include respond(phone) {
-            padding: 0 3rem;
+            padding: 0 4rem;
         }
         
         &-title {
@@ -128,6 +128,10 @@
         background-image: url("../img/Park Cheonwoong-4.jpg");  // object-fit not working in IE.
         background-size: cover;
 
+        // IE
+        height: auto;
+        max-height: 125vh;  
+
         @include respond(tab-land) {
             height: 100vh;
             width: 80%;
@@ -140,20 +144,13 @@
         }
     }
 
-    &__img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: 0 0;
-    }
-
     &__text {
         color: $color-primary-dark;
         text-align: left;
         font-size: 1.8rem;
         line-height: 2.5;
         font-weight: 400;
-        padding: 13rem 5rem;
+        padding: 7rem 5rem;
 
         display: flex;
         flex-direction: column;
@@ -165,7 +162,7 @@
         }
 
         @include respond(phone) {
-            padding: 2rem 1rem;
+            padding: 2rem 1.3rem;
         }
 
         &-name {

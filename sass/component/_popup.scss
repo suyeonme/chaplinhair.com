@@ -57,11 +57,12 @@
     &__close:link,
     &__close:visited {
         @include textDecoration;
+        font-size: 4rem;
+        color: $color-primary-dark;
         position: absolute;
         top: 1rem;
         right: 2rem;
-        font-size: 4rem;
-        color: $color-primary-dark;
+        z-index:2;  // enable click the button
     }
 
     &__col {
