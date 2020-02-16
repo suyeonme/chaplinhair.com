@@ -122,3 +122,18 @@
         border: 1px solid $color-primary-dark;
     }
 }
+
+// arrow button on sub header
+.arrow-button {
+    color: $color-gold;
+    font-size: 3rem;
+    
+    &:hover {
+        color: currentColor;
+        text-decoration: none;
+    }
+
+    @include respond(phone) {
+        display: none;
+    }
+}

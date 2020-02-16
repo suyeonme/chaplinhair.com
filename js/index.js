@@ -3,37 +3,19 @@
 $('.wp--home-1').waypoint(function (direction) {
     $('.wp--home-1').addClass('animated fadeIn');
 }, {
-    offset: '80%'
+    offset: '60%'
 });
 
-$('.wp--home-2').waypoint(function (direction) {
+$('.wp--home-2').waypoint(function (direction) { 
     $('.wp--home-2').addClass('animated fadeIn');
 }, {
-    offset: '80%'
+    offset: '60%'
 });
 
 $('.wp--home-3').waypoint(function (direction) {
     $('.wp--home-3').addClass('animated fadeIn');
 }, {
-    offset: '80%'
-});
-
-$('.wp--home-4').waypoint(function (direction) {
-    $('.wp--home-4').addClass('animated fadeIn');
-}, {
-    offset: '80%'
-});
-
-$('.wp--home-5').waypoint(function (direction) {
-    $('.wp--home-5').addClass('animated fadeIn');
-}, {
-    offset: '80%'
-});
-
-$('.wp--home-6').waypoint(function (direction) {
-    $('.wp--home-6').addClass('animated fadeIn');
-}, {
-    offset: '80%'
+    offset: '60%'
 });
 
 // About 
@@ -94,6 +76,12 @@ $(".person-2").hover(function () {
     $(".person-2").attr("src", "img/Wang Hanna-1.jpg");
 });
 
+$(".person-3").hover(function () {
+    $(".person-3").attr("src", "img/Park Kwansoo-2.jpg"); 
+}, function () {
+    $(".person-3").attr("src", "img/Park Kwansoo-1.jpg");
+});
+
 $(".person-4").hover(function () {
     $(".person-4").attr("src", "img/Jeong Haemin-2.jpg"); 
 }, function () {
@@ -116,6 +104,18 @@ $(".person-7").hover(function () {
     $(".person-7").attr("src", "img/Lee Joonha-2.jpg"); 
 }, function () {
     $(".person-7").attr("src", "img/Lee Joonha-1.jpg");
+});
+
+$(".person-8").hover(function () {
+    $(".person-8").attr("src", "img/Kang Suyeon-2.jpg"); 
+}, function () {
+    $(".person-8").attr("src", "img/Kang Suyeon-1.jpg");
+});
+
+$(".person-9").hover(function () {
+    $(".person-9").attr("src", "img/Kang Soojeong-2.jpg"); 
+}, function () {
+    $(".person-9").attr("src", "img/Kang Soojeong-1.jpg");
 });
 
 
@@ -177,3 +177,10 @@ $('main').waypoint(function (direction) {
 }, {
     offset: '30%;'
 });
+
+
+// translate with button on Subheader
+$(".arrow-button").click(function() {
+    $(".sub-header__text-description--ko").toggle();
+});
+

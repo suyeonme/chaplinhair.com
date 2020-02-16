@@ -10,16 +10,12 @@
         color: $color-primary-dark;
         display: block;
         padding: 5rem 0 7rem;
-        font-size: 4.3rem;
+        font-size: 5rem;
         font-weight: 800;
         letter-spacing: .5rem;
 
         @include respond(tab-land) {
             font-size: 6rem;
-        }
-
-        @include respond(tab-port) {
-            font-size: 5rem;
         }
 
         @include respond(phone) {

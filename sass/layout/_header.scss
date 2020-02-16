@@ -98,11 +98,11 @@
     }
 }
 
-
+/*
 // Subpages
 .sub-header {
     height: auto;
-    min-height: 60vh;
+    min-height: 50vh;
     background-color: $color-primary-dark;
 
     display: flex;  // For Chorome, Safafi, Firefox
@@ -128,7 +128,7 @@
         padding: 0 2rem;
     }
 
-    &--title {
+    &-title {
         display: block;
         font-size: 5rem;
         font-weight: 200;
@@ -140,10 +140,78 @@
         }
     }
 
-    &--description {
+    &-description {
         font-family: 'Times New Roman', Times, serif;
         font-size: 2rem;
         font-style: italic;
+    } 
+    
     }
 }
+*/
+
+
+// Subpages
+.sub-header {
+    height: auto;
+    min-height: 50vh;
+    background-color: $color-primary-dark;
+
+    display: flex; // For Chorome, Safafi, Firefox
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+        // For IE , alternative for flexbox
+        content: "";
+        min-height: inherit;
+        font-size: 0;
+    }
+
+    @include respond(tab-land) {
+        min-height: 40vh;
+    }
+
+
+    &__text {
+        text-align: center;
+        color: $color-primary-light;
+        margin: 0;
+
+        @include respond(phone) {
+            padding: 0 2rem;
+        }
+
+        &-title {
+            display: block;
+            font-size: 5rem;
+            font-weight: 200;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+
+            @include respond(phone) {
+                font-size: 4rem;
+            }
+        }
+
+        &-description {
+
+            &--en {
+                display: block;
+                margin-bottom: 2rem;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 2rem;
+                font-style: italic;  
+            }
+
+            &--ko {
+                display: none;
+                font-size: 1.5rem;
+                font-style: normar;
+                font-family: 'Nanum Gothic';
+                line-height: 1.5;
+            }
+        }
+
+    }
 }
