@@ -312,14 +312,6 @@ body {
   .btn--pink::before {
     background: #ffddcc; }
 
-.btn--gold {
-  color: #dbcc8f;
-  border: 1px solid #dbcc8f; }
-  .btn--gold:hover {
-    color: #0f0f0f; }
-  .btn--gold::before {
-    background: #dbcc8f; }
-
 .btn:hover {
   z-index: 1; }
 
@@ -365,7 +357,12 @@ body {
 
 .arrow-button {
   color: #dbcc8f;
-  font-size: 3rem; }
+  font-size: 2.7rem;
+  display: inline-block;
+  animation-duration: 3s;
+  margin-left: 5px;
+  vertical-align: -2.5px;
+  line-height: .5; }
   .arrow-button:hover {
     color: currentColor;
     text-decoration: none; }
@@ -994,57 +991,6 @@ body {
         .header__image-wrapper--2 {
           display: none; } }
 
-/*
-// Subpages
-.sub-header {
-    height: auto;
-    min-height: 50vh;
-    background-color: $color-primary-dark;
-
-    display: flex;  // For Chorome, Safafi, Firefox
-    align-items: center;
-    justify-content: center;
-
-    &:after {   // For IE , alternative for flexbox
-        content: "";
-        min-height: inherit;
-        font-size: 0;
-    }
-
-    @include respond(tab-land) {
-        min-height: 40vh;
-    }
-
-
-&__text {
-    text-align: center;
-    color: $color-primary-light;
-
-    @include respond(phone) {
-        padding: 0 2rem;
-    }
-
-    &-title {
-        display: block;
-        font-size: 5rem;
-        font-weight: 200;
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-
-        @include respond(phone) {
-            font-size: 4rem;
-        }
-    }
-
-    &-description {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2rem;
-        font-style: italic;
-    } 
-    
-    }
-}
-*/
 .sub-header {
   height: auto;
   min-height: 50vh;
