@@ -116,30 +116,37 @@
     }
 }
 
+
 // CEO Message
 .ceo-message {
     padding: 0 2rem;
+    margin-bottom: 13rem;
+
+    overflow: hidden;       // for IE.
+    max-height: 140vh;
+    height: auto;
 
     @include respond(tab-land) {
-        padding: 3rem !important; 
+        padding: 3rem 3rem 0 !important; 
+        overflow: visible;
+        max-height: 200vh;
+        margin-bottom: 5rem !important;
     }
 
     &__image-container {
         background-image: url("../img/Park Cheonwoong-4.jpg");  // object-fit not working in IE.
+        background-position: top;
         background-size: cover;
-
-        // IE
-        height: auto;
-        max-height: 125vh;  
+        background-repeat: no-repeat; 
 
         @include respond(tab-land) {
-            height: 100vh;
+            height: 90vh;
             width: 80%;
             margin: 0 auto;
         }
 
         @include respond(phone) {
-            height: 90vh;
+            height: 70vh;
             width: 100%;
         }
     }

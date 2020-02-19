@@ -69,6 +69,15 @@ body {
     color: #f7f7f7; }
   .text__category--black {
     color: #0f0f0f; }
+  .text__category-big {
+    text-align: center;
+    font-weight: 800;
+    font-size: 4.5rem; }
+    .text__category-big--black {
+      color: #0f0f0f; }
+    @media only screen and (max-width: 75em) {
+      .text__category-big {
+        font-size: 3.5rem; } }
 
 .text__quote {
   font-family: 'Permanent Marker', cursive;
@@ -100,6 +109,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
+.u-margin-bottom-huge {
+  margin-bottom: 13rem !important; }
+
 .u-margin-top-small {
   margin-top: 1rem !important; }
 
@@ -110,7 +122,7 @@ body {
   margin-top: 8rem !important; }
 
 .u-margin-top-huge {
-  margin-top: 10rem !important; }
+  margin-top: 13rem !important; }
 
 .u-padding-top-small {
   padding-top: 1rem !important; }
@@ -122,7 +134,7 @@ body {
   padding-top: 8rem !important; }
 
 .u-padding-top-huge {
-  padding-top: 10rem !important; }
+  padding-top: 13rem !important; }
 
 .u-padding-bottom-small {
   padding-bottom: 1rem !important; }
@@ -134,7 +146,7 @@ body {
   padding-bottom: 8rem !important; }
 
 .u-padding-bottom-huge {
-  padding-bottom: 10rem !important; }
+  padding-bottom: 13rem !important; }
 
 .u-bold {
   font-weight: 700; }
@@ -219,23 +231,30 @@ body {
       display: none; } }
 
 .ceo-message {
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  margin-bottom: 13rem;
+  overflow: hidden;
+  max-height: 140vh;
+  height: auto; }
   @media only screen and (max-width: 75em) {
     .ceo-message {
-      padding: 3rem !important; } }
+      padding: 3rem 3rem 0 !important;
+      overflow: visible;
+      max-height: 200vh;
+      margin-bottom: 5rem !important; } }
   .ceo-message__image-container {
     background-image: url("../img/Park Cheonwoong-4.jpg");
+    background-position: top;
     background-size: cover;
-    height: auto;
-    max-height: 125vh; }
+    background-repeat: no-repeat; }
     @media only screen and (max-width: 75em) {
       .ceo-message__image-container {
-        height: 100vh;
+        height: 90vh;
         width: 80%;
         margin: 0 auto; } }
     @media only screen and (max-width: 37.5em) {
       .ceo-message__image-container {
-        height: 90vh;
+        height: 70vh;
         width: 100%; } }
   .ceo-message__text {
     color: #0f0f0f;
@@ -351,7 +370,6 @@ body {
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: .3rem;
-    transition: all 0.7s;
     color: #0f0f0f;
     border: 1px solid #0f0f0f; }
 
@@ -931,7 +949,7 @@ body {
     .header {
       min-height: 60vh; } }
   .header__title {
-    display: inline-block;
+    display: block;
     text-align: left;
     color: #f7f7f7;
     font-family: 'Permanent Marker', cursive;

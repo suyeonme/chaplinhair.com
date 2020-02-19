@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;  // Eglish - Monserrat, Korean - Nanum Gothic
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif; // Eglish - Monserrat, Korean - Nanum Gothic
     line-height: 1;
     font-weight: 200;
     color: $color-primary-light;
@@ -20,15 +20,29 @@ body {
         &--black {
             color: $color-primary-dark;
         }
+
+        &-big {
+            text-align: center;
+            font-weight: 800;
+            font-size: 4.5rem;
+
+            &--black {
+                color: $color-primary-dark;
+            }
+
+            @include respond(tab-land) {
+                font-size: 3.5rem;
+            }
+        }
     }
 
-    &__quote {         
+    &__quote {
         font-family: 'Permanent Marker', cursive;
         color: $color-primary-dark;
         font-size: 3.5rem;
         text-align: center;
         letter-spacing: .3rem;
-        
+
         &--gold {
             color: $color-gold;
         }
@@ -46,5 +60,3 @@ body {
         }
     }
 }
-
-

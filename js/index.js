@@ -43,6 +43,12 @@ $('.wp--about-4').waypoint(function (direction) {
     offset: '80%'
 });
 
+$('.wp--about-5').waypoint(function (direction) {
+    $('.wp--about-5').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
 // Join with us
 $('.wp--partnership-1').waypoint(function (direction) {
     $('.wp--partnership-1').addClass('animated fadeIn');
