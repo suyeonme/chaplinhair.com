@@ -1,14 +1,27 @@
 // Chaplin logo and brand name
 .main-logo {
+    text-align: center;
+
+    &::before {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
     &__logo {
         width: 18rem;
-        padding-top: 7rem;
+
+        @include respond(tab-port) {
+            margin-top: 5rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 10rem;
+        }
     }
 
     &__text {
         color: $color-primary-dark;
-        display: block;
         padding: 5rem 0 7rem;
         font-size: 5rem;
         font-weight: 800;
@@ -19,9 +32,8 @@
         }
 
         @include respond(phone) {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
-
     }
 }
 

@@ -1,9 +1,28 @@
 .team {
+
+    &__row {
+        margin-bottom: 4rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__person {
+
+        @include respond(tab-port) {
+            margin-bottom: 5rem;
+        }
+    }
     
     &__container {
         height: auto;
         background-color: $color-primary-light;
         padding: 10rem;
+
+        @include respond(tab-port) {
+            padding: 5rem;
+        }
     }
 
     &__img {

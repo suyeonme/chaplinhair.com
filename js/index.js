@@ -1,21 +1,21 @@
 /******** WAYPOINTS *********/
 // Home
 $('.wp--home-1').waypoint(function (direction) {
-    $('.wp--home-1').addClass('animated fadeIn');
+    $('.wp--home-1').addClass('animated tada');
 }, {
-    offset: '60%'
+    offset: '50%'
 });
 
 $('.wp--home-2').waypoint(function (direction) { 
     $('.wp--home-2').addClass('animated fadeIn');
 }, {
-    offset: '60%'
+    offset: '80%'
 });
 
 $('.wp--home-3').waypoint(function (direction) {
     $('.wp--home-3').addClass('animated fadeIn');
 }, {
-    offset: '60%'
+    offset: '80%'
 });
 
 // About 
