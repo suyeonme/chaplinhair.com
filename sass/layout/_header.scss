@@ -1,107 +1,4 @@
-// Home
-/*
-.header {
-    @include theme-black;
-    width: 100%;
-    height: 110vh;
-    overflow: hidden;
-
-    @include respond(tab-land) {
-        height: auto;
-        min-height: 65vh;
-    }
-
-    @include respond(phone) {
-        min-height: 60vh;
-    }
-
-    &__title {
-        display: block;
-        text-align: left;
-        color: $color-primary-light;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 7rem;
-        line-height: 1.2;
-        animation-delay: 1.3s;
-
-        float: right;
-        transform: translateY(-28rem) translateX(-28rem);
-
-        @include respond(tab-land) {
-            transform: translateY(-23rem) translateX(-7rem);
-            font-size: 8rem;
-        }
-
-        @include respond(tab-port) {
-            transform: translateY(-15rem) translateX(-10rem);
-            animation-delay: 1s;
-        }
-
-        @include respond(phone) {
-            transform: translateY(-10rem) translateX(-3rem);
-            font-size: 5.5rem;
-        }
-
-        @include respond(small-phone) {
-            transform: translateY(-7rem) translateX(-4rem);
-            font-size: 5rem;
-        }
-
-    }
-
-    &__img {
-        width: 100%;
-        height: 100%;
-    }
-
-    &__image-wrapper {
-        display: inline-block;
-        height: auto;
-
-        &--1 {
-            width: 40%;
-            min-width: 40%;
-            animation-delay: .5s;
-
-            margin-top: 12rem;
-            margin-left: 13rem;
-
-            @include respond(tab-land) {
-                min-width: 50%;
-                margin-top: 20rem;
-                margin-left: 0;
-            }
-
-            @include respond(tab-port) {
-                min-width: 80%;
-                margin: 0;
-                animation-delay: 0;
-            }
-
-        }
-
-        &--2 {
-            width: 30%;
-            animation-delay: .9s;
-
-            float: right;
-            margin-right: 13rem;
-
-            @include respond(tab-land) {
-                width: 40%;
-                margin-right: 0;
-            }
-
-            @include respond(tab-port) {
-                display: none;
-            }
-        }
-    }
-}
-*/
-
-
-// HOME - TRANSLATE 
+// HOME 
 .header {
     @include theme-black;
     width: 100%;
@@ -123,7 +20,7 @@
         animation-delay: 1.3s;
 
         float: right;
-        transform: translateY(-28rem) translateX(-28rem);
+        transform: translateY(-28rem) translateX(-20rem);
 
         @include respond(tab-land) {
             transform: translateY(-28rem) translateX(-7rem);
@@ -245,7 +142,7 @@
         color: $color-primary-light;
         margin: 0;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             padding: 0 2rem;
         }
 

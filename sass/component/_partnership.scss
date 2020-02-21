@@ -6,6 +6,10 @@
         height: auto;
         overflow: hidden;
 
+        @include respond(tab-port) {
+            padding-bottom: 10rem;
+        }
+
         &-imageBox {
             width: 60%;
             margin-top: 5rem;
@@ -123,17 +127,14 @@
         }
 
         @include respond(tab-port) {
-            padding: 3rem;
-        }
-
-        @include respond(phone) {
+            padding: 3rem; 
             margin: 0 !important;
         }
     }
 
     &__col {
         
-        @include respond(tab-port) {
+        @include respond(phone) {
             padding: 0;
             }
         }
@@ -170,6 +171,10 @@
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 2;
+
+        @include respond(phone) {
+            padding: 3rem 1rem 0;
+        }
 
         &-title {
             text-align: center;

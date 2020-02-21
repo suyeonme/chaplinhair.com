@@ -59,7 +59,8 @@ body {
   line-height: 1;
   font-weight: 200;
   color: #f7f7f7;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
 
 .text__category {
   text-align: center;
@@ -564,18 +565,18 @@ body {
       .features__box {
         padding: 5rem 0; } }
     .features__box--1 {
-      border-bottom: 1px solid #a19f9fa8;
-      border-right: 1px solid #a19f9fa8; }
+      border-bottom: 1px solid rgba(161, 159, 159, 0.659);
+      border-right: 1px solid rgba(161, 159, 159, 0.659); }
       @media only screen and (max-width: 75em) {
         .features__box--1 {
           border: none; } }
     .features__box--2 {
-      border-bottom: 1px solid #a19f9fa8; }
+      border-bottom: 1px solid rgba(161, 159, 159, 0.659); }
       @media only screen and (max-width: 75em) {
         .features__box--2 {
           border: none; } }
     .features__box--3 {
-      border-right: 1px solid #a19f9fa8; }
+      border-right: 1px solid rgba(161, 159, 159, 0.659); }
       @media only screen and (max-width: 75em) {
         .features__box--3 {
           border: none; } }
@@ -715,6 +716,9 @@ body {
   width: 100%;
   height: auto;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .contact-us__content {
+      padding-bottom: 10rem; } }
   .contact-us__content-imageBox {
     width: 60%;
     margin-top: 5rem;
@@ -804,12 +808,10 @@ body {
       padding: 0 5rem; } }
   @media only screen and (max-width: 56.25em) {
     .partnership__row {
-      padding: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .partnership__row {
+      padding: 3rem;
       margin: 0 !important; } }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 37.5em) {
   .partnership__col {
     padding: 0; } }
 
@@ -841,6 +843,9 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2; }
+  @media only screen and (max-width: 37.5em) {
+    .partnership__text {
+      padding: 3rem 1rem 0; } }
   .partnership__text-title {
     text-align: center;
     font-weight: 700; }
@@ -971,106 +976,6 @@ body {
     margin: 4rem 0 0;
     padding-bottom: 2rem; }
 
-/*
-.header {
-    @include theme-black;
-    width: 100%;
-    height: 110vh;
-    overflow: hidden;
-
-    @include respond(tab-land) {
-        height: auto;
-        min-height: 65vh;
-    }
-
-    @include respond(phone) {
-        min-height: 60vh;
-    }
-
-    &__title {
-        display: block;
-        text-align: left;
-        color: $color-primary-light;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 7rem;
-        line-height: 1.2;
-        animation-delay: 1.3s;
-
-        float: right;
-        transform: translateY(-28rem) translateX(-28rem);
-
-        @include respond(tab-land) {
-            transform: translateY(-23rem) translateX(-7rem);
-            font-size: 8rem;
-        }
-
-        @include respond(tab-port) {
-            transform: translateY(-15rem) translateX(-10rem);
-            animation-delay: 1s;
-        }
-
-        @include respond(phone) {
-            transform: translateY(-10rem) translateX(-3rem);
-            font-size: 5.5rem;
-        }
-
-        @include respond(small-phone) {
-            transform: translateY(-7rem) translateX(-4rem);
-            font-size: 5rem;
-        }
-
-    }
-
-    &__img {
-        width: 100%;
-        height: 100%;
-    }
-
-    &__image-wrapper {
-        display: inline-block;
-        height: auto;
-
-        &--1 {
-            width: 40%;
-            min-width: 40%;
-            animation-delay: .5s;
-
-            margin-top: 12rem;
-            margin-left: 13rem;
-
-            @include respond(tab-land) {
-                min-width: 50%;
-                margin-top: 20rem;
-                margin-left: 0;
-            }
-
-            @include respond(tab-port) {
-                min-width: 80%;
-                margin: 0;
-                animation-delay: 0;
-            }
-
-        }
-
-        &--2 {
-            width: 30%;
-            animation-delay: .9s;
-
-            float: right;
-            margin-right: 13rem;
-
-            @include respond(tab-land) {
-                width: 40%;
-                margin-right: 0;
-            }
-
-            @include respond(tab-port) {
-                display: none;
-            }
-        }
-    }
-}
-*/
 .header {
   background-color: #0f0f0f;
   width: 100%;
@@ -1089,7 +994,7 @@ body {
     line-height: 1.2;
     animation-delay: 1.3s;
     float: right;
-    transform: translateY(-28rem) translateX(-28rem); }
+    transform: translateY(-28rem) translateX(-20rem); }
     @media only screen and (max-width: 75em) {
       .header__title {
         transform: translateY(-28rem) translateX(-7rem);
@@ -1172,7 +1077,7 @@ body {
     text-align: center;
     color: #f7f7f7;
     margin: 0; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .sub-header__text {
         padding: 0 2rem; } }
     .sub-header__text-title {

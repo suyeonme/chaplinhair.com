@@ -4,6 +4,7 @@ body {
     font-weight: 200;
     color: $color-primary-light;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 .text {
