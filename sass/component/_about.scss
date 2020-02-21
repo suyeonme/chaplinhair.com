@@ -3,10 +3,6 @@
     overflow: hidden;
     color: $color-primary-dark;
 
-    @include respond(tab-land) {
-        //padding-bottom: 0 !important;
-    }
-
     @include respond(phone) {
         padding-bottom: 0 !important;
     }
@@ -36,11 +32,10 @@
         margin: 6rem 0;
 
         @include respond(tab-land) {
-            //padding: 0 7rem;
             padding: 0 4rem;
         }
 
-        @include respond(tab-port) {    //test
+        @include respond(tab-port) {   
             padding: 0 4rem;
             margin: 3rem 0;
         }
@@ -107,7 +102,6 @@
 
     &--one-third {
         @include respond(tab-land) {
-            //display: none; 
             width: 40%;
         }
 
@@ -117,8 +111,7 @@
     }
 
     &--two-third {
-        @include respond(tab-land) {
-            //width: 100%; 
+        @include respond(tab-land) { 
             width: 60%;
             padding: 0;
         }

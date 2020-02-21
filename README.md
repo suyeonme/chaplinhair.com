@@ -1,2 +1,2 @@
 # Chaplin
-Chaplin Hairsalon 
+Chaplin Hairsalon provides happiness in beauty and life.

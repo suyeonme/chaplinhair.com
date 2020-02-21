@@ -2,14 +2,14 @@
     height: 100vh auto;
     background-color: $color-primary-dark;
     background-image: linear-gradient(to right bottom, rgba($color-black, .8), rgba($color-black, .8)),
-    url("../img/team.jpg");
+        url("../img/team.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
     &__text {
 
-        &--quote{
+        &--quote {
             font-size: 8rem;
             padding: 0 30rem;
 
@@ -29,11 +29,12 @@
 
         &--primary {
             font-size: 2.3rem;
+            font-weight: 600;
             margin-bottom: 2rem;
             color: $color-primary-light;
 
             @include respond(tab-land) {
-                margin: 5rem 0 1rem 0;
+                margin: 5rem 0 1.5rem 0;
             }
 
             @include respond(tab-port) {
@@ -48,13 +49,14 @@
         &--secondary {
             font-size: 2rem;
             color: $color-footer-grey;
+            font-weight: 400;
 
             @include respond(tab-port) {
                 font-size: 2.5rem;
             }
 
-            @include respond(small-phone) {
-                font-size: 2.3rem;
+            @include respond(phone) {
+                font-size: 2rem;
             }
         }
     }
@@ -102,7 +104,7 @@
     }
 
     &__icon {
-        
+
         &:hover {
             @include footerHover;
         }
@@ -112,19 +114,28 @@
     &__link:link,
     &__link:visited {
         display: block;
-        font-size: 2rem;    
+        font-size: 2rem;
+        font-weight: 400;
         color: $color-footer-grey;
         text-decoration: none;
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 1rem;
         }
 
         &:hover {
             @include footerHover;
         }
+
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
     }
-    
+
     &__adress--kr {
         display: block;
         margin-top: 1rem;
