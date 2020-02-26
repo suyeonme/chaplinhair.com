@@ -129,6 +129,7 @@
 }
 
 
+/*
 // CEO Message
 .ceo-message {
     padding: 0 2rem;
@@ -215,3 +216,90 @@
         }
     }
 }
+*/
+
+
+.ceo-message {
+    display: flex;
+    padding: 0 2rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    &__textBox {
+        color: $color-primary-dark;
+        font-size: 1.8rem;
+        line-height: 2.5;
+        padding: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include respond(tab-port) {
+            margin-top: 3rem;
+        }
+    }
+
+    &__text span {
+        display: block;
+        font-size: 2.5rem;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+            margin-bottom: 2rem !important;
+        }
+    }
+
+    &__imageBox {
+        flex: 0 0 45%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        margin-right: 3rem;
+        text-align: right;
+
+        & span:last-of-type {
+            font-size: 2rem;
+
+            @include respond(phone) {
+                font-size: 1.5rem;
+            }
+        }
+
+        @include respond(phone) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__handwritten {
+        transform: translateX(2rem);
+
+        @include respond(tab-port) {
+            transform: translateX(1rem);
+        }
+
+        &-img {
+            width: 40%;
+    
+            @include respond(tab-port) {
+                width: 25%;
+            }
+    
+            @include respond(phone) {
+                width: 35%;
+            }
+        }
+
+    }
+    
+}
+
+
+

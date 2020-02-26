@@ -7,12 +7,14 @@
         width: 75%;
         height: auto;
 
+
         @include respond(tab-port) {
-            width: 100%;
+            width: 80%;
         }
 
         @include respond(phone) {
             height: 100vh;
+            min-width: 100%;
 
             display: flex;
             align-items: center;
@@ -28,7 +30,8 @@
                 display: flex;
                 padding: 0 3rem;
                 height: auto;
-                min-height: 60vh;
+                width: 100%;
+                min-height: 100vh;
             }
         }
     }

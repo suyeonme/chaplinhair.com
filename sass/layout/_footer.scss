@@ -87,8 +87,16 @@
         margin: 0 auto;
     }
 
-    &__number:hover {
-        @include footerHover;
+    &__number a {                   // number is rendered as link on iphone (blue text)
+        color: $color-footer-grey;  
+        text-decoration:none;
+    }
+
+    &__number {
+
+        &:hover {
+            @include footerHover;
+        }
     }
 
     &__email,
