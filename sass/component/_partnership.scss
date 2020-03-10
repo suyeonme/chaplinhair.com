@@ -231,6 +231,26 @@
             font-size: 1.7rem;
             color: $color-primary-dark;
         }
+
+        &-instagram {
+            color: #E1306C;
+            margin-right: 1rem;
+            margin-top: 4rem;
+
+            font-size: 2rem;
+        }
+    }
+
+    &__instagram {
+        color: $color-primary-dark;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+
+        &:hover {
+            text-decoration: none;
+            transition: color .2s;
+            color: #E1306C;
+        }
     }
 }
 

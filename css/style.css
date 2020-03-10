@@ -892,6 +892,20 @@ body {
     margin-left: 2rem;
     font-size: 1.7rem;
     color: #0f0f0f; }
+  .partnership__icon-instagram {
+    color: #E1306C;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    font-size: 2rem; }
+
+.partnership__instagram {
+  color: #0f0f0f;
+  font-size: 1.5rem;
+  letter-spacing: 1px; }
+  .partnership__instagram:hover {
+    text-decoration: none;
+    transition: color .2s;
+    color: #E1306C; }
 
 .map {
   padding-left: 15px; }
