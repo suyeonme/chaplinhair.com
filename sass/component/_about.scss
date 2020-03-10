@@ -35,7 +35,7 @@
             padding: 0 4rem;
         }
 
-        @include respond(tab-port) {   
+        @include respond(tab-port) {
             padding: 0 4rem;
             margin: 3rem 0;
         }
@@ -43,7 +43,7 @@
         @include respond(phone) {
             padding: 0 4rem;
         }
-        
+
         &-title {
             display: block;
             font-size: 4rem;
@@ -106,18 +106,18 @@
         }
 
         @include respond(phone) {
-            display: none; 
+            display: none;
         }
     }
 
     &--two-third {
-        @include respond(tab-land) { 
+        @include respond(tab-land) {
             width: 60%;
             padding: 0;
         }
 
         @include respond(phone) {
-            width: 100%; 
+            width: 100%;
         }
     }
 
@@ -129,20 +129,20 @@
 }
 
 
-/*
+
 // CEO Message
 .ceo-message {
     padding: 0 2rem;
     margin-bottom: 13rem;
 
     overflow: hidden;       // for IE.
-    max-height: 140vh;
+    max-height: 150vh;
     height: auto;
 
     @include respond(tab-land) {
         padding: 3rem 3rem 0 !important; 
         overflow: visible;
-        max-height: 200vh;
+        max-height: 210vh;
         margin-bottom: 5rem !important;
     }
 
@@ -164,18 +164,17 @@
         }
     }
 
-    &__text {
+    &__textBox {
         color: $color-primary-dark;
         text-align: left;
         font-size: 1.8rem;
         line-height: 2.5;
         font-weight: 400;
-        padding: 7rem 5rem;
+        padding: 3rem 5rem 0;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
-
 
         @include respond(tab-land) {
             padding: 4rem;
@@ -184,122 +183,51 @@
         @include respond(phone) {
             padding: 2rem 1.3rem;
         }
+    }
 
-        &-name {
+    &__text {
+        & span {
             display: block;
-            font-weight: 600;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
     }
 
     &__handwritten {
-        width: 40%;
         padding-top: 6rem;
+        text-align: right;
+        font-size: 1.5rem;
+        padding-top: 10rem;
 
         @include respond(tab-land) {
-            width: 30%;
-            padding-top: 5rem;
-        }
-
-        @include respond(tab-port) {
-            width: 40%;
-            padding-top: 5rem;
+            padding-top: 10rem;
         }
 
         @include respond(phone) {
-            width: 50%;
-            padding-top: 4rem;
+            padding-top: 6rem;
         }
 
         &-name {
-            width: 100%;
-        }
-    }
-}
-*/
+            width: 30%;
 
-
-.ceo-message {
-    display: flex;
-    padding: 0 2rem;
-
-    @include respond(tab-port) {
-        flex-direction: column;
-    }
-
-    &__textBox {
-        color: $color-primary-dark;
-        font-size: 1.8rem;
-        line-height: 2.5;
-        padding: 3rem;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        @include respond(tab-port) {
-            margin-top: 3rem;
-        }
-    }
-
-    &__text span {
-        display: block;
-        font-size: 2.5rem;
-
-        @include respond(tab-port) {
-            font-size: 2rem;
-            margin-bottom: 2rem !important;
-        }
-    }
-
-    &__imageBox {
-        flex: 0 0 45%;
-    }
-
-    &__img {
-        width: 100%;
-    }
-
-    &__name {
-        font-size: 1.5rem;
-        margin-right: 3rem;
-        text-align: right;
-
-        & span:last-of-type {
-            font-size: 2rem;
-
-            @include respond(phone) {
-                font-size: 1.5rem;
+            @include respond(tab-land) {
+                width: 20%;
             }
-        }
 
-        @include respond(phone) {
-            font-size: 1.3rem;
-        }
-    }
-
-    &__handwritten {
-        transform: translateX(2rem);
-
-        @include respond(tab-port) {
-            transform: translateX(1rem);
-        }
-
-        &-img {
-            width: 40%;
-    
             @include respond(tab-port) {
                 width: 25%;
             }
-    
+
             @include respond(phone) {
                 width: 35%;
             }
         }
-
     }
-    
+
+    &__name {
+        font-size: 1.5rem;
+
+        & span {
+            font-size: 1.8rem;
+        }
+    }
 }
-
-
-

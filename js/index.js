@@ -6,7 +6,7 @@ $('.wp--home-1').waypoint(function (direction) {
     offset: '50%'
 });
 
-$('.wp--home-2').waypoint(function (direction) { 
+$('.wp--home-2').waypoint(function (direction) {
     $('.wp--home-2').addClass('animated fadeIn');
 }, {
     offset: '80%'
@@ -68,6 +68,12 @@ $('.wp--partnership-3').waypoint(function (direction) {
     offset: '80%'
 });
 
+$('.wp--partnership-4').waypoint(function (direction) {
+    $('.wp--partnership-4').addClass('animated fadeIn');
+}, {
+    offset: '80%'
+});
+
 
 /********  IMAGE ON HOVER *********/
 $(".person-1").hover(function () {
@@ -83,50 +89,50 @@ $(".person-2").hover(function () {
 });
 
 $(".person-3").hover(function () {
-    $(".person-3").attr("src", "img/Park Kwansoo-2.jpg"); 
+    $(".person-3").attr("src", "img/Park Kwansoo-2.jpg");
 }, function () {
     $(".person-3").attr("src", "img/Park Kwansoo-1.jpg");
 });
 
 $(".person-4").hover(function () {
-    $(".person-4").attr("src", "img/Jeong Haemin-2.jpg"); 
+    $(".person-4").attr("src", "img/Jeong Haemin-2.jpg");
 }, function () {
     $(".person-4").attr("src", "img/Jeong Haemin-1.jpg");
 });
 
 $(".person-5").hover(function () {
-    $(".person-5").attr("src", "img/Lee Hana-2.jpg"); 
+    $(".person-5").attr("src", "img/Lee Hana-2.jpg");
 }, function () {
     $(".person-5").attr("src", "img/Lee Hana-1.jpg");
 });
 
 $(".person-6").hover(function () {
-    $(".person-6").attr("src", "img/Jung Hana-2.jpg"); 
+    $(".person-6").attr("src", "img/Jung Hana-2.jpg");
 }, function () {
     $(".person-6").attr("src", "img/Jung Hana-1.jpg");
 });
 
 $(".person-7").hover(function () {
-    $(".person-7").attr("src", "img/Lee Joonha-2.jpg"); 
+    $(".person-7").attr("src", "img/Lee Joonha-2.jpg");
 }, function () {
     $(".person-7").attr("src", "img/Lee Joonha-1.jpg");
 });
 
 $(".person-8").hover(function () {
-    $(".person-8").attr("src", "img/Kang Suyeon-2.jpg"); 
+    $(".person-8").attr("src", "img/Kang Suyeon-2.jpg");
 }, function () {
     $(".person-8").attr("src", "img/Kang Suyeon-1.jpg");
 });
 
 $(".person-9").hover(function () {
-    $(".person-9").attr("src", "img/Kang Soojeong-2.jpg"); 
+    $(".person-9").attr("src", "img/Kang Soojeong-2.jpg");
 }, function () {
     $(".person-9").attr("src", "img/Kang Soojeong-1.jpg");
 });
 
 
 
-/******** POPUP *********/ 
+/******** POPUP *********/
 // open and close
 $(".popup__trigger").click(function () {
     $(".popup").show();
@@ -186,7 +192,40 @@ $('main').waypoint(function (direction) {
 
 
 // translate with button on Subheader
-$(".arrow-button").click(function() {
+$(".arrow-button").click(function () {
     $(".sub-header__text-description--ko").toggle();
 });
 
+
+/********  Kakao Map *********/
+// 봉선 행복점
+new daum.roughmap.Lander({
+    "timestamp": "1583810604533",
+    "key": "xfak",
+    "mapWidth": "500",
+    "mapHeight": "300"
+}).render();
+
+// 풍암 로얄점
+new daum.roughmap.Lander({
+    "timestamp": "1583811650775",
+    "key": "xfat",
+    "mapWidth": "500",
+    "mapHeight": "300"
+}).render();
+
+// 상무 진격점
+new daum.roughmap.Lander({
+    "timestamp": "1583811887146",
+    "key": "xfax",
+    "mapWidth": "500",
+    "mapHeight": "300"
+}).render();
+
+// 두암 시작점
+new daum.roughmap.Lander({
+    "timestamp": "1583812012389",
+    "key": "xfbz",
+    "mapWidth": "500",
+    "mapHeight": "300"
+}).render();
