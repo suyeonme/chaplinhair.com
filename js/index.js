@@ -196,7 +196,6 @@ $(".arrow-button").click(function () {
     $(".sub-header__text-description--ko").toggle();
 });
 
-
 /********  Kakao Map *********/
 // 봉선 행복점
 new daum.roughmap.Lander({

@@ -819,9 +819,6 @@ body {
     .partnership__row {
       padding: 3rem;
       margin: 0 !important; } }
-  .partnership__row--map {
-    display: flex;
-    justify-content: flex-start; }
 
 @media only screen and (max-width: 37.5em) {
   .partnership__col {
@@ -869,9 +866,8 @@ body {
     font-weight: 700; }
   .partnership__text-info {
     color: #0f0f0f;
-    font-size: 1.7rem;
     margin-left: 5rem;
-    line-height: 2;
+    line-height: 2.5;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -888,9 +884,14 @@ body {
     font-size: 1.4rem;
     font-weight: 600; }
 
-.partnership__icon-text {
-  font-weight: 600;
-  margin-left: 1.5rem; }
+.partnership__icon {
+  font-size: 2.3rem;
+  color: #d9b650; }
+  .partnership__icon-text {
+    font-weight: 600;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #0f0f0f; }
 
 .map {
   padding-left: 15px; }
