@@ -15,6 +15,12 @@ Breakpoint argument choices:
 
 1em = 16px
 */
+.block-center {
+  margin: 0 auto; }
+
+.inline-center {
+  text-align: center; }
+
 .wp {
   opacity: 0; }
 
@@ -407,32 +413,69 @@ body {
     .arrow-button {
       display: none; } }
 
-.main-logo {
-  text-align: center; }
-  .main-logo::before {
-    content: "";
-    clear: both;
-    display: table; }
-  .main-logo__logo {
-    width: 18rem; }
+.notice {
+  width: 50rem;
+  height: 60rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/head-care.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 200;
+  border-radius: 5px;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .notice h2 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+    letter-spacing: 2px;
+    opacity: .5; }
+  .notice ul {
+    list-style: none;
+    margin-bottom: 5rem; }
+  .notice li {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2; }
+  .notice p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    letter-spacing: 2px; }
+  .notice__icon {
+    margin-right: 1rem;
+    font-size: 1.4rem; }
+  @media (orientation: landscape) and (max-width: 50.75em) {
+    .notice {
+      display: none; } }
+  @media only screen and (max-width: 37.5em) {
+    .notice {
+      display: none; } }
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .video__container {
+    padding: 0 15rem; }
     @media only screen and (max-width: 56.25em) {
-      .main-logo__logo {
-        margin-top: 5rem; } }
+      .video__container {
+        padding: 0 8rem; } }
     @media only screen and (max-width: 37.5em) {
-      .main-logo__logo {
-        margin-top: 10rem; } }
-  .main-logo__text {
-    color: #0f0f0f;
-    padding: 5rem 0 7rem;
-    font-size: 5rem;
-    font-weight: 800;
-    letter-spacing: .5rem; }
-    @media only screen and (max-width: 75em) {
-      .main-logo__text {
-        font-size: 6rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .main-logo__text {
-        font-size: 3.5rem; } }
+      .video__container {
+        padding: 0 3rem;
+        padding-top: 15rem; } }
+  .video__content {
+    width: 100%;
+    outline: none; }
 
 .instagram__illustration {
   width: 10%; }
@@ -888,7 +931,7 @@ body {
   font-size: 2.3rem;
   color: #d9b650; }
   .partnership__icon-text {
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 2rem;
     font-size: 1.7rem;
     color: #0f0f0f; }
@@ -897,12 +940,18 @@ body {
     margin-right: 1rem;
     margin-top: 4rem;
     font-size: 2rem; }
+  .partnership__icon-kakao-container {
+    width: 2rem;
+    display: inline-block;
+    margin-right: .5rem; }
+  .partnership__icon-kakao {
+    width: 100%; }
 
-.partnership__instagram {
+.partnership__instagram, .partnership__kakao-hairshop {
   color: #0f0f0f;
   font-size: 1.5rem;
   letter-spacing: 1px; }
-  .partnership__instagram:hover {
+  .partnership__instagram:hover, .partnership__kakao-hairshop:hover {
     text-decoration: none;
     transition: color .2s;
     color: #E1306C; }
@@ -1048,7 +1097,7 @@ body {
   width: 100%;
   height: auto;
   max-height: 100%;
-  padding-bottom: 15rem; }
+  padding-bottom: 25rem; }
   @media only screen and (max-width: 37.5em) {
     .header {
       padding-bottom: 25rem; } }

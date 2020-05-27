@@ -5,6 +5,12 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin textDecoration {
   text-decoration: none;
 }
@@ -89,6 +95,11 @@ Breakpoint argument choices:
   @if $breakpoint == phone{
     @media only screen and (max-width: 37.5em){ @content }; //  600px
   }
+
+  @if $breakpoint==phone-land {
+    @media (orientation: landscape) and (max-width: 50.75em) { @content };
+}   
+ // 812px 
 
   @if $breakpoint == tab-port{
     @media only screen and (max-width: 56.25em) { @content }; // 900px
