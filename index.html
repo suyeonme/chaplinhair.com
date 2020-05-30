@@ -123,8 +123,10 @@
             <!-- Video  -->
             <div class="video">
                 <div class="video__container">
-                    <video class="video__content" loop autoplay>
-                        <source src="img/Chaplin Website.mp4" type="video/mp4">
+                    <video class="video__content"  muted autoplay loop playsinline>
+                        <source src="video/chaplin-video.mp4" type="video/mp4" />            <!-- Safari / iOS video -->
+                        <source src="video/chaplin-video.ogv" type="video/ogg" />            <!-- Firefox / Opera / Chrome10 -->
+                        <source src="video/chaplin-video.webm" type="video/webm" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -148,7 +150,7 @@
                 <a href="#" class="btn btn--light notice-btn">Okay!</a>
             </div>
         </div>
-        
+
         <!-- Partner Interview -->
         <!-- Big screen -->
         <section class="section-partner-interview wp wp--home-2" id="section-partner-interview">
@@ -162,7 +164,7 @@
                     <h1 class="partner-interview-mobile__name partner-interview-mobile__name--eg">Jeong Haemin</h1>
 
                     <div class="partner-interview__image-container">
-                        <img srcset="img/Partner Interveiw-small.jpg 800w, img/Partner Interveiw.jpg 1600w" sizes="(max-width: 600px) 70vw, 506px" src="img/Partner Interveiw.jpg" alt="채플린헤어 시작점 정해민 점장" class="partner-interview__img">
+                        <img srcset="img/partner-interview-small.jpg 800w, img/partner-interveiw.jpg 1600w" sizes="(max-width: 600px) 70vw, 506px" src="img/partner-interveiw.jpg" alt="채플린헤어 시작점 정해민 점장" class="partner-interview__img">
                     </div>
 
                     <!-- Caption for Tab-land -->
@@ -194,7 +196,7 @@
                 <div class="partner-interview-mobile__content">
                     <h1 class="partner-interview-mobile__name partner-interview-mobile__name--eg">Jeong Haemin</h1>
                     <div class="partner-interview-mobile__image-container">
-                        <img src="img/Partner Interveiw.jpg" class="partner-interview__img"
+                        <img src="img/partner-interview-small.jpg" class="partner-interview__img"
                             alt="partner interview-Jeong Haemin">
                     </div>
 
@@ -318,8 +320,3 @@
 </html>
 
 
-<!-- 
-
-<img srcset="images/woodcraft-small.jpg 700w, images/woodcraft.jpg 1500w" sizes="(max-width: 768px) 85vw, (max-width: 480px) 100vw, 1000px" src="images/woodcraft.jpg" alt="목공예 사진" class="activity__img">
-
--->

@@ -418,7 +418,7 @@ body {
   height: 60rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/head-care.jpg");
   background-size: cover;
-  position: fixed;
+  position: absolute;
   top: 10%;
   left: 0;
   z-index: 200;
@@ -457,7 +457,6 @@ body {
     font-size: 1.4rem; }
   @media (orientation: landscape) and (max-width: 50.75em) {
     .notice {
-      position: absolute;
       top: 40%;
       left: 0; } }
   @media only screen and (max-width: 37.5em) {
@@ -469,7 +468,6 @@ body {
   @media (max-width: 35.5em) and (orientation: landscape) {
     .notice {
       width: 70vw;
-      position: absolute;
       top: 100%; } }
 
 .video {

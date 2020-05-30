@@ -3,7 +3,7 @@
     height: 60rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/head-care.jpg");
     background-size: cover;
-    position: fixed;
+    position: absolute;
     top: 10%;
     left: 0;
     z-index: 200;
@@ -54,7 +54,6 @@
     }
 
     @include respond (phone-land) {
-        position: absolute;
         top: 40%;
         left: 0;
     }
@@ -68,7 +67,6 @@
 
     @include respond (small-phone-land) {
         width: 70vw;
-        position: absolute;
         top: 100%;
     }
 }

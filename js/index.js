@@ -16,15 +16,15 @@ const strings = {
 
 /********  Modal *********/
 if (strings.modal) {
-    strings.modalCloseBtn.addEventListener('click', e => {
+    strings.modalCloseBtn.addEventListener('click', function(e) {
         e.preventDefault();
         strings.modal.parentNode.removeChild(strings.modal);
     });
-
-    document.addEventListener('click', e => {
+    
+    document.addEventListener('click', function(e) {
         if (strings.modal) {
             strings.modal.style.display = 'none';
-        }
+        };
     });
 };
 
@@ -166,36 +166,37 @@ $(strings.subHeaderBtn).click(function () {
     $(strings.translateKo).toggle();
 });
 
-/********  Kakao Map *********/
-// 봉선 행복점  
-new daum.roughmap.Lander({
-    "timestamp": "1583810604533",
-    "key": "xfak",
-    "mapWidth": "500",
-    "mapHeight": "300"
-}).render();
+/********  Kakao Map  *********/
+    // 봉선 행복점  
+    new daum.roughmap.Lander({
+        "timestamp": "1590841099405",
+        "key": "ykwh",
+        "mapWidth": "500",
+        "mapHeight": "300"
+    }).render();
 
-// 풍암 로얄점
-new daum.roughmap.Lander({
-    "timestamp": "1583811650775",
-    "key": "xfat",
-    "mapWidth": "500",
-    "mapHeight": "300"
-}).render();
+    // 풍암 로얄점
+    new daum.roughmap.Lander({
+        "timestamp": "1583811650775",
+        "key": "xfat",
+        "mapWidth": "500",
+        "mapHeight": "300"
+    }).render();
 
-// 상무 진격점
-new daum.roughmap.Lander({
-    "timestamp": "1583811887146",
-    "key": "xfax",
-    "mapWidth": "500",
-    "mapHeight": "300"
-}).render();
+    // 상무 진격점
+    new daum.roughmap.Lander({
+        "timestamp": "1583811887146",
+        "key": "xfax",
+        "mapWidth": "500",
+        "mapHeight": "300"
+    }).render();
 
-// 두암 시작점
-new daum.roughmap.Lander({
-    "timestamp": "1583812012389",
-    "key": "xfbz",
-    "mapWidth": "500",
-    "mapHeight": "300"
-}).render();
+    // 두암 시작점
+    new daum.roughmap.Lander({
+        "timestamp": "1583812012389",
+        "key": "xfbz",
+        "mapWidth": "500",
+        "mapHeight": "300"
+    }).render();
+
 
