@@ -11,7 +11,7 @@ const strings = {
     navbar: '.navigation__nav',
     navigation: '.navigation',
     navLogo: '.navigation__logo',
-    video: '.video'
+    video: '.video',
 };
 
 /********  Modal *********/
@@ -19,6 +19,12 @@ if (strings.modal) {
     strings.modalCloseBtn.addEventListener('click', e => {
         e.preventDefault();
         strings.modal.parentNode.removeChild(strings.modal);
+    });
+
+    document.addEventListener('click', e => {
+        if (strings.modal) {
+            strings.modal.style.display = 'none';
+        }
     });
 };
 
@@ -192,3 +198,4 @@ new daum.roughmap.Lander({
     "mapWidth": "500",
     "mapHeight": "300"
 }).render();
+

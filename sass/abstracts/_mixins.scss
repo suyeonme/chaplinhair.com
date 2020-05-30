@@ -92,14 +92,17 @@ Breakpoint argument choices:
     @media only screen and (max-width: 23.375em) { @content }; //  375px 
   }
 
+  @if $breakpoint == small-phone-land {
+    @media (max-width: 35.5em) and (orientation: landscape) { @content }; // 568px
+  }
+
   @if $breakpoint == phone{
     @media only screen and (max-width: 37.5em){ @content }; //  600px
   }
 
   @if $breakpoint==phone-land {
-    @media (orientation: landscape) and (max-width: 50.75em) { @content };
+    @media (orientation: landscape) and (max-width: 50.75em) { @content };   // 812px 
 }   
- // 812px 
 
   @if $breakpoint == tab-port{
     @media only screen and (max-width: 56.25em) { @content }; // 900px
