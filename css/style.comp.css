@@ -416,7 +416,7 @@ body {
 .notice {
   width: 50rem;
   height: 60rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/head-care.jpg");
+  background-image: url("../img/paper-2.jpg");
   background-size: cover;
   position: absolute;
   top: 10%;
@@ -428,21 +428,22 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem; }
+  padding: 4rem;
+  color: #0f0f0f; }
   .notice h2 {
     font-weight: bold;
-    font-size: 4.5rem;
-    letter-spacing: 2px;
-    opacity: .5; }
+    font-size: 4rem;
+    letter-spacing: 2px; }
     @media only screen and (max-width: 37.5em) {
       .notice h2 {
         font-size: 3rem; } }
   .notice ul {
     list-style: none; }
   .notice li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.2; }
+    line-height: 2.2;
+    letter-spacing: 2px; }
     @media only screen and (max-width: 37.5em) {
       .notice li {
         font-size: 1.8rem; } }
@@ -451,10 +452,16 @@ body {
     line-height: 1.3;
     font-weight: 500;
     margin-bottom: 2rem;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    text-align: center; }
+    .notice p span {
+      display: block;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      font-weight: bold; }
   .notice__icon {
     margin-right: 1.5rem;
-    font-size: 1.4rem; }
+    font-size: 1.8rem; }
   @media (orientation: landscape) and (max-width: 50.75em) {
     .notice {
       top: 40%;
