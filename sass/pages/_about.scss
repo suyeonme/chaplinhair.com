@@ -128,8 +128,6 @@
     }
 }
 
-
-
 // CEO Message
 .ceo-message {
     padding: 0 2rem;
@@ -228,6 +226,93 @@
 
         & span {
             font-size: 1.8rem;
+        }
+    }
+}
+
+// About -features
+.features {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10rem 0;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+    
+    &__container {
+        width: 80%;
+
+        @include respond(tab-port) {
+            margin-top: 5rem !important;
+        }
+    }
+
+    &__box {
+        padding: 5rem 5rem 5rem 8rem;
+        color: $color-primary-light;
+        display: flex;
+        align-items: center;
+
+        @include respond(tab-port) {
+            padding: 5rem 0;
+        }
+
+        &--1 {
+            border-bottom: 1px solid $color-grey-light;
+            border-right: 1px solid  $color-grey-light;
+
+            @include respond(tab-land) {
+                border: none;
+            }
+        }
+
+        &--2 { 
+            border-bottom: 1px solid  $color-grey-light;
+
+            @include respond(tab-land) {
+                border: none;
+            }
+        }
+
+        &--3 {
+            border-right: 1px solid  $color-grey-light;
+
+            @include respond(tab-land) {
+                border: none;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 5rem;
+        color: $color-gold;
+    }
+
+    &__textbox {
+        margin-left: 5rem;
+    }
+
+    &__text {
+
+        &--primary {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: .3rem;
+            text-transform: uppercase;
+
+        }
+
+        &--secondary {
+            font-size: 1.2rem;
+            margin-left: 1rem;
+        }
+
+        &--tertiary {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            margin-top: 2rem;
         }
     }
 }

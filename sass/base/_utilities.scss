@@ -23,3 +23,15 @@
 
 .u-bold {font-weight: 700;}
 .u-text-left {text-align: left;}
+
+.inline-center { text-align: center; }
+.block-center { margin: 0 auto; }
+
+// Waypoints
+.wp {
+    opacity: 0;
+}
+
+.wp.animated {
+    opacity: 1;
+}

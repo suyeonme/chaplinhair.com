@@ -1,24 +1,20 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "base/animation";
+@import "base/mixins";
+@import "base/variables";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
-@import "component/about";
-@import "component/button";
-@import "component/composition";
-@import "component/features";
-@import "component/popup";
-@import "component/partnership";
-@import "component/team";
+@import "pages/about";
+@import "pages/partnership";
+@import "pages/team";
+@import "pages/home";
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/popup";
+@import "layout/button";
 
-@import "pages/home";
 
 
 
