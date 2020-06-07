@@ -16,12 +16,12 @@ const strings = {
 
 /********  Modal *********/
 if (strings.modal) {
-    strings.modalCloseBtn.addEventListener('click', function(e) {
+    strings.modalCloseBtn.addEventListener('click', function (e) {
         e.preventDefault();
         strings.modal.parentNode.removeChild(strings.modal);
     });
-    
-    document.addEventListener('click', function(e) {
+
+    document.addEventListener('click', function (e) {
         if (strings.modal) {
             strings.modal.style.display = 'none';
         };
@@ -167,6 +167,9 @@ $(strings.subHeaderBtn).click(function () {
 });
 
 /********  Kakao Map  *********/
+const map = document.querySelector('.root_daum_roughmap');
+
+if (map) {
     // 봉선 행복점  
     new daum.roughmap.Lander({
         "timestamp": "1590841099405",
@@ -198,5 +201,4 @@ $(strings.subHeaderBtn).click(function () {
         "mapWidth": "500",
         "mapHeight": "300"
     }).render();
-
-
+}
