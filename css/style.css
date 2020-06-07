@@ -1094,12 +1094,12 @@ body {
   background-color: #0f0f0f; }
 
 .notice {
-  width: 50rem;
+  width: 55rem;
   height: auto;
   background-image: url("../img/paper-2.jpg");
   background-size: cover;
   position: absolute;
-  top: 15%;
+  top: 12%;
   left: 0;
   z-index: 200;
   border-radius: 5px;
@@ -1111,10 +1111,9 @@ body {
   flex-direction: column;
   align-items: space-between; }
   .notice__row {
-    display: flex;
-    justify-content: space-between; }
+    display: flex; }
   .notice__col:not(:last-child) {
-    margin-right: 3rem; }
+    margin-right: 5rem; }
   .notice h2 {
     font-weight: bold;
     font-size: 3.5rem;
@@ -1156,14 +1155,19 @@ body {
       left: 0; } }
   @media only screen and (max-width: 37.5em) {
     .notice {
-      width: 80vw;
+      width: 100vw;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); } }
+      transform: translate(-50%, -50%);
+      padding: 4rem; } }
   @media (max-width: 35.5em) and (orientation: landscape) {
     .notice {
       width: 70vw;
       top: 100%; } }
+  @media only screen and (max-width: 23.375em) {
+    .notice {
+      width: 100vw;
+      top: 65%; } }
 
 .popup {
   position: fixed;
