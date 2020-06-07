@@ -10,7 +10,7 @@
     &__title {
         padding: 0 30rem;
         text-align: center;
-        font-weight: 800;
+        font-weight: $font-en-extra-bold;
         font-size: 4.5rem;
 
         @include respond(tab-land) {
@@ -20,14 +20,14 @@
 
         &-ko {
             display: block;
-            font-weight: 600;
+            font-weight: $font-ko-bold;
             font-size: 2rem;
         }
     }
 
     &__description {
         font-size: 1.8rem;
-        font-weight: 400;
+        font-weight: $font-medium;
         line-height: 2.5;
         margin: 6rem 0;
 
@@ -47,7 +47,7 @@
         &-title {
             display: block;
             font-size: 4rem;
-            font-weight: 800;
+            font-weight: $font-en-extra-bold;
             text-align: center;
         }
     }
@@ -167,7 +167,7 @@
         text-align: left;
         font-size: 1.8rem;
         line-height: 2.5;
-        font-weight: 400;
+        font-weight: $font-medium;
         padding: 3rem 5rem 0;
 
         display: flex;
@@ -298,7 +298,7 @@
 
         &--primary {
             font-size: 2rem;
-            font-weight: 600;
+            font-weight: $font-en-bold;
             letter-spacing: .3rem;
             text-transform: uppercase;
 
@@ -310,6 +310,7 @@
         }
 
         &--tertiary {
+            font-weight: $font-medium;
             font-size: 1.3rem;
             line-height: 1.7;
             margin-top: 2rem;

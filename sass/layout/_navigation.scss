@@ -109,6 +109,7 @@
 
     &__item {
         display: inline;
+        font-weight: $font-ko-extra-light;
 
         &:not(:last-child) {
             margin-right: 7rem;

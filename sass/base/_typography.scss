@@ -1,7 +1,7 @@
 body {
-    font-family: 'Spoqa Han Sans', 'Montserrat', sans-serif; // Korean - Nanum Gothic, Eglish - Monserrat
+    font-family: 'Montserrat', 'Spoqa Han Sans', sans-serif; // Korean - Nanum Gothic, Eglish - Monserrat
     line-height: 1;
-    font-weight: 200;
+    font-weight: $font-medium;
     color: $color-primary-light;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -24,7 +24,7 @@ body {
 
         &-big {
             text-align: center;
-            font-weight: 800;
+            font-weight: $font-en-extra-bold;
             font-size: 4.5rem;
 
             &--black {

@@ -49,9 +49,9 @@ body {
   color: #f7f7f7; }
 
 body {
-  font-family: 'Spoqa Han Sans', 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Spoqa Han Sans', sans-serif;
   line-height: 1;
-  font-weight: 200;
+  font-weight: 400;
   color: #f7f7f7;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
@@ -178,7 +178,7 @@ body {
         font-size: 3.5rem; } }
     .about__title-ko {
       display: block;
-      font-weight: 600;
+      font-weight: bold;
       font-size: 2rem; }
   .about__description {
     font-size: 1.8rem;
@@ -370,6 +370,7 @@ body {
     font-size: 1.2rem;
     margin-left: 1rem; }
   .features__text--tertiary {
+    font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.7;
     margin-top: 2rem; }
@@ -516,7 +517,7 @@ body {
       padding: 3rem 1rem 0; } }
   .partnership__text-title {
     text-align: center;
-    font-weight: 700; }
+    font-weight: 600; }
   .partnership__text-info {
     color: #0f0f0f;
     margin-left: 5rem;
@@ -773,7 +774,6 @@ body {
         font-size: 5rem; } }
   .footer__text--primary {
     font-size: 2.3rem;
-    font-weight: 600;
     margin-bottom: 2rem;
     color: #f7f7f7; }
     @media only screen and (max-width: 75em) {
@@ -787,8 +787,7 @@ body {
         font-size: 2.8rem; } }
   .footer__text--secondary {
     font-size: 2rem;
-    color: #969696;
-    font-weight: 400; }
+    color: #969696; }
     @media only screen and (max-width: 56.25em) {
       .footer__text--secondary {
         font-size: 2.5rem; } }
@@ -803,9 +802,11 @@ body {
       .footer__row {
         padding: 0;
         margin: 2rem !important; } }
-  @media only screen and (max-width: 75em) {
-    .footer__col {
-      padding: 0; } }
+  .footer__col {
+    font-weight: 400; }
+    @media only screen and (max-width: 75em) {
+      .footer__col {
+        padding: 0; } }
   .footer__logo {
     display: block;
     height: 15rem;
@@ -829,7 +830,6 @@ body {
   .footer__link, .footer__link:link, .footer__link:visited {
     display: block;
     font-size: 2rem;
-    font-weight: 400;
     color: #969696;
     text-decoration: none; }
     .footer__link:not(:last-child), .footer__link:link:not(:last-child), .footer__link:visited:not(:last-child) {
@@ -1057,7 +1057,8 @@ body {
       top: 50%; } }
 
 .navigation__item {
-  display: inline; }
+  display: inline;
+  font-weight: 300; }
   .navigation__item:not(:last-child) {
     margin-right: 7rem; }
     @media only screen and (max-width: 75em) {
@@ -1141,11 +1142,6 @@ body {
     margin: 2rem 0;
     letter-spacing: 2px;
     text-align: center; }
-    .notice p span {
-      display: block;
-      font-size: 1.3rem;
-      margin-top: 2rem;
-      font-weight: bold; }
   .notice__icon {
     margin-right: 1rem;
     font-size: 1.5rem; }
@@ -1278,7 +1274,7 @@ body {
           margin-top: 3rem; } }
     .popup__text--question {
       display: block;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 600; }
       .popup__text--question:not(:first-child) {
         margin-top: 2rem; }

@@ -10,7 +10,7 @@
         padding: 2rem 2.3rem;
         border-radius: .5rem;
         font-size: 1.3rem;
-        font-weight: 600;
+        font-weight: $font-en-bold;
         letter-spacing: .3rem;
         word-spacing: .7rem;
         transition: $transition-medium;
@@ -102,7 +102,7 @@
         padding: 2.1rem 1.5rem;
         border-radius: 50%;
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: $font-en-bold;
         letter-spacing: .3rem;
         color: $color-primary-dark;
         border: 1px solid $color-primary-dark;

@@ -79,7 +79,7 @@
 
         &--eg {
             font-size: 6.5rem;
-            font-weight: 800;
+            font-weight: $font-en-extra-bold;
             text-transform: uppercase;
 
             position: absolute;
@@ -99,7 +99,7 @@
 
         &--popup {
             display: block;
-            font-weight: 400;
+            font-weight: $font-medium;
         }
     }
 
@@ -129,7 +129,7 @@
     &__caption {
         font-family: 'Noto Serif KR', serif;
         font-size: 2.3rem;
-        font-weight: 400;
+        font-weight: $font-medium;
 
         // Desktop 
         position: absolute;
@@ -144,7 +144,7 @@
         &-tab {
             font-family: 'Noto Serif KR', serif;
             font-size: 2.3rem;
-            font-weight: 400;
+            font-weight: $font-medium;
             margin-top: 1rem;
             margin-left: 5rem;
             display: none;
@@ -174,7 +174,7 @@
 
         &--eg {
             font-size: 5rem;
-            font-weight: 800;
+            font-weight: $font-en-extra-bold;
             text-transform: uppercase;
             margin-left: 5rem;
 
@@ -186,7 +186,7 @@
         &--popup {
             text-align: center;
             display: block;
-            font-weight: 400;
+            font-weight: $font-medium;
         }
     }
 
@@ -206,7 +206,7 @@
     &__caption {
         font-family: 'Noto Serif KR', serif;
         font-size: 2.3rem;
-        font-weight: 400;
+        font-weight: $font-medium;
         margin-top: 1rem;
         margin-left: 5rem;
 

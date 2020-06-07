@@ -29,7 +29,6 @@
 
         &--primary {
             font-size: 2.3rem;
-            font-weight: 600;
             margin-bottom: 2rem;
             color: $color-primary-light;
 
@@ -49,8 +48,6 @@
         &--secondary {
             font-size: 2rem;
             color: $color-footer-grey;
-            font-weight: 400;
-
             @include respond(tab-port) {
                 font-size: 2.5rem;
             }
@@ -75,6 +72,7 @@
     }
 
     &__col {
+        font-weight: $font-medium;
 
         @include respond(tab-land) {
             padding: 0;
@@ -123,7 +121,6 @@
     &__link:visited {
         display: block;
         font-size: 2rem;
-        font-weight: 400;
         color: $color-footer-grey;
         text-decoration: none;
 
